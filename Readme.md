@@ -2,10 +2,27 @@
 
 Algorithms that I have actually implemented in the past.
 
+# Reminder
+
+1. When using fgets, make sure there are at least 2 spaces for `\n` and `\0`
+2. Use `gg=G` to do auto-indent
+
+# What to test before contest
+
+1. Is the type `auto` working?
+2. Is `#include <bits/stdc++.h>` working?
+3. Use `%lld` or `%I64d`? (Use the following macro to deal with `%I64d`)
+```
+#ifdef _WIN32
+#define lld "I64d"
+#else
+#define lld "lld"
+#endif
+```
+
 # Short Code
 
 * GCD
-
 ```
 long long int gcd(long long int a, long long int b)
 {
@@ -14,13 +31,11 @@ long long int gcd(long long int a, long long int b)
 ```
 
 * LCM
-
 ```
 a * b / gcd(a,b)
 ```
 
 * Leap year
-
 ```
 year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 ```
@@ -28,7 +43,6 @@ year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 # BFS over a graph
 
 #### (Code simplified and commented from UVa 924)
-
 ```
 int visited[employee]; // to avoid repeatedly enqueueing elements
 memset(visited, 0, sizeof(visited)); //init
@@ -64,7 +78,6 @@ Using a n * n adjacency matrix to store the graph.
 
 Update the distance between vertices a and b by adding 1 vertex, e.g. c, at a time,
 and check if going a->c->b can shorten the distance between a and b or not.
-
 ```
 for (int k = 1; k < max; k++)
   for (int i = 1; i < max; i++)
