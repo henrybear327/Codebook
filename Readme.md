@@ -40,6 +40,20 @@ a * b / gcd(a,b)
 year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 ```
 
+* Matrix multiplication
+```
+for (int i = 0; i < n; i++) {
+  for (int k = 0; k < p; k++) {
+    int tmp = 0;
+    for (int j = 0; j < m; j++) {
+      tmp += a[i][j] * b[j][k];
+    }
+    if (tmp > max)
+    max = tmp;
+  }
+}
+```
+
 # BFS over a graph
 
 #### (Code simplified and commented from UVa 924)
