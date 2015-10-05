@@ -7,6 +7,10 @@ Algorithms that I have actually implemented in the past.
 1. When using fgets, make sure there are at least 2 spaces for `\n` and `\0`
 2. Use `gg=G` to do auto-indent
 
+# To-do
+
+1. Add 找所有因數 code
+
 # What to test before contest
 
 1. Is the type `auto` working?
