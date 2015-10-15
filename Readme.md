@@ -10,6 +10,7 @@ Algorithms that I have actually implemented in the past.
 # To-do
 
 1. Add 找所有因數 code
+2. Code all algorithms included.
 
 # What to test before contest
 
