@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {2}Contest Setup}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}vimrc}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}bashrc}{1}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}C++ template}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Java template}{2}{subsection.2.4}
-\contentsline {section}{\numberline {3}Reminder}{3}{section.3}
-\contentsline {section}{\numberline {4}Useful code}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}Fast Exponentiation}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}GCD}{3}{subsection.4.2}
+\contentsline {subsection}{\numberline {2.3}C++ template}{1}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Java template}{1}{subsection.2.4}
+\contentsline {section}{\numberline {3}Reminder}{2}{section.3}
+\contentsline {section}{\numberline {4}Useful code}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fast Exponentiation}{2}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}GCD}{2}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Extended Euclidean Algorithm}{3}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}STL quick reference}{3}{subsection.4.4}
 \contentsline {subsubsection}{\numberline {4.4.1}Map / Set}{3}{subsubsection.4.4.1}
