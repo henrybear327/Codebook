@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 01:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -63,6 +63,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
 )
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (483.69684pt) is ignored.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
 
@@ -1189,14 +1193,14 @@ LaTeX Font Info:    ... okay on input line 91.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69684pt
+* \textwidth=540.60239pt
 * \textheight=731.23582pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1330,38 +1334,38 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(./contest_setup/main.cpp) [1
+(./contest_setup/main.cpp) (./contest_setup/Main.java [1
 
-] (./contest_setup/Main.java)
+])
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 175.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 173.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 263.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 
-Underfull \vbox (badness 2903) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 263.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 263.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 263.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 261.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 26623 strings out of 493706
- 499237 string characters out of 6145769
- 1002593 words of memory out of 5000000
- 29748 multiletter control sequences out of 15000+600000
+ 26617 strings out of 493706
+ 499179 string characters out of 6145769
+ 1050593 words of memory out of 5000000
+ 29742 multiletter control sequences out of 15000+600000
  4192 words of font info for 39 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,11n,69p,10389b,1467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,69p,10389b,1795s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Codebook.pdf (3 pages).
