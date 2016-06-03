@@ -1,12 +1,37 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[10pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper]{geometry}
+% 一定要用 xelatex 進行編譯，字體目前是使用Mac內建的中文字體
 
-\usepackage{pdfpages}
-\usepackage[colorlinks=true, urlcolor=cyan]{hyperref}
+%%%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,twocolumn,oneside]{article} %垂直兩欄、單面列印
+\setlength{\columnsep}{14pt} %兩欄模式的間距
+\setlength{\columnseprule}{0pt} %兩欄模式間格線粗細
+
+\usepackage{geometry} %定義邊界
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{pdfpages} %導入pdf文檔, \includepdf[pages={3,4}]{problem_statement.pdf}
+
+\usepackage[colorlinks=true, urlcolor=cyan]{hyperref} %使用超連結, \href{http://codeforces.com/blog/entry/17974}{Codeforces}
+
+\usepackage{fancyhdr}	%設定頁首頁尾
+
+\usepackage{verbatim}  % 大量註解用 , \begin{comment}  % 註解開始,  \end{comment}  % 註解結尾
+
+%%%%%%%%%%%%%%%%中文設定%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec} %加這個就可以設定字體 
+\usepackage{xeCJK} %讓中英文字體分開設置
+%\setmainfont{Arial}
+\setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt 
+
+%%%%%%%%%%%%%%%程式碼設定%%%%%%%%%%%%%%%%%%%
 
 \usepackage{listings}
 \usepackage{xcolor}
@@ -16,31 +41,29 @@
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 \lstset{ %
-  language=C++,								  % the language of the code
-  backgroundcolor=\color{black!5}, % set backgroundcolor,   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-  breaklines=true,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  deletekeywords={...},            % if you want to delete keywords from the given language
-  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  frame=single,	                   % adds a frame around the code
-  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{blue},       % keyword style
-  otherkeywords={*,...},           % if you want to add more keywords to the set  
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=7pt,                   % how far the line-numbers are from the code
+  backgroundcolor=\color{black!5}, % set backgroundcolor,  choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,   % the size of the fonts that are used for the code
+  breakatwhitespace=false,   % sets if automatic breaks should only happen at whitespace
+  breaklines=true,  % sets automatic line breaking
+  captionpos=b,  % sets the caption-position to bottom
+  frame=single,	  % adds a frame around the code
+  escapeinside={\%*}{*)},  % if you want to add LaTeX within your code
+  keepspaces=true,  % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  columns=flexible,
+  commentstyle=\color{mygreen}, % comment style
+  keywordstyle=\color{blue},  % keyword style
+  %otherkeywords={*,...}, % if you want to add more keywords to the set  
+  numbers=left, % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=7pt, % how far the line-numbers are from the code
   numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          % underline spaces within strings only
-  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,  % the step between two line-numbers. If it's 1, each line will be numbered
+  rulecolor=\color{black}, % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false, % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false, % underline spaces within strings only
+  showtabs=false, % show tabs within strings adding particular underscores
   stringstyle=\color{mymauve},     % string literal style
-  tabsize=4,	                   % sets default tabsize to 4 spaces
-  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+  tabsize=4, % sets default tabsize to 4 spaces
+  title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
 \lstdefinestyle{customc}{
@@ -57,37 +80,176 @@
   stringstyle=\color{orange},
 }
 
-\lstset{escapechar=@,style=customc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{fontspec} %加這個就可以設定字體 
-\usepackage{xeCJK} %讓中英文字體分開設置
-%\setmainfont{Arial}
-\setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
-\XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
-\XeTeXlinebreakskip = 0pt plus 1pt 
-
-\title{NCPC 2016\\ Team $CCU Earthrise$ Codebook} % \\ is line break
-\author{黃鈺程、曾俊宏、陳丕祐}
-\date{\today}
-
-% Use this tag to surround the entire document, a must
 \begin{document} 
 
-\begin{titlepage}
-\maketitle
-\end{titlepage}
+%%%%%%%%%%%%%%%%%頁首%%%%%%%%%%%%%%%%%%%%
 
+% generate header and footer
+\pagestyle{fancy}
+\fancyhead[L]{National Chung Cheng University -- Earthrise}
+\fancyhead[R]{\thepage}
+
+%\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
+\fancyfoot[C]{\today}
+\fancyfoot[R]{\thepage}
+
+% generate table of content on in a new page
+\scriptsize
 \tableofcontents
 \newpage
 
-%By default, the paragraphs are indented by 1.5 times the point size of the current font. Also, there is no extra blank space inserted between the paragraphs. In the sections below is described how to change that.
+%%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%%
 
-%\includepdf[pages={3,4}]{problem_statement.pdf}
+\section{Todo}
+\begin{enumerate}
+\item Add code and complexity
+\item Add brief explanations
+\end{enumerate}
 
-\section{BIT(Fenwick Tree)}
+%%%%%%%%%%%%%%%%機器設定%%%%%%%%%%%%%%%%%%
+
+\section{Contest Setup}
+
+\subsection{vimrc}
+\lstinputlisting[language=bash]{contest_setup/vimrc}
+
+\subsection{bashrc}
+\lstinputlisting[language=bash]{contest_setup/bashrc}
+
+\subsection{c++ template}
+
+\subsection{Java template}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
+
+\section{Reminder}
+
+\begin{enumerate}
+	\item Read the problem statements carefully. Input and output specifications are crucial!
+	\item Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
+	\item Time penalty is 20 minutes per WA, \textbf{don't rush}!
+	\item Sample test cases must all be tested and passed before every submission!
+	\item Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
+
+\section{Useful code}
+
+\subsection{Fast Exponentiation}
+
+\subsection{GCD}
+
+小心負數！
+
+\subsection{Extended Euclidean Algorithm}
+
+\subsection{STL quick reference}
+
+\subsubsection{Map / Set}
+
+\subsubsection{String}
+
+%%%%%%%%%%%%%%%%%搜尋%%%%%%%%%%%%%%%%%%%%
+
+\section{Search}
+
+\subsection{Binary Search}
+
+\subsubsection{Find key}
+
+\subsubsection{Upper / lower Bound}
+
+\subsection{折半完全列舉}
+
+\subsection{Two-pointer 爬行法}
+
+%%%%%%%%%%%%%%%%資料結構%%%%%%%%%%%%%%%%%%
+
+\section{Basic data structure}
+
+\subsection{1D BIT}
+
+\lstinputlisting[style=customc]{old/"UVA 10810 BIT.cpp"}
+
+\subsection{2D BIT}
+
+\subsection{Union Find}
 
 %\lstinputlisting[language=c++]{A/main.cpp}
 
-\newpage
+\subsection{Segment Tree}
+
+Hehe
+
+%%%%%%%%%%%%%%%%%%DP%%%%%%%%%%%%%%%%%%%%
+
+\section{Dynamic Programming}
+
+%%%%%%%%%%%%%%%%%%樹%%%%%%%%%%%%%%%%%%%%
+
+\section{Tree}
+
+\subsection{LCA}
+
+%%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
+
+\section{Graph}
+
+\subsection{Articulation point / edge}
+
+\subsection{BCC vertex}
+
+\subsection{BCC edge}
+
+\subsection{SCC}
+
+\subsection{Shortest Path}
+
+\subsubsection{Dijkatra}
+
+\subsubsection{SPFA}
+
+\subsubsection{Bellman-Ford}
+
+\subsection{Flow}
+
+\subsubsection{Max Flow (Dinic)}
+
+\subsubsection{Min-Cut}
+
+\subsubsection{Min Cost Max Flow}
+
+\subsubsection{Maximum Bipartite Graph}
+
+%%%%%%%%%%%%%%%%%字串%%%%%%%%%%%%%%%%%%%
+
+\section{String}
+
+\subsection{KMP}
+
+\subsection{Z Algorithm}
+
+\subsection{Trie}
+
+\subsection{Suffix Array}
+
+%%%%%%%%%%%%%%%%%幾何%%%%%%%%%%%%%%%%%%%
+
+\section{Geometry}
+
+\subsection{Template}
+
+\subsubsection{Point / Line}
+
+\subsubsection{Intersection}
+
+\subsection{Half-plane intersection}
+
+\subsection{Convex Hull}
 
 \end{document}
