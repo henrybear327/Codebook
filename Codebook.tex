@@ -28,6 +28,7 @@
 \usepackage{xeCJK} %讓中英文字體分開設置
 %\setmainfont{Arial}
 \setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\setmonofont{Courier} %等寬字體
 \XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt 
 
@@ -63,6 +64,7 @@
   showtabs=false, % show tabs within strings adding particular underscores
   stringstyle=\color{mymauve},     % string literal style
   tabsize=4, % sets default tabsize to 4 spaces
+  basicstyle=\footnotesize\ttfamily, %等寬字體 字體大小
   title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
@@ -73,7 +75,6 @@
   xleftmargin=\parindent,
   language=C++,
   showstringspaces=false,
-  basicstyle=\footnotesize\ttfamily,
   keywordstyle=\bfseries\color{green!40!black},
   commentstyle=\itshape\color{purple!40!black},
   identifierstyle=\color{blue},
@@ -113,14 +114,18 @@
 \section{Contest Setup}
 
 \subsection{vimrc}
-\lstinputlisting[language=bash]{contest_setup/vimrc}
+\lstinputlisting[language=bash, basicstyle=\footnotesize\ttfamily]{contest_setup/vimrc}
 
 \subsection{bashrc}
 \lstinputlisting[language=bash]{contest_setup/bashrc}
 
-\subsection{c++ template}
+\newpage
+
+\subsection{C++ template}
+\lstinputlisting[style=customc]{contest_setup/main.cpp}
 
 \subsection{Java template}
+\lstinputlisting[style=customc]{contest_setup/Main.java}
 
 \newpage
 
@@ -174,7 +179,7 @@
 
 \subsection{1D BIT}
 
-\lstinputlisting[style=customc]{old/"UVA 10810 BIT.cpp"}
+%\lstinputlisting[style=customc]{old/"UVA 10810 BIT.cpp"}
 
 \subsection{2D BIT}
 
