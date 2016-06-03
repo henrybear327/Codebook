@@ -5,9 +5,16 @@
 
 %%%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%%%%%
 
-\documentclass[10pt,twocolumn,oneside]{article} %垂直兩欄、單面列印
-\setlength{\columnsep}{14pt} %兩欄模式的間距
-\setlength{\columnseprule}{0pt} %兩欄模式間格線粗細
+ %\documentclass[10pt,twocolumn,oneside]{article} %垂直兩欄、單面列印
+%\setlength{\columnsep}{14pt} %兩欄模式的間距
+%\setlength{\columnseprule}{0pt} %兩欄模式間格線粗細
+
+\documentclass[10pt,oneside]{article}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{tocloft}
+\renewcommand\cftsecafterpnum{\vspace{-0.6ex}}
+\renewcommand\cftsubsecafterpnum{\vspace{-0.6ex}}
 
 \linespread{1} % 行距
 
@@ -52,7 +59,7 @@
   breakatwhitespace=false,   % sets if automatic breaks should only happen at whitespace
   breaklines=true,  % sets automatic line breaking
   captionpos=b,  % sets the caption-position to bottom
-  frame=single,	  % adds a frame around the code
+  frame=L, % add double line frame at the LHS of the code
   escapeinside={\%*}{*)},  % if you want to add LaTeX within your code
   keepspaces=true,  % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
   columns=flexible,
@@ -70,14 +77,13 @@
   stringstyle=\color{mymauve},     % string literal style
   tabsize=4, % sets default tabsize to 4 spaces
   basicstyle=\footnotesize\ttfamily, %等寬字體 字體大小
-  title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=\parindent,
+  %title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
 \lstdefinestyle{customc}{
   belowcaptionskip=1\baselineskip,
   breaklines=true,
-  frame=L,
-  xleftmargin=\parindent,
   language=C++,
   showstringspaces=false,
   keywordstyle=\bfseries\color{green!40!black},
@@ -89,6 +95,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document} 
+
+\begin{landscape}
+\begin{multicols}{2}
 
 %%%%%%%%%%%%%%%%%頁首%%%%%%%%%%%%%%%%%%%%
 
@@ -104,15 +113,9 @@
 % generate table of content on in a new page
 \scriptsize
 \tableofcontents
-\newpage
+%\newpage
 
-%%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%%
-
-\section{Todo}
-\begin{enumerate}
-\item Add code and complexity
-\item Add brief explanations
-\end{enumerate}
+%%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%機器設定%%%%%%%%%%%%%%%%%%
 
@@ -148,9 +151,24 @@
 
 \subsection{Fast Exponentiation}
 
+\lstinputlisting[style=customc]{useful_code/fast_pow.cpp}
+
 \subsection{GCD}
 
-小心負數！
+注意負數的case!
+
+\begin{lstlisting}[style=customc] 
+ll gcd(ll a, ll b)
+{
+    return b == 0 ? a : gcd(b, a % b);
+}
+\end{lstlisting}
+
+\subsection{Leap year}
+
+\begin{lstlisting}[style=customc] 
+year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
+\end{lstlisting}
 
 \subsection{Extended Euclidean Algorithm}
 
@@ -180,13 +198,9 @@
 
 \subsection{1D BIT}
 
-%\lstinputlisting[style=customc]{old/"UVA 10810 BIT.cpp"}
-
 \subsection{2D BIT}
 
 \subsection{Union Find}
-
-%\lstinputlisting[language=c++]{A/main.cpp}
 
 \subsection{Segment Tree}
 
@@ -257,5 +271,8 @@ Hehe
 \subsection{Half-plane intersection}
 
 \subsection{Convex Hull}
+
+\end{multicols}
+\end{landscape}
 
 \end{document}
