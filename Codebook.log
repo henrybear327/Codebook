@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 00:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1297,12 +1297,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
 * 
@@ -1310,7 +1304,14 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 * 
 * Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
-(./contest_setup/vimrc) (./contest_setup/bashrc) [1
+(./contest_setup/vimrc)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(./contest_setup/bashrc) [1
 
 ]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1344,10 +1345,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 26394 strings out of 493706
- 495124 string characters out of 6145769
- 918213 words of memory out of 5000000
- 29523 multiletter control sequences out of 15000+600000
+ 26348 strings out of 493706
+ 494568 string characters out of 6145769
+ 921968 words of memory out of 5000000
+ 29477 multiletter control sequences out of 15000+600000
  4192 words of font info for 39 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  39i,11n,69p,10389b,1467s stack positions out of 5000i,500n,10000p,200000b,80000s

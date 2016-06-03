@@ -2,8 +2,7 @@ set number	    " Show line numbers
 set mouse=a	    " Enable inaction via mouse
 set showmatch	    " Highlight matching brace
 set cursorline	    " Show underline
-set cursorcolumn    " Show vertical column highlight
-set ruler	    " Show row and column ruler information
+set cursorcolumn    " highlight vertical column
 
 filetype on	"enable file detection
 syntax on	"syntax highlight
@@ -17,12 +16,12 @@ set softtabstop=4   " Number of spaces per Tab
 " ---------Optional----------
 
 set undolevels=10000	" Number of undo levels
-set scrolloff=5		"auto scroll on the bottom 5 lines
+set scrolloff=5		" Auto scroll
  
-set hlsearch	    " Highlight all search results
-set smartcase	    " Enable smart-case search
-set ignorecase	    " Always case-insensitive
-set incsearch	    " Searches for strings incrementally
+set hlsearch	" Highlight all search results
+set smartcase	" Enable smart-case search
+set ignorecase	" Always case-insensitive
+set incsearch	" Searches for strings incrementally
 
 highlight Comment ctermfg=cyan
 set showmode
