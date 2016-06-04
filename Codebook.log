@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 15:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1413,7 +1413,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 130.
+nput line 143.
 
 (./contest_setup/vimrc)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1435,50 +1435,50 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 
 ])
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 157.
+(Font)              <12> on input line 170.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 157.
+(Font)              <8> on input line 170.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 157.
+(Font)              <6> on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `math shift' on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 157.
+(hyperref)                removing `math shift' on input line 170.
 
 (./useful_code/fast_pow.cpp) [2] (./useful_code/ext_gcd.cpp)
 (./useful_code/prime_gen.cpp) (./useful_code/map_API.cpp)
 (./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 210.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 223.
 
 [3]
 Overfull \vbox (231.31274pt too high) has occurred while \output is active []
 
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 310.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 27237 strings out of 493706
- 507341 string characters out of 6145769
- 946908 words of memory out of 5000000
- 30320 multiletter control sequences out of 15000+600000
+ 27227 strings out of 493706
+ 507209 string characters out of 6145769
+ 938489 words of memory out of 5000000
+ 30310 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 37i,11n,69p,10389b,1943s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,69p,10389b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Codebook.pdf (4 pages).

@@ -103,11 +103,24 @@
 
 %%%%%%%%%%%%%%%%%頁首%%%%%%%%%%%%%%%%%%%%
 
-% generate header and footer
-\pagestyle{fancy}
+% for page 1
+\fancypagestyle{plain}
+{
+% generate header
 \fancyhead[L]{National Chung Cheng University -- Earthrise}
 \fancyhead[R]{\thepage}
+% generate footer
+%\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
+\fancyfoot[C]{\today}
+\fancyfoot[R]{\thepage}
+}
 
+% for all other pages
+\pagestyle{fancy}
+% generate header
+\fancyhead[L]{National Chung Cheng University -- Earthrise}
+\fancyhead[R]{\thepage}
+% generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
 \fancyfoot[C]{\today}
 \fancyfoot[R]{\thepage}
