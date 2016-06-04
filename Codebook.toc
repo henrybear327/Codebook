@@ -10,9 +10,11 @@
 \contentsline {subsection}{\numberline {3.3}Extended Euclidean Algorithm}{3}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Leap year}{3}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Prime Generator}{3}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}STL quick reference}{4}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Map / Set}{4}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}String}{4}{subsubsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6}STL quick reference}{3}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Map}{3}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Set}{3}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}Algorithm}{3}{subsubsection.3.6.3}
+\contentsline {subsubsection}{\numberline {3.6.4}String}{4}{subsubsection.3.6.4}
 \contentsline {section}{\numberline {4}Search}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}Binary Search}{4}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Find key}{4}{subsubsection.4.1.1}
