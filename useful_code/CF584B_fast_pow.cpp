@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-//LLONG_MIN LLONG_MAX INT_MIN INT_MAX
+// LLONG_MIN LLONG_MAX INT_MIN INT_MAX
 
 #ifdef _WIN32
 #define lld "I64d"
@@ -12,15 +12,15 @@ typedef long long ll;
 
 ll fast_pow(ll base, ll exp, ll mod)
 {
-    if(exp == 0)
-	return 1LL;
+    if (exp == 0)
+        return 1LL;
     ll res = 1;
-    while(exp > 0) {
-	if(exp & 1) {
-	    res = ((res % mod) * (base % mod)) % mod;
-	}
-	exp >>= 1;
-	base = (base * base) % mod;
+    while (exp > 0) {
+        if (exp & 1) {
+            res = ((res % mod) * (base % mod)) % mod;
+        }
+        exp >>= 1;
+        base = (base * base) % mod;
     }
     return res;
 }

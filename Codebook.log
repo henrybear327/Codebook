@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 02:28
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1245,6 +1245,15 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
 (/usr/local/texlive/2015/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2015/05/15 v3.3.2 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count169
@@ -1253,30 +1262,30 @@ Package: xeCJK-listings 2015/05/15 v3.3.2 xeCJK patch file for listings
 (./Codebook.aux)
 \openout1 = `Codebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 97.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 99.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 99.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    ... okay on input line 99.
 \AtBeginShipoutBox=\box76
 
 *geometry* driver: auto-detecting
@@ -1313,7 +1322,7 @@ LaTeX Font Info:    ... okay on input line 97.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 97.
+Package hyperref Info: Link coloring ON on input line 99.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1322,9 +1331,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 97.
-LaTeX Info: Redefining \pageref on input line 97.
-LaTeX Info: Redefining \nameref on input line 97.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 
 (./Codebook.out) (./Codebook.out)
 \@outlinefile=\write3
@@ -1337,57 +1346,57 @@ LaTeX Info: Redefining \nameref on input line 97.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 97.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 97.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 97.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 97.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 97.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 97.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 97.
-LaTeX Font Info:    Redeclaring math accent \check on input line 97.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 97.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 97.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 97.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 97.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 97.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 99.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 99.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 99.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 99.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 99.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 99.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 99.
+LaTeX Font Info:    Redeclaring math accent \check on input line 99.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 99.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 99.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 99.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 99.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 97.
+(Font)              `operators' in the math version `normal' on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 97.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 99.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 97.
+(Font)              `operators' in the math version `bold' on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 97.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 97.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 97.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 97.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 97.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/Courier(0)/m/n on input line 97.
+(Font)                  OT1/cmtt/m/n --> EU1/Courier(0)/m/n on input line 99.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 97.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 97.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 97.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 99.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/Courier(0)/bx/n on input line 97.
+(Font)                  OT1/cmtt/m/n --> EU1/Courier(0)/bx/n on input line 99.
 \c@lstlisting=\count172
  (./Codebook.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1404,15 +1413,8 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 125.
+nput line 130.
 
-*************************************************
-* xeCJK warning: "CJKfamily-Unknown"
-* 
-* Unknown CJK family `\CJKttdefault' is being ignored.
-* 
-* Try to use `\setCJKmonofont[...]{...}' to define it.
-*************************************************
 (./contest_setup/vimrc)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
@@ -1421,43 +1423,61 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (./contest_setup/bashrc)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-)
+*************************************************
+* xeCJK warning: "CJKfamily-Unknown"
+* 
+* Unknown CJK family `\CJKttdefault' is being ignored.
+* 
+* Try to use `\setCJKmonofont[...]{...}' to define it.
+*************************************************
 (./contest_setup/main.cpp) (./contest_setup/Main.java [1
 
 
 ])
-(./useful_code/fast_pow.cpp) [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 157.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 157.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+(./useful_code/fast_pow.cpp) [2] (./useful_code/ext_gcd.cpp)
+(./useful_code/prime_gen.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 191.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 204.
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Overfull \vbox (264.36374pt too high) has occurred while \output is active []
+
+
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 291.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 291.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 291.
  ) 
 Here is how much of TeX's memory you used:
- 27015 strings out of 493706
- 504838 string characters out of 6145769
- 907153 words of memory out of 5000000
- 30123 multiletter control sequences out of 15000+600000
- 4192 words of font info for 39 fonts, out of 8000000 for 9000
+ 27145 strings out of 493706
+ 506318 string characters out of 6145769
+ 898504 words of memory out of 5000000
+ 30237 multiletter control sequences out of 15000+600000
+ 6936 words of font info for 49 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,11n,69p,10389b,2003s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,69p,10389b,1945s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Codebook.pdf (3 pages).
+Output written on Codebook.pdf (4 pages).

@@ -92,6 +92,8 @@
   stringstyle=\color{orange},
 }
 
+\lstset{style=customc}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document} 
@@ -113,7 +115,10 @@
 % generate table of content on in a new page
 \scriptsize
 \tableofcontents
+
 %\newpage
+\vfill
+\columnbreak
 
 %%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%
 
@@ -122,16 +127,16 @@
 \section{Contest Setup}
 
 \subsection{vimrc}
-\lstinputlisting{contest_setup/vimrc}
+\lstinputlisting[style=]{contest_setup/vimrc}
 
 \subsection{bashrc}
-\lstinputlisting[language=bash]{contest_setup/bashrc}
+\lstinputlisting[style=,language=bash]{contest_setup/bashrc}
 
 \subsection{C++ template}
-\lstinputlisting[style=customc]{contest_setup/main.cpp}
+\lstinputlisting{contest_setup/main.cpp}
 
 \subsection{Java template}
-\lstinputlisting[style=customc]{contest_setup/Main.java}
+\lstinputlisting{contest_setup/Main.java}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
 
@@ -149,28 +154,36 @@
 
 \section{Useful code}
 
-\subsection{Fast Exponentiation}
+\subsection{Fast Exponentiation $O(log(exp))$}
 
-\lstinputlisting[style=customc]{useful_code/fast_pow.cpp}
+\lstinputlisting{useful_code/fast_pow.cpp}
 
 \subsection{GCD}
 
 注意負數的case!
 
-\begin{lstlisting}[style=customc] 
+\begin{lstlisting}
 ll gcd(ll a, ll b)
 {
     return b == 0 ? a : gcd(b, a % b);
 }
 \end{lstlisting}
 
+\subsection{Extended Euclidean Algorithm}
+
+$ax + by = gcd(a, b)$
+
+\lstinputlisting{useful_code/ext_gcd.cpp}
+
 \subsection{Leap year}
 
-\begin{lstlisting}[style=customc] 
+\begin{lstlisting}
 year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 \end{lstlisting}
 
-\subsection{Extended Euclidean Algorithm}
+\subsection{Prime Generator}
+
+\lstinputlisting{useful_code/prime_gen.cpp}
 
 \subsection{STL quick reference}
 
@@ -204,8 +217,6 @@ year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 
 \subsection{Segment Tree}
 
-Hehe
-
 %%%%%%%%%%%%%%%%%%DP%%%%%%%%%%%%%%%%%%%%
 
 \section{Dynamic Programming}
@@ -235,6 +246,8 @@ Hehe
 \subsubsection{SPFA}
 
 \subsubsection{Bellman-Ford}
+
+\subsubsection{Floyd-Warshall}
 
 \subsection{Flow}
 

@@ -2,25 +2,22 @@
 #include <vector>
 
 using namespace std;
+typedef long long ll;
 
 #define N 10010
-int is_prime[N];
-vector<int> prime;
+
+bool is_prime[N];
+vector<ll> primes;
 void init()
 {
     fill(is_prime, is_prime + N, true);
-    is_prime[0] = is_prime[1] = false;
-
-    for(int i = 2; i < N; i++) {
-	if(is_prime[i] == true) {
-	    for(int j = i * i; j < N; j += i)
-		is_prime[j] = false;
-	}
+    for (int i = 2; i < N; i++) {
+        if (is_prime[i] == true) {
+            primes.push_back(i);
+            for (int j = i * i; j < N; j += i)
+                is_prime[j] = false;
+        }
     }
-
-    for(int i = 0; i < N; i++)
-	if(is_prime[i] == true)
-	    prime.push_back(i);
 }
 
 int main()
@@ -28,23 +25,23 @@ int main()
     init();
 
     int n;
-    while(scanf("%d", &n) == 1 && n) {
-	int ans = 0;
-	for(int i = 0; i < (int)prime.size(); i++) {
-	    if(prime[i] > n)
-		break;
-	    int sum = 0;
-	    for(int j = i; j < (int)prime.size(); j++) {
-		sum += prime[j];
-		if(sum == n) {
-		    ans++;
-		    break;
-		} else if (sum > n){
-		    break;
-		}
-	    }
-	}
-	printf("%d\n", ans);
+    while (scanf("%d", &n) == 1 && n) {
+        int ans = 0;
+        for (int i = 0; i < (int)primes.size(); i++) {
+            if (primes[i] > n)
+                break;
+            int sum = 0;
+            for (int j = i; j < (int)primes.size(); j++) {
+                sum += primes[j];
+                if (sum == n) {
+                    ans++;
+                    break;
+                } else if (sum > n) {
+                    break;
+                }
+            }
+        }
+        printf("%d\n", ans);
     }
     return 0;
 }
