@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  4 JUN 2016 15:50
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  5 JUN 2016 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1415,14 +1415,6 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 144.
 
-(./contest_setup/vimrc)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(./contest_setup/bashrc)
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
 * 
@@ -1430,7 +1422,15 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 * 
 * Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
-(./contest_setup/main.cpp) (./contest_setup/Main.java [1
+(./contest_setup/vimrc)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(./contest_setup/bashrc) (./contest_setup/main.cpp) (./contest_setup/Main.java
+[1
 
 
 ])
@@ -1475,7 +1475,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
 Here is how much of TeX's memory you used:
  27237 strings out of 493706
  507341 string characters out of 6145769
- 946991 words of memory out of 5000000
+ 959075 words of memory out of 5000000
  30320 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
