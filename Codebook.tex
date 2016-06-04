@@ -103,6 +103,16 @@
 
 %%%%%%%%%%%%%%%%%頁首%%%%%%%%%%%%%%%%%%%%
 
+% for all other pages
+\pagestyle{fancy}
+% generate header
+\fancyhead[L]{National Chung Cheng University -- Earthrise}
+\fancyhead[R]{\thepage}
+% generate footer
+%\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
+\fancyfoot[C]{\today}
+\fancyfoot[R]{\thepage}
+
 % for page 1
 \fancypagestyle{plain}
 {
@@ -115,19 +125,10 @@
 \fancyfoot[R]{\thepage}
 }
 
-% for all other pages
-\pagestyle{fancy}
-% generate header
-\fancyhead[L]{National Chung Cheng University -- Earthrise}
-\fancyhead[R]{\thepage}
-% generate footer
-%\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{\today}
-\fancyfoot[R]{\thepage}
-
 % generate table of content on in a new page
 \scriptsize
 \tableofcontents
+\pagestyle{fancy}
 
 %\newpage
 \vfill
