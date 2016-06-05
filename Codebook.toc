@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2}Reminder}{2}{section.2}
 \contentsline {section}{\numberline {3}Useful code}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Fast Exponentiation $O(log(exp))$}{2}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}GCD}{2}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}GCD $O(log(a + b)$}{2}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Extended Euclidean Algorithm}{3}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Leap year}{3}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Prime Generator}{3}{subsection.3.5}
@@ -31,19 +31,21 @@
 \contentsline {subsection}{\numberline {7.1}LCA}{4}{subsection.7.1}
 \contentsline {section}{\numberline {8}Graph}{4}{section.8}
 \contentsline {subsection}{\numberline {8.1}Articulation point / edge}{4}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}BCC vertex}{4}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}BCC edge}{4}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}SCC}{4}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Shortest Path}{4}{subsection.8.5}
-\contentsline {subsubsection}{\numberline {8.5.1}Dijkatra}{4}{subsubsection.8.5.1}
-\contentsline {subsubsection}{\numberline {8.5.2}SPFA}{4}{subsubsection.8.5.2}
-\contentsline {subsubsection}{\numberline {8.5.3}Bellman-Ford}{4}{subsubsection.8.5.3}
-\contentsline {subsubsection}{\numberline {8.5.4}Floyd-Warshall}{4}{subsubsection.8.5.4}
-\contentsline {subsection}{\numberline {8.6}Flow}{4}{subsection.8.6}
-\contentsline {subsubsection}{\numberline {8.6.1}Max Flow (Dinic)}{4}{subsubsection.8.6.1}
-\contentsline {subsubsection}{\numberline {8.6.2}Min-Cut}{4}{subsubsection.8.6.2}
-\contentsline {subsubsection}{\numberline {8.6.3}Min Cost Max Flow}{4}{subsubsection.8.6.3}
-\contentsline {subsubsection}{\numberline {8.6.4}Maximum Bipartite Graph}{4}{subsubsection.8.6.4}
+\contentsline {subsection}{\numberline {8.2}CC}{4}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}BCC vertex}{4}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}BCC edge}{4}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}SCC}{4}{subsubsection.8.2.3}
+\contentsline {subsection}{\numberline {8.3}Shortest Path}{4}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Dijkatra}{4}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}SPFA}{4}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3}Bellman-Ford}{4}{subsubsection.8.3.3}
+\contentsline {subsubsection}{\numberline {8.3.4}Floyd-Warshall}{4}{subsubsection.8.3.4}
+\contentsline {subsection}{\numberline {8.4}Kruskal MST}{4}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Flow}{4}{subsection.8.5}
+\contentsline {subsubsection}{\numberline {8.5.1}Max Flow (Dinic)}{4}{subsubsection.8.5.1}
+\contentsline {subsubsection}{\numberline {8.5.2}Min-Cut}{4}{subsubsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.3}Min Cost Max Flow}{4}{subsubsection.8.5.3}
+\contentsline {subsubsection}{\numberline {8.5.4}Maximum Bipartite Graph}{4}{subsubsection.8.5.4}
 \contentsline {section}{\numberline {9}String}{4}{section.9}
 \contentsline {subsection}{\numberline {9.1}KMP}{4}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Z Algorithm}{4}{subsection.9.2}
