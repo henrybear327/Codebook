@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  5 JUN 2016 11:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  5 JUN 2016 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,35 +1435,39 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 
 ])
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 171.
+(Font)              <12> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 171.
+(Font)              <8> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 171.
+(Font)              <6> on input line 177.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
+(hyperref)                removing `math shift' on input line 177.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 171.
+(hyperref)                removing `math shift' on input line 177.
 
 (./useful_code/fast_pow.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 175.
+(hyperref)                removing `math shift' on input line 181.
 
-[2] (./useful_code/ext_gcd.cpp) (./useful_code/prime_gen.cpp)
-(./useful_code/map_API.cpp) (./useful_code/set_API.cpp)
-(./useful_code/algorithm_API.cpp [3])
+[2] (./useful_code/ext_gcd.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+(./useful_code/prime_gen.cpp) (./useful_code/map_API.cpp)
+(./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp [3])
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 244.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 250.
 
 
 Overfull \vbox (262.36374pt too high) has occurred while \output is active []
@@ -1474,24 +1478,24 @@ Overfull \vbox (262.36374pt too high) has occurred while \output is active []
 
 
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 341.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
  27244 strings out of 493706
  507417 string characters out of 6145769
- 981758 words of memory out of 5000000
+ 948964 words of memory out of 5000000
  30327 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 37i,12n,69p,10389b,1972s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,69p,10389b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Codebook.pdf (5 pages).

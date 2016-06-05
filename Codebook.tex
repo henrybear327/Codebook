@@ -168,11 +168,17 @@
 
 \section{Useful code}
 
+\subsection{Leap year}
+
+\begin{lstlisting}
+year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
+\end{lstlisting}
+
 \subsection{Fast Exponentiation $O(log(exp))$}
 
 \lstinputlisting{useful_code/fast_pow.cpp}
 
-\subsection{GCD $O(log(a + b)$}
+\subsection{GCD $O(log(a + b))$}
 
 注意負數的case!
 
@@ -189,11 +195,11 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 
 \lstinputlisting{useful_code/ext_gcd.cpp}
 
-\subsection{Leap year}
+\subsection{Mod Inverse}
 
-\begin{lstlisting}
-year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
-\end{lstlisting}
+Case 1 $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
+
+\noindent Case 2 $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ (use Fermat's little theorem)
 
 \subsection{Prime Generator}
 \lstinputlisting{useful_code/prime_gen.cpp}
