@@ -185,7 +185,7 @@ ll gcd(ll a, ll b)
 
 \subsection{Extended Euclidean Algorithm}
 
-$ax + by = gcd(a, b)$
+Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
 
 \lstinputlisting{useful_code/ext_gcd.cpp}
 
@@ -197,6 +197,26 @@ year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 
 \subsection{Prime Generator}
 \lstinputlisting{useful_code/prime_gen.cpp}
+
+\subsection{Binomial Coefficient}
+
+\begin{lstlisting}
+int binomialCoeff(int n, int k)
+{
+    int res = 1;
+ 
+    if ( k > n - k ) // Since C(n, k) = C(n, n-k)
+        k = n - k;
+ 
+    for (int i = 0; i < k; ++i) // n...n-k / 1...k
+    {
+        res *= (n - i);
+        res /= (i + 1);
+    }
+ 
+    return res;
+}
+\end{lstlisting}
 
 \subsection{STL quick reference}
 

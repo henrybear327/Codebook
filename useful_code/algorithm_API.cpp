@@ -10,8 +10,7 @@ it unique(v.begin(), v.end());          // it - v.begin() = size
 void nth_element(v.begin(), nth_it, bin_comp);
 void merge(in1.begin(), in1.end(), in2.begin(), in2.end(), out.begin(), comp);
 // include union, intersection, difference, symmetric_difference(xor)
-void set_union(in1.begin(), in1.end(), in2.begin(), in2.end(), out.begin(),
-               comp);
+void set_union(in1.begin(), in1.end(), in2.begin(), in2.end(), out.begin(), comp);
 bool next_permutation(v.begin(), v.end());
 // v1, v2 need sorted already, whether v1 includes v2
 bool inclues(v1.begin(), v1.end(), v2.begin(), v2.end());
