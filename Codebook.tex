@@ -259,8 +259,8 @@ int binomialCoeff(int n, int k)
 \subsection{1D BIT}
 
 \begin{lstlisting}
-const int MAX_N = 20000;
-int N;
+// BIT is 1-based
+const int MAX_N = 20000; //這個記得改！
 ll bit[MAX_N + 1];
 
 int sum(int i) {
@@ -281,6 +281,27 @@ void add(int i, int x) {
 \end{lstlisting}
 
 \subsection{2D BIT}
+
+\begin{lstlisting}
+// BIT is 1-based
+const int MAX_N = 20000, MAX_M = 20000; //這個記得改！
+ll bit[MAX_N + 1][MAX_M + 1];
+
+ll sum(int a, int b) {
+    ll s = 0;
+    for (int i = a; i > 0; i -= (i & -i))
+        for (int j = b; j > 0; j -= (j & -j))
+            s += bit[i][j];
+    return s;
+}
+
+void add(int a, int b, ll x) {
+	// MAX_N, MAX_M 須適時調整！
+    for (int i = a; i <= MAX_N; i += (i & -i))
+        for (int j = b; j <= MAX_M; j += (j & -j))
+            bit[i][j] += x;
+}
+\end{lstlisting}
 
 \subsection{Union Find}
 
