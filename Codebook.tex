@@ -162,6 +162,7 @@
 	\item Time penalty is 20 minutes per WA, \textbf{don't rush}!
 	\item Sample test cases must all be tested and passed before every submission!
 	\item Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
+	\item Bus error: the code has $scanf, fgets$ but have nothing to read! Check if you have early termination but didn't handle it properly.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -257,6 +258,28 @@ int binomialCoeff(int n, int k)
 
 \subsection{1D BIT}
 
+\begin{lstlisting}
+const int MAX_N = 20000;
+int N;
+ll bit[MAX_N + 1];
+
+int sum(int i) {
+    int s = 0;
+    while (i > 0) {
+        s += bit[i];
+        i -= (i & -i);
+    }
+    return s;
+}
+
+void add(int i, int x) {
+    while (i <= MAX_N) {
+        bit[i] += x;
+        i += (i & -i);
+    }
+}
+\end{lstlisting}
+
 \subsection{2D BIT}
 
 \subsection{Union Find}
@@ -326,6 +349,21 @@ int binomialCoeff(int n, int k)
 \section{Geometry}
 
 \subsection{Template}
+
+\begin{lstlisting}
+#define x first
+#define y second
+typedef pair <double , double > pt;
+struct line {
+double a, b, c;
+// coefficients in general form, compare up to constant factor
+}
+pt operator-(pt u, pt v) { return pt(u.x-v.x, u.y-v.y); }
+pt operator+(pt u, pt v) { return pt(u.x+v.x, u.y+v.y); }
+pt operator*(pt u, double d) { return pt(u.x*d, u.y*d); }
+double operator*(pt u, pt v) { return u.x*v.x + u.y*v.y); } // dot product double operator!(pt p) { return sqrt(p*p); } // norm
+double operator^(pt u, pt v) { return u.x*v.y - u.y*v.x; } // cross product
+\end{lstlisting}
 
 \subsubsection{Point / Line}
 
