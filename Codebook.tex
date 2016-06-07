@@ -305,6 +305,33 @@ void add(int a, int b, ll x) {
 
 \subsection{Union Find}
 
+\begin{lstlisting}
+#define N 20000 // 記得改
+struct UFDS {
+    int par[N];
+
+    void init() {
+        memset(par, -1, sizeof(par));
+    }
+
+    int root(int x) {
+        return par[x] < 0 ? x : par[x] = root(par[x]);
+    }
+
+    void merge(int x, int y) {
+        x = root(x);
+        y = root(y);
+
+        if (x != y) {
+            if (par[x] > par[y])
+                swap(x, y);
+            par[x] += par[y];
+            par[y] = x;
+        }
+    }
+}
+\end{lstlisting}
+
 \subsection{Segment Tree}
 
 %%%%%%%%%%%%%%%%%%DP%%%%%%%%%%%%%%%%%%%%
@@ -334,6 +361,8 @@ void add(int a, int b, ll x) {
 \subsection{Shortest Path}
 
 \subsubsection{Dijkatra}
+
+\subsubsection{Dijkatra (next-to-shortest path)}
 
 \subsubsection{SPFA}
 

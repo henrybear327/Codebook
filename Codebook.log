@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  6 JUN 2016 22:40
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  7 JUN 2016 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,11 +1429,11 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(./contest_setup/bashrc) (./contest_setup/main.cpp) (./contest_setup/Main.java
-[1
+(./contest_setup/bashrc) (./contest_setup/main.cpp) [1
 
 
-])
+]
+(./contest_setup/Main.java)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 178.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1449,7 +1449,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 178.
 
-(./useful_code/fast_pow.cpp)
+(./useful_code/fast_pow.cpp) [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 182.
@@ -1458,7 +1458,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 182.
 
-[2] (./useful_code/ext_gcd.cpp)
+(./useful_code/ext_gcd.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
@@ -1474,26 +1474,26 @@ LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 263.
 
 [4]
-Overfull \vbox (5.03305pt too high) has occurred while \output is active []
+Overfull \vbox (3.03305pt too high) has occurred while \output is active []
 
 
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 400.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 400.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 429.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
  ) 
 Here is how much of TeX's memory you used:
- 27277 strings out of 493706
- 508021 string characters out of 6145769
- 924967 words of memory out of 5000000
- 30359 multiletter control sequences out of 15000+600000
+ 27288 strings out of 493706
+ 508124 string characters out of 6145769
+ 925209 words of memory out of 5000000
+ 30370 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  37i,12n,69p,10389b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
