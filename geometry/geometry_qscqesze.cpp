@@ -548,7 +548,7 @@ int insidepolygon(int vcount, POINT Polygon[], POINT q)
                               Polygon
                               [(i + 2) %
                                n])) && /* 下一条边是水平线，前一个端点和后一个端点在射线两侧
-                               */
+         */
               ((r2 = multiply(Polygon[i], Polygon[(i + 2) % n], l1.s) *
                      multiply(Polygon[(i + 2) % n], Polygon[(i + 3) % n],
                               l1.s)) > 0))))
@@ -606,7 +606,7 @@ void Graham_scan(POINT PointSet[], POINT ch[], int n, int &len)
     for (
         i = 1; i < n - 1;
         i++) /* 对顶点按照相对PointSet[0]的极角从小到大进行排序，极角相同的按照距离PointSet[0]从近到远进行排序
-              */
+          */
     {
         k = i;
         for (j = i + 1; j < n; j++)
@@ -1073,27 +1073,27 @@ time (after hull computation). See the "Rotating Calipers Homepage"
 http://www.cs.mcgill.ca/~orm/rotcal.frame.html for a description
 and applet.
 */ /*
-    折线的化简 伪码如下：
-    Input: tol = the approximation tolerance
-    L = {V0,V1,,Vn-1} is any n-vertex polyline
+             折线的化简 伪码如下：
+             Input: tol = the approximation tolerance
+             L = {V0,V1,,Vn-1} is any n-vertex polyline
 
-    Set start = 0;
-    Set k = 0;
-    Set W0 = V0;
-    for each vertex Vi (i=1,n-1)
-    {
-    if Vi is within tol from Vstart
-    then ignore it, and continue with the next vertex
+             Set start = 0;
+             Set k = 0;
+             Set W0 = V0;
+             for each vertex Vi (i=1,n-1)
+             {
+             if Vi is within tol from Vstart
+             then ignore it, and continue with the next vertex
 
-    Vi is further than tol away from Vstart
-    so add it as a new vertex of the reduced polyline
-    Increment k++;
-    Set Wk = Vi;
-    Set start = i; as the new initial vertex
-    }
+             Vi is further than tol away from Vstart
+             so add it as a new vertex of the reduced polyline
+             Increment k++;
+             Set Wk = Vi;
+             Set start = i; as the new initial vertex
+             }
 
-    Output: W = {W0,W1,,Wk-1} = the k-vertex simplified polyline
-    */
+             Output: W = {W0,W1,,Wk-1} = the k-vertex simplified polyline
+             */
 /********************\
 *        *
 * 补充    *
@@ -1423,7 +1423,8 @@ int rotat(LINESEG l1, LINESEG l2)
 公式：
 
 球坐标公式：
-直角坐标为 P(x, y, z) 时，对应的球坐标是(rsinφcosθ, rsinφsinθ, rcosφ),其中φ是向量OP与Z轴的夹角，范围[0，π]；是OP在XOY面上的投影到X轴的旋角，范围[0，2π]
+直角坐标为 P(x, y, z) 时，对应的球坐标是(rsinφcosθ, rsinφsinθ,
+rcosφ),其中φ是向量OP与Z轴的夹角，范围[0，π]；是OP在XOY面上的投影到X轴的旋角，范围[0，2π]
 
 直线的一般方程转化成向量方程：
 ax+by+c=0
