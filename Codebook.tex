@@ -152,12 +152,18 @@
 \subsection{Java template}
 \lstinputlisting{contest_setup/Main.java}
 
+\subsubsection{Java Issues}
+\begin{enumerate}
+	\item Random Shuffle before sorting: $Random\ rnd = new\ Random();\ rnd.nextInt();$
+	\item Use StringBuilder for large output
+\end{enumerate}
+
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
 
 \section{Reminder}
 
 \begin{enumerate}
-	\item 隊友的建議，要認真聽！通常隊友的建議都會突破你盲點，畢竟他是在thinking out-of-the-box 狀態！
+	\item 隊友的建議，要認真聽！通常隊友的建議都會突破你盲點
 	\item Read the problem statements carefully. Input and output specifications and constraints are crucial!
 	\item Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
 	\item Time penalty is 20 minutes per WA, \textbf{don't rush}!
@@ -165,6 +171,7 @@
 	\item Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
 	\item Bus error: the code has $scanf, fgets$ but have nothing to read! Check if you have early termination but didn't handle it properly.
 	\item Binary search? 數學算式移項合併後查詢？
+	\item Two Pointer <--> Binary Search
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -239,6 +246,19 @@ int binomialCoeff(int n, int k)
 \lstinputlisting{useful_code/algorithm_API.cpp}
 
 \subsubsection{String}
+
+\subsubsection{Priority Queue}
+
+\begin{lstlisting}
+bool cmp(ii a, ii b)
+{
+    if(a.first == b.first)
+	return a.second > b.second;
+    return b.first > a.first;
+}
+
+priority_queue< ii, vector<ii>, function<bool(ii, ii)> > pq(cmp);
+\end{lstlisting}
 
 %%%%%%%%%%%%%%%%%搜尋%%%%%%%%%%%%%%%%%%%%
 
@@ -403,6 +423,10 @@ struct UFDS {
 \section{Geometry}
 
 \subsection{Template}
+
+\lstinputlisting{geometry/geometry_stanford.cpp}
+
+========\\
 
 \begin{lstlisting}
 #define x first
