@@ -30,7 +30,8 @@
 \contentsline {subsection}{\numberline {5.1}1D BIT}{5}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}2D BIT}{5}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Union Find}{5}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Segment Tree}{6}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}Segment Tree}{5}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Sparse Table}{5}{subsection.5.5}
 \contentsline {section}{\numberline {6}Dynamic Programming}{6}{section.6}
 \contentsline {section}{\numberline {7}Tree}{6}{section.7}
 \contentsline {subsection}{\numberline {7.1}LCA}{6}{subsection.7.1}
