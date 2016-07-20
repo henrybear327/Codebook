@@ -179,6 +179,12 @@
 
 \section{Useful code}
 
+\subsection{Grep Error and Warnings}
+
+\begin{lstlisting}
+g++ main.cpp 2>&1 | grep -E 'warning|error'
+\end{lstlisting}
+
 \subsection{Leap year}
 
 \begin{lstlisting}
