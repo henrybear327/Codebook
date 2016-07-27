@@ -58,9 +58,9 @@
 \contentsline {subsection}{\numberline {9.1}KMP}{6}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Z Algorithm}{6}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Trie}{6}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Suffix Array}{6}{subsection.9.4}
-\contentsline {section}{\numberline {10}Geometry}{6}{section.10}
-\contentsline {subsection}{\numberline {10.1}Template}{6}{subsection.10.1}
+\contentsline {subsection}{\numberline {9.4}Suffix Array}{7}{subsection.9.4}
+\contentsline {section}{\numberline {10}Geometry}{7}{section.10}
+\contentsline {subsection}{\numberline {10.1}Template}{7}{subsection.10.1}
 \contentsline {subsubsection}{\numberline {10.1.1}Point / Line}{10}{subsubsection.10.1.1}
 \contentsline {subsubsection}{\numberline {10.1.2}Intersection}{10}{subsubsection.10.1.2}
 \contentsline {subsection}{\numberline {10.2}Half-plane intersection}{10}{subsection.10.2}
