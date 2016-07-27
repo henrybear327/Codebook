@@ -1,6 +1,6 @@
 #define N 600010
 struct node {
-    int child[26]; 
+    int child[26];
     bool ending;
 } trie[N];
 
