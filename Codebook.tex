@@ -423,6 +423,11 @@ struct UFDS {
 
 \subsection{Rolling Hash}
 
+\begin{enumerate}
+	\item Use two rolling hashes if needed.  
+	\item The prime for pre-calculation can be $137$ and $257$, for modulo can be $1e9 + 7$ and $0xdefaced$ 
+\end{enumerate}
+
 \lstinputlisting{string/RollingHash.cpp}
 
 \subsection{KMP}
@@ -444,8 +449,6 @@ struct UFDS {
 \subsection{Template}
 
 % \lstinputlisting{geometry/geometry_stanford.cpp}
-
-========\\
 
 \begin{lstlisting}
 #define x first

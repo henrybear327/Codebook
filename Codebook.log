@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  27 JUL 2016 21:12
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  28 JUL 2016 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,27 +1475,22 @@ LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 295.
 
 (./DS/sparse_table.cpp) [5] (./string/RollingHash.cpp) (./string/KMP.cpp)
-(./string/myTrie.cpp [6])
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
-
- []
-
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+[6] (./string/myTrie.cpp) [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 479.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 479.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 479.
  ) 
 Here is how much of TeX's memory you used:
  27406 strings out of 493706
  510364 string characters out of 6145769
- 1039494 words of memory out of 5000000
+ 1038494 words of memory out of 5000000
  30474 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
