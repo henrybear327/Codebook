@@ -158,6 +158,16 @@
 	\item Use StringBuilder for large output
 \end{enumerate}
 
+\section{System Testing}
+
+\begin{enumerate}
+	\item Setup bashrc and vimrc
+	\item Look for compilation parameter and code it into bashrc
+	\item Test if c++ and java templates work properly on local and judge machine
+	\item Test "divide by 0" $\rightarrow$ RE/TLE?
+	\item Test stack size
+\end{enumerate}
+
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
 
 \section{Reminder}
@@ -176,6 +186,7 @@
 	\item Check connectivity of the graph if the problem statement doesn't say anything
 	\item $long long = int * int$ won't work!
 	\item Shifting for $long long int$ should be something like $1LL << 35$
+	\item For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -453,18 +464,7 @@ struct UFDS {
 % \lstinputlisting{geometry/geometry_stanford.cpp}
 
 \begin{lstlisting}
-#define x first
-#define y second
-typedef pair <double , double > pt;
-struct line {
-double a, b, c;
-// coefficients in general form, compare up to constant factor
-}
-pt operator-(pt u, pt v) { return pt(u.x-v.x, u.y-v.y); }
-pt operator+(pt u, pt v) { return pt(u.x+v.x, u.y+v.y); }
-pt operator*(pt u, double d) { return pt(u.x*d, u.y*d); }
-double operator*(pt u, pt v) { return u.x*v.x + u.y*v.y); } // dot product double operator!(pt p) { return sqrt(p*p); } // norm
-double operator^(pt u, pt v) { return u.x*v.y - u.y*v.x; } // cross product
+
 \end{lstlisting}
 
 \subsubsection{Point / Line}
