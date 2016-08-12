@@ -61,4 +61,3 @@
 \contentsline {section}{\numberline {11}Geometry}{7}{section.11}
 \contentsline {subsection}{\numberline {11.1}EPS}{7}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Template}{7}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Half-plane intersection}{8}{subsection.11.3}
