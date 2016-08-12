@@ -460,6 +460,11 @@ struct UFDS {
 	\item If you have decimals, if they are fixed precision, you can usually just multiply all the input and use integers instead
 \end{enumerate}
 
+\subsection{EPS}
+
+$a > b \rightarrow a - b > 0 \rightarrow a - b > EPS$ (stands for positive)\\
+$a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positive or zero)\\
+
 \subsection{Template}
 
 % \lstinputlisting{geometry/geometry_stanford.cpp}
