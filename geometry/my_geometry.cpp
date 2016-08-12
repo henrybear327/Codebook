@@ -2,7 +2,7 @@
 
 typedef long long ll;
 
-typedef pair<ll, ll> pt; // points are stored using long long
+typedef pair<ll, ll> pt;  // points are stored using long long
 typedef pair<pt, pt> seg; // segments are a pair of points
 
 #define x first
@@ -48,8 +48,8 @@ double dist(pt a, pt b)
     return sqrt(dx * dx + dy * dy);
 }
 
-bool zero(double x) 
-{ 
+bool zero(double x)
+{
     return fabs(x) <= EPS;
 }
 
@@ -70,7 +70,7 @@ bool intersect(seg a, seg b)
         d = max(d, dist(b.x, b.y));
 
         // d > dist(a.x, a.y) + dist(b.x, b.y)
-        if (d - (dist(a.x, a.y) + dist(b.x, b.y)) > EPS) 
+        if (d - (dist(a.x, a.y) + dist(b.x, b.y)) > EPS)
             return false;
         return true;
     }
@@ -81,6 +81,15 @@ bool intersect(seg a, seg b)
         ccw(b.x, b.y, a.x) * ccw(b.x, b.y, a.y) <= 0)
         return true;
     return false;
+}
+
+double area(vector<pt> pts)
+{
+    double res = 0;
+    int n = pts.size();
+    for (int i = 0; i < n; i++)
+        res += (pts[i].y + pts[(i + 1) % n].y) * (pts[(i + 1) % n].x - pts[i].x);
+    return res / 2.0;
 }
 
 vector<pt> halfHull(vector<pt> &points)
