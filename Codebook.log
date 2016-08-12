@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  12 AUG 2016 13:52
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  13 AUG 2016 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,10 +1429,10 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(./contest_setup/bashrc) (./contest_setup/main.cpp [1
+(./contest_setup/bashrc) (./contest_setup/main.cpp) [1
 
 
-])
+]
 (./contest_setup/Main.java [2])
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 209.
@@ -1467,33 +1467,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 (./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 297.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 291.
 
 [4]
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 309.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 303.
 
-(./DS/sparse_table.cpp [5]) (./string/RollingHash.cpp) (./string/KMP.cpp
-[6]) (./string/myTrie.cpp) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
+(./DS/sparse_table.cpp) [5] (./string/RollingHash.cpp) (./string/KMP.cpp)
+[6] (./string/myTrie.cpp) (./geometry/my_geometry.cpp [7]) [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 482.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 477.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 27398 strings out of 493706
- 510305 string characters out of 6145769
- 969705 words of memory out of 5000000
- 30466 multiletter control sequences out of 15000+600000
+ 27466 strings out of 493706
+ 511035 string characters out of 6145769
+ 1568402 words of memory out of 5000000
+ 30530 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  37i,12n,69p,10389b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Codebook.pdf (7 pages).
+Output written on Codebook.pdf (8 pages).
