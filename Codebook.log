@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  13 AUG 2016 01:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  13 AUG 2016 02:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,36 +1467,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 (./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 291.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 294.
 
 [4]
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 303.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 306.
 
 (./DS/sparse_table.cpp) [5] (./string/RollingHash.cpp) (./string/KMP.cpp)
 [6] (./string/myTrie.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
 
  []
 
 (./geometry/my_geometry.cpp [7]) [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 479.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 479.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 479.
  ) 
 Here is how much of TeX's memory you used:
- 27476 strings out of 493706
- 511123 string characters out of 6145769
- 1863379 words of memory out of 5000000
- 30540 multiletter control sequences out of 15000+600000
+ 27485 strings out of 493706
+ 511567 string characters out of 6145769
+ 1864379 words of memory out of 5000000
+ 30549 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  37i,12n,69p,10389b,1961s stack positions out of 5000i,500n,10000p,200000b,80000s

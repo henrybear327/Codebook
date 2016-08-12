@@ -15,12 +15,13 @@
 \contentsline {subsection}{\numberline {4.5}Mod Inverse}{4}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Prime Generator}{4}{subsection.4.6}
 \contentsline {subsection}{\numberline {4.7}Binomial Coefficient}{4}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}STL quick reference}{4}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Map}{4}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Set}{4}{subsubsection.4.8.2}
-\contentsline {subsubsection}{\numberline {4.8.3}Algorithm}{4}{subsubsection.4.8.3}
-\contentsline {subsubsection}{\numberline {4.8.4}String}{4}{subsubsection.4.8.4}
-\contentsline {subsubsection}{\numberline {4.8.5}Priority Queue}{4}{subsubsection.4.8.5}
+\contentsline {subsection}{\numberline {4.8}scanf/printf reference}{4}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}STL quick reference}{4}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Map}{4}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}Set}{4}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Algorithm}{4}{subsubsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.4}String}{4}{subsubsection.4.9.4}
+\contentsline {subsubsection}{\numberline {4.9.5}Priority Queue}{4}{subsubsection.4.9.5}
 \contentsline {section}{\numberline {5}Search}{5}{section.5}
 \contentsline {subsection}{\numberline {5.1}Ternary Search}{5}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}折半完全列舉}{5}{subsection.5.2}
