@@ -1,3 +1,5 @@
+// if the points are given in doubles form, change the code accordingly
+
 typedef long long ll;
 
 typedef pair<ll, ll> pt; // points are stored using long long
@@ -31,12 +33,11 @@ ll cross(pt a, pt b)
 int ccw(pt a, pt b, pt c)
 {
     ll res = cross(b - a, c - a);
-    // printf("%lld\n", res);
-    if (res > 0)
+    if (res > 0) // left turn
         return 1;
-    else if (res == 0)
+    else if (res == 0) // straight
         return 0;
-    else
+    else // right turn
         return -1;
 }
 
@@ -44,19 +45,22 @@ double dist(pt a, pt b)
 {
     double dx = a.x - b.x;
     double dy = a.y - b.y;
-    return (dx * dx + dy * dy);
+    return sqrt(dx * dx + dy * dy);
+}
+
+bool zero(double x) 
+{ 
+    return fabs(x) <= EPS;
 }
 
 bool overlap(seg a, seg b)
 {
-    // a.x -> a, a.y -> b, b.x -> c, b.y -> d
     return ccw(a.x, a.y, b.x) == 0 && ccw(a.x, a.y, b.y) == 0;
 }
 
 bool intersect(seg a, seg b)
 {
-    // printf("%d\n", overlap(a, b));
-    if (overlap(a, b) == true) {
+    if (overlap(a, b) == true) { // non-proper intersection
         double d = 0;
         d = max(d, dist(a.x, a.y));
         d = max(d, dist(a.x, b.x));
@@ -70,8 +74,9 @@ bool intersect(seg a, seg b)
             return false;
         return true;
     }
-
-    // bitch man.... Equal sign..
+    //                     |
+    // Equal sign for -----| case
+    // non qeual sign => proper intersection
     if (ccw(a.x, a.y, b.x) * ccw(a.x, a.y, b.y) <= 0 &&
         ccw(b.x, b.y, a.x) * ccw(b.x, b.y, a.y) <= 0)
         return true;
