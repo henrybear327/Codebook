@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  11 AUG 2016 11:36
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  12 AUG 2016 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,31 +1435,31 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ])
 (./contest_setup/Main.java [2])
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 208.
+(Font)              <12> on input line 209.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 208.
+(Font)              <8> on input line 209.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 208.
+(Font)              <6> on input line 209.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 209.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 209.
 
 (./useful_code/fast_pow.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 212.
+(hyperref)                removing `math shift' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 212.
+(hyperref)                removing `math shift' on input line 213.
 
 (./useful_code/ext_gcd.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
@@ -1467,25 +1467,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
 (./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 296.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 297.
 
 [4]
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 308.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 309.
 
 (./DS/sparse_table.cpp [5]) (./string/RollingHash.cpp) (./string/KMP.cpp
 [6]) (./string/myTrie.cpp) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 481.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 481.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 482.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
  27398 strings out of 493706
