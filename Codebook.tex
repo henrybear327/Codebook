@@ -146,6 +146,12 @@
 \subsection{bashrc}
 \lstinputlisting[style=,language=bash,basicstyle=\footnotesize\ttfamily]{contest_setup/bashrc}
 
+\subsection{Grep Error and Warnings}
+
+\begin{lstlisting}
+g++ main.cpp 2>&1 | grep -E 'warning|error'
+\end{lstlisting}
+
 \subsection{C++ template}
 \lstinputlisting{contest_setup/main.cpp}
 
@@ -193,12 +199,6 @@
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
 
 \section{Useful code}
-
-\subsection{Grep Error and Warnings}
-
-\begin{lstlisting}
-g++ main.cpp 2>&1 | grep -E 'warning|error'
-\end{lstlisting}
 
 \subsection{Leap year}
 
