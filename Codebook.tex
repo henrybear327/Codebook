@@ -2,6 +2,7 @@
 %!TEX encoding = UTF-8 Unicode
 
 % 一定要用 xelatex 進行編譯，字體目前是使用Mac內建的中文字體
+% Empty codeblocks will cause formatting problem
 
 %%%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%%%%%
 
@@ -390,6 +391,10 @@ struct UFDS {
 
 \subsection{LCA}
 
+\subsection{Tree Centroid}
+
+\subsection{Treap}
+
 %%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
 
 \section{Graph}
@@ -416,7 +421,16 @@ struct UFDS {
 
 \subsubsection{Floyd-Warshall}
 
-\subsection{Kruskal MST}
+\subsection{MST}
+
+\subsubsection{Kruskal}
+
+1. Store the graph by $(weight, (from , to))$\\
+2. Sort the graph by $weight$ \\
+3. Start from the smallest weight, and keep adding edges that won't form a cycle with the current MST set\\
+4. Early termination condition: $n - 1$ edges has been added, NOT size of the union-find set\\
+
+\subsubsection{Prim}
 
 \subsection{Flow}
 
