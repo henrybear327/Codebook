@@ -425,10 +425,12 @@ struct UFDS {
 
 \subsubsection{Kruskal}
 
-1. Store the graph by $(weight, (from , to))$\\
-2. Sort the graph by $weight$ \\
-3. Start from the smallest weight, and keep adding edges that won't form a cycle with the current MST set\\
-4. Early termination condition: $n - 1$ edges has been added, NOT size of the union-find set\\
+\begin{enumerate}
+	\item Store the graph by $(weight, (from , to))$
+	\item Sort the graph by $weight$ 
+	\item Start from the smallest weight, and keep adding edges that won't form a cycle with the current MST set
+	\item Early termination condition: $n - 1$ edges has been added, NOT size of the union-find set
+\end{enumerate}
 
 \subsubsection{Prim}
 
@@ -486,6 +488,18 @@ $a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positi
 
 % \lstinputlisting{geometry/geometry_stanford.cpp}
 \lstinputlisting{geometry/my_geometry.cpp}
+
+\section{Math}
+
+\subsection{Euclid's formula}
+
+$a = p^2 - q^2 $\\
+$b = 2pq \; \textbf{(always even)}$ \\
+$c = p^2 + q^2$\\
+
+\subsection{Difference between two consecutive numbers' square is odd}
+
+$(k + 1)^2 - k^2 = 2k + 1$
 
 \end{multicols}
 \end{landscape}

@@ -66,3 +66,6 @@
 \contentsline {section}{\numberline {11}Geometry}{7}{section.11}
 \contentsline {subsection}{\numberline {11.1}EPS}{7}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Template}{7}{subsection.11.2}
+\contentsline {section}{\numberline {12}Math}{9}{section.12}
+\contentsline {subsection}{\numberline {12.1}Euclid's formula}{9}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Difference between two consecutive numbers' square is odd}{9}{subsection.12.2}
