@@ -69,3 +69,4 @@
 \contentsline {section}{\numberline {12}Math}{9}{section.12}
 \contentsline {subsection}{\numberline {12.1}Euclid's formula}{9}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Difference between two consecutive numbers' square is odd}{9}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Summation}{9}{subsection.12.3}
