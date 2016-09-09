@@ -21,8 +21,8 @@
 \contentsline {subsubsection}{\numberline {5.9.1}Map}{4}{subsubsection.5.9.1}
 \contentsline {subsubsection}{\numberline {5.9.2}Set}{4}{subsubsection.5.9.2}
 \contentsline {subsubsection}{\numberline {5.9.3}Algorithm}{4}{subsubsection.5.9.3}
-\contentsline {subsubsection}{\numberline {5.9.4}String}{4}{subsubsection.5.9.4}
-\contentsline {subsubsection}{\numberline {5.9.5}Priority Queue}{4}{subsubsection.5.9.5}
+\contentsline {subsubsection}{\numberline {5.9.4}String}{5}{subsubsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.5}Priority Queue}{5}{subsubsection.5.9.5}
 \contentsline {section}{\numberline {6}Search}{5}{section.6}
 \contentsline {subsection}{\numberline {6.1}Ternary Search}{5}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}折半完全列舉}{5}{subsection.6.2}
@@ -68,6 +68,6 @@
 \contentsline {subsection}{\numberline {12.1}EPS}{7}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Template}{7}{subsection.12.2}
 \contentsline {section}{\numberline {13}Math}{9}{section.13}
-\contentsline {subsection}{\numberline {13.1}Euclid's formula}{9}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.1}Euclid's formula (Pythagorean Triples)}{9}{subsection.13.1}
 \contentsline {subsection}{\numberline {13.2}Difference between two consecutive numbers' square is odd}{9}{subsection.13.2}
 \contentsline {subsection}{\numberline {13.3}Summation}{9}{subsection.13.3}

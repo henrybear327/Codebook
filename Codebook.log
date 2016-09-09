@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  21 AUG 2016 23:53
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  9 SEP 2016 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,31 +1436,31 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ])
 (./contest_setup/Main.java [2])
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 221.
+(Font)              <12> on input line 222.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 221.
+(Font)              <8> on input line 222.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 221.
+(Font)              <6> on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 221.
+(hyperref)                removing `math shift' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 221.
+(hyperref)                removing `math shift' on input line 222.
 
 (./useful_code/fast_pow.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 226.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 226.
 
 (./useful_code/ext_gcd.cpp [3])
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
@@ -1468,25 +1468,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 (./useful_code/set_API.cpp) (./useful_code/algorithm_API.cpp) [4]
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 306.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 309.
 
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 318.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 321.
 
 (./DS/sparse_table.cpp [5]) (./string/RollingHash.cpp) (./string/KMP.cpp
 [6]) (./string/myTrie.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 495--497
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
 
  []
 
 (./geometry/my_geometry.cpp [7] [8])
-Underfull \hbox (badness 10000) in paragraph at lines 507--510
+Underfull \hbox (badness 10000) in paragraph at lines 510--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--521
+Underfull \hbox (badness 10000) in paragraph at lines 520--524
 
  []
 
@@ -1519,24 +1519,24 @@ File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2> [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 527.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 527.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 530.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 530.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 527.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 530.
  ) 
 Here is how much of TeX's memory you used:
  27492 strings out of 493706
- 511692 string characters out of 6145769
- 1078287 words of memory out of 5000000
+ 511697 string characters out of 6145769
+ 1078552 words of memory out of 5000000
  30552 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 42i,21n,69p,10389b,1963s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,21n,69p,10389b,1975s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Codebook.pdf (11 pages).

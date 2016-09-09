@@ -197,6 +197,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Shifting for $long long int$ should be something like $1LL << 35$
 	\item For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
 	\item Don't use anonymous struct
+	\item 因式分解
 \end{enumerate}
 
 \section{Topic list}
@@ -249,6 +250,8 @@ Case 1 $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 \lstinputlisting{useful_code/prime_gen.cpp}
 
 \subsection{Binomial Coefficient}
+
+Add recursive version
 
 \begin{lstlisting}
 int binomialCoeff(int n, int k)
@@ -502,7 +505,7 @@ $a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positi
 
 \section{Math}
 
-\subsection{Euclid's formula}
+\subsection{Euclid's formula (Pythagorean Triples)}
 
 $a = p^2 - q^2 $\\
 $b = 2pq \; \textbf{(always even)}$ \\
