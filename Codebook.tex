@@ -109,7 +109,7 @@
 % for all other pages
 \pagestyle{fancy}
 % generate header
-\fancyhead[L]{National Chung Cheng University -- Earthrise}
+\fancyhead[L]{National Chung Cheng University -- CCU\_Earthrise}
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
@@ -120,7 +120,7 @@
 \fancypagestyle{plain}
 {
 % generate header
-\fancyhead[L]{National Chung Cheng University -- Earthrise}
+\fancyhead[L]{National Chung Cheng University -- CCU\_Earthrise}
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
@@ -135,7 +135,7 @@
 
 %\newpage
 \vfill
-\columnbreak
+%\columnbreak
 
 %%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%
 
@@ -204,11 +204,13 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \begin{enumerate}
 	\item enumeration
-	\item greedy
+	\item greedy 
 	\item sorting, topological sort
 	\item binary search
 	\item 離散化
 	\item 矩陣快速冪
+	\item Pigeonhole 
+	\item DFS 轉換成 RMQ
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -253,10 +255,9 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 \subsection{Prime Generator}
 \lstinputlisting{useful_code/prime_gen.cpp}
 
-\subsection{scanf/printf reference}
+\subsection{C++ Reference}
 
-
-\subsection{STL quick reference}
+\subsubsection{scanf/printf reference}
 
 \subsubsection{Map}
 \lstinputlisting{useful_code/map_API.cpp}
@@ -290,9 +291,9 @@ priority_queue< ii, vector<ii>, function<bool(ii, ii)> > pq(cmp);
 
 \subsection{折半完全列舉}
 
-能用vector用vector
+能用vector就用vector
 
-\subsection{Two-pointer 爬行法}
+\subsection{Two-pointer 爬行法 （右跑左追）}
 
 %%%%%%%%%%%%%%%%資料結構%%%%%%%%%%%%%%%%%%
 
@@ -375,6 +376,7 @@ struct UFDS {
 \end{lstlisting}
 
 \subsection{Segment Tree}
+\lstinputlisting{DS/segmentTree.cpp}
 
 \subsection{Sparse Table}
 \lstinputlisting{DS/sparse_table.cpp}
@@ -410,8 +412,12 @@ struct UFDS {
 \subsection{Shortest Path}
 
 \subsubsection{Dijkatra (next-to-shortest path)}
+% https://gist.github.com/amoshyc/f011abc6fad9b413c24b
+\lstinputlisting{graph/nextToShortestPath.cpp}
 
 \subsubsection{SPFA}
+%http://amoshyc.github.io/ojsolution-build/template/graph/spfa.html
+\lstinputlisting{graph/SPFA.cpp}
 
 \subsubsection{Bellman-Ford}
 
@@ -432,15 +438,19 @@ If diagonal numbers are negative $\leftarrow$ cycle
 
 \subsubsection{Prim}
 
-\subsection{Flow}
+\section{Flow}
 
-\subsubsection{Max Flow (Dinic)}
+\subsection{Max Flow (Dinic)}
+%http://amoshyc.github.io/ojsolution-build/template/graph/max_flow.html
+\lstinputlisting{flow/dinic.cpp }
 
-\subsubsection{Min-Cut}
+\subsection{Min Cost Flow}
+%http://amoshyc.github.io/ojsolution-build/template/graph/min_cost_flow.html
+\lstinputlisting{flow/minCostFlow.cpp }
 
-\subsubsection{Min Cost Flow}
-
-\subsubsection{Maximum Bipartite Graph}
+\subsection{Bipartite Matching}
+%http://amoshyc.github.io/ojsolution-build/template/graph/bipartite_matching.html
+\lstinputlisting{flow/bipartiteMatching.cpp }
 
 %%%%%%%%%%%%%%%%%字串%%%%%%%%%%%%%%%%%%%
 
@@ -462,10 +472,9 @@ If diagonal numbers are negative $\leftarrow$ cycle
 \subsection{Z Algorithm}
 
 \subsection{Trie}
-
+%http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
 注意count的擺放位置，視題意可以擺在迴圈外
-
-\lstinputlisting{string/myTrie.cpp}
+\lstinputlisting{string/TrieAmoshyc.cpp}
 
 \subsection{Suffix Array}
 
@@ -519,9 +528,12 @@ $\sum_{k=1}^{n} k^2= \frac{n(n+1)(2n+1)}{6}$\\
 $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
 
 \subsection{FFT}
+%http://amoshyc.github.io/ojsolution-build/template/math/fft.html
+\lstinputlisting{Math/fft.cpp}
 
-\subsection{combination}
+\subsection{Combination}
 
+% Pi-You Uva 10943
 \subsubsection{Pascal triangle}
 
 \begin{lstlisting}
@@ -536,7 +548,7 @@ void Combination() {
 
     for(ll i=2; i<N; i++) {
         for(ll j=1; j<=i; j++) {
-            C[i][j] = (C[i-1][j] + C[i-1][j-1])%1000000;
+            C[i][j] = (C[i-1][j] + C[i-1][j-1])%M; // if needed, mod it
         }
     }
 }
@@ -564,6 +576,27 @@ ll binomialCoeff(ll n, ll k)
 
 \subsection{重複組合}
 
+\subsection{Chinese remainder theorem}
+%http://amoshyc.github.io/ojsolution-build/template/math/crt.html
+\lstinputlisting{Math/chineseRemainderTheorem.cpp}
+
+\subsection{2-Circle relations}
+
+$d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
+內切: $d = R - r$\\
+外切: $d = R + r$\\
+內離: $d < R - r$\\
+外離: $d > R + r$\\
+相交: $d < R + r$ 且 $d > R - r$
+
+\subsection{Fun Facts}
+
+\begin{enumerate}
+	\item 如果 $\frac b a$ 是最簡分數，則 $1 - \frac b a$也是%http://amoshyc.github.io/ojsolution-build/cf/cf369/pe.html
+	\item 
+\end{enumerate}
+
+%trig information
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
 
 \end{multicols}
