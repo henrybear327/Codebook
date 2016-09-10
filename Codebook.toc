@@ -11,21 +11,20 @@
 \contentsline {section}{\numberline {5}Useful code}{3}{section.5}
 \contentsline {subsection}{\numberline {5.1}Leap year}{3}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Fast Exponentiation $O(log(exp))$}{3}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}GCD $O(log(a + b))$}{3}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Extended Euclidean Algorithm}{3}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Mod Inverse}{4}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.3}Mod Inverse}{3}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}GCD $O(log(a + b))$}{3}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Extended Euclidean Algorithm GCD $O(log(a + b))$}{3}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Prime Generator}{4}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Binomial Coefficient}{4}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}scanf/printf reference}{4}{subsection.5.8}
-\contentsline {subsection}{\numberline {5.9}STL quick reference}{4}{subsection.5.9}
-\contentsline {subsubsection}{\numberline {5.9.1}Map}{4}{subsubsection.5.9.1}
-\contentsline {subsubsection}{\numberline {5.9.2}Set}{4}{subsubsection.5.9.2}
-\contentsline {subsubsection}{\numberline {5.9.3}Algorithm}{4}{subsubsection.5.9.3}
-\contentsline {subsubsection}{\numberline {5.9.4}String}{5}{subsubsection.5.9.4}
-\contentsline {subsubsection}{\numberline {5.9.5}Priority Queue}{5}{subsubsection.5.9.5}
-\contentsline {section}{\numberline {6}Search}{5}{section.6}
-\contentsline {subsection}{\numberline {6.1}Ternary Search}{5}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}折半完全列舉}{5}{subsection.6.2}
+\contentsline {subsection}{\numberline {5.7}scanf/printf reference}{4}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}STL quick reference}{4}{subsection.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}Map}{4}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}Set}{4}{subsubsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.3}Algorithm}{4}{subsubsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.4}String}{4}{subsubsection.5.8.4}
+\contentsline {subsubsection}{\numberline {5.8.5}Priority Queue}{4}{subsubsection.5.8.5}
+\contentsline {section}{\numberline {6}Search}{4}{section.6}
+\contentsline {subsection}{\numberline {6.1}Ternary Search}{4}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}折半完全列舉}{4}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Two-pointer 爬行法}{5}{subsection.6.3}
 \contentsline {section}{\numberline {7}Basic data structure}{5}{section.7}
 \contentsline {subsection}{\numberline {7.1}1D BIT}{5}{subsection.7.1}
@@ -45,18 +44,17 @@
 \contentsline {subsubsection}{\numberline {10.2.2}BCC edge}{6}{subsubsection.10.2.2}
 \contentsline {subsubsection}{\numberline {10.2.3}SCC}{6}{subsubsection.10.2.3}
 \contentsline {subsection}{\numberline {10.3}Shortest Path}{6}{subsection.10.3}
-\contentsline {subsubsection}{\numberline {10.3.1}Dijkatra}{6}{subsubsection.10.3.1}
-\contentsline {subsubsection}{\numberline {10.3.2}Dijkatra (next-to-shortest path)}{6}{subsubsection.10.3.2}
-\contentsline {subsubsection}{\numberline {10.3.3}SPFA}{6}{subsubsection.10.3.3}
-\contentsline {subsubsection}{\numberline {10.3.4}Bellman-Ford}{6}{subsubsection.10.3.4}
-\contentsline {subsubsection}{\numberline {10.3.5}Floyd-Warshall}{6}{subsubsection.10.3.5}
+\contentsline {subsubsection}{\numberline {10.3.1}Dijkatra (next-to-shortest path)}{6}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}SPFA}{6}{subsubsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.3}Bellman-Ford}{6}{subsubsection.10.3.3}
+\contentsline {subsubsection}{\numberline {10.3.4}Floyd-Warshall}{6}{subsubsection.10.3.4}
 \contentsline {subsection}{\numberline {10.4}MST}{6}{subsection.10.4}
 \contentsline {subsubsection}{\numberline {10.4.1}Kruskal}{6}{subsubsection.10.4.1}
 \contentsline {subsubsection}{\numberline {10.4.2}Prim}{6}{subsubsection.10.4.2}
 \contentsline {subsection}{\numberline {10.5}Flow}{6}{subsection.10.5}
 \contentsline {subsubsection}{\numberline {10.5.1}Max Flow (Dinic)}{6}{subsubsection.10.5.1}
 \contentsline {subsubsection}{\numberline {10.5.2}Min-Cut}{6}{subsubsection.10.5.2}
-\contentsline {subsubsection}{\numberline {10.5.3}Min Cost Max Flow}{6}{subsubsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.3}Min Cost Flow}{6}{subsubsection.10.5.3}
 \contentsline {subsubsection}{\numberline {10.5.4}Maximum Bipartite Graph}{6}{subsubsection.10.5.4}
 \contentsline {section}{\numberline {11}String}{6}{section.11}
 \contentsline {subsection}{\numberline {11.1}Rolling Hash}{6}{subsection.11.1}
@@ -64,10 +62,18 @@
 \contentsline {subsection}{\numberline {11.3}Z Algorithm}{7}{subsection.11.3}
 \contentsline {subsection}{\numberline {11.4}Trie}{7}{subsection.11.4}
 \contentsline {subsection}{\numberline {11.5}Suffix Array}{7}{subsection.11.5}
-\contentsline {section}{\numberline {12}Geometry}{7}{section.12}
-\contentsline {subsection}{\numberline {12.1}EPS}{7}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Template}{7}{subsection.12.2}
-\contentsline {section}{\numberline {13}Math}{9}{section.13}
-\contentsline {subsection}{\numberline {13.1}Euclid's formula (Pythagorean Triples)}{9}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Difference between two consecutive numbers' square is odd}{9}{subsection.13.2}
-\contentsline {subsection}{\numberline {13.3}Summation}{9}{subsection.13.3}
+\contentsline {section}{\numberline {12}Matrix}{7}{section.12}
+\contentsline {subsection}{\numberline {12.1}高斯消去法}{7}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}高斯喬登}{7}{subsection.12.2}
+\contentsline {section}{\numberline {13}Geometry}{7}{section.13}
+\contentsline {subsection}{\numberline {13.1}EPS}{7}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Template}{7}{subsection.13.2}
+\contentsline {section}{\numberline {14}Math}{9}{section.14}
+\contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{9}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{9}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Summation}{9}{subsection.14.3}
+\contentsline {subsection}{\numberline {14.4}FFT}{9}{subsection.14.4}
+\contentsline {subsection}{\numberline {14.5}combination}{9}{subsection.14.5}
+\contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{9}{subsubsection.14.5.1}
+\contentsline {subsubsection}{\numberline {14.5.2}線性}{9}{subsubsection.14.5.2}
+\contentsline {subsection}{\numberline {14.6}重複組合}{9}{subsection.14.6}

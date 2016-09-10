@@ -174,7 +174,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Look for compilation parameter and code it into bashrc
 	\item Test if c++ and java templates work properly on local and judge machine
 	\item Test "divide by 0" $\rightarrow$ RE/TLE?
-	\item Test stack size
+	\item Test heap size
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
@@ -207,6 +207,8 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item greedy
 	\item sorting, topological sort
 	\item binary search
+	\item 離散化
+	\item 矩陣快速冪
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -221,7 +223,15 @@ year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 
 \subsection{Fast Exponentiation $O(log(exp))$}
 
+Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$
+
 \lstinputlisting{useful_code/fast_pow.cpp}
+
+\subsection{Mod Inverse}
+
+Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
+
+\noindent Case 2: $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ 
 
 \subsection{GCD $O(log(a + b))$}
 
@@ -234,42 +244,14 @@ ll gcd(ll a, ll b)
 }
 \end{lstlisting}
 
-\subsection{Extended Euclidean Algorithm}
+\subsection{Extended Euclidean Algorithm GCD $O(log(a + b))$}
 
 Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
 
 \lstinputlisting{useful_code/ext_gcd.cpp}
 
-\subsection{Mod Inverse}
-
-Case 1 $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
-
-\noindent Case 2 $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ (use Fermat's little theorem)
-
 \subsection{Prime Generator}
 \lstinputlisting{useful_code/prime_gen.cpp}
-
-\subsection{Binomial Coefficient}
-
-Add recursive version
-
-\begin{lstlisting}
-int binomialCoeff(int n, int k)
-{
-    int res = 1;
- 
-    if ( k > n - k ) // Since C(n, k) = C(n, n-k)
-        k = n - k;
- 
-    for (int i = 0; i < k; ++i) // n...n-k / 1...k
-    {
-        res *= (n - i);
-        res /= (i + 1);
-    }
- 
-    return res;
-}
-\end{lstlisting}
 
 \subsection{scanf/printf reference}
 
@@ -308,6 +290,8 @@ priority_queue< ii, vector<ii>, function<bool(ii, ii)> > pq(cmp);
 
 \subsection{折半完全列舉}
 
+能用vector用vector
+
 \subsection{Two-pointer 爬行法}
 
 %%%%%%%%%%%%%%%%資料結構%%%%%%%%%%%%%%%%%%
@@ -321,7 +305,7 @@ priority_queue< ii, vector<ii>, function<bool(ii, ii)> > pq(cmp);
 const int MAX_N = 20000; //這個記得改！
 ll bit[MAX_N + 1];
 
-int sum(int i) {
+ll sum(int i) {
     int s = 0;
     while (i > 0) {
         s += bit[i];
@@ -330,7 +314,7 @@ int sum(int i) {
     return s;
 }
 
-void add(int i, int x) {
+void add(int i, ll x) {
     while (i <= MAX_N) {
         bit[i] += x;
         i += (i & -i);
@@ -425,8 +409,6 @@ struct UFDS {
 
 \subsection{Shortest Path}
 
-\subsubsection{Dijkatra}
-
 \subsubsection{Dijkatra (next-to-shortest path)}
 
 \subsubsection{SPFA}
@@ -434,6 +416,8 @@ struct UFDS {
 \subsubsection{Bellman-Ford}
 
 \subsubsection{Floyd-Warshall}
+
+If diagonal numbers are negative $\leftarrow$ cycle 
 
 \subsection{MST}
 
@@ -454,7 +438,7 @@ struct UFDS {
 
 \subsubsection{Min-Cut}
 
-\subsubsection{Min Cost Max Flow}
+\subsubsection{Min Cost Flow}
 
 \subsubsection{Maximum Bipartite Graph}
 
@@ -479,9 +463,17 @@ struct UFDS {
 
 \subsection{Trie}
 
+注意count的擺放位置，視題意可以擺在迴圈外
+
 \lstinputlisting{string/myTrie.cpp}
 
 \subsection{Suffix Array}
+
+\section{Matrix}
+
+\subsection{高斯消去法}
+
+\subsection{高斯喬登}
 
 %%%%%%%%%%%%%%%%%幾何%%%%%%%%%%%%%%%%%%%
 
@@ -495,8 +487,12 @@ struct UFDS {
 
 \subsection{EPS}
 
-$a > b \rightarrow a - b > 0 \rightarrow a - b > EPS$ (stands for positive)\\
-$a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positive or zero)\\
+%$a > b \rightarrow a - b > 0 \rightarrow a - b > EPS$ (stands for positive)\\
+%$a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positive or zero)\\
+
+$=0$: $fabs \leq eps$\\
+$<0$: $ < -eps$\\
+$>0$: $ > +eps$
 
 \subsection{Template}
 
@@ -521,6 +517,52 @@ $\sum_{k=1}^{n} 1= n$\\
 $\sum_{k=1}^{n} k= \frac{n(n+1)}{2}$\\
 $\sum_{k=1}^{n} k^2= \frac{n(n+1)(2n+1)}{6}$\\
 $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
+
+\subsection{FFT}
+
+\subsection{combination}
+
+\subsubsection{Pascal triangle}
+
+\begin{lstlisting}
+#define N 210
+ll C[N][N];
+
+void Combination() {
+    for(ll i=0; i<N; i++) {
+        C[i][0] = 1;
+        C[i][i] = 1;
+    }
+
+    for(ll i=2; i<N; i++) {
+        for(ll j=1; j<=i; j++) {
+            C[i][j] = (C[i-1][j] + C[i-1][j-1])%1000000;
+        }
+    }
+}
+\end{lstlisting}
+
+\subsubsection{線性}
+
+\begin{lstlisting}
+ll binomialCoeff(ll n, ll k)
+{
+    ll res = 1;
+ 
+    if ( k > n - k ) // Since C(n, k) = C(n, n-k)
+        k = n - k;
+ 
+    for (int i = 0; i < k; ++i) // n...n-k / 1...k
+    {
+        res *= (n - i);
+        res /= (i + 1);
+    }
+ 
+    return res;
+}
+\end{lstlisting}
+
+\subsection{重複組合}
 
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
 
