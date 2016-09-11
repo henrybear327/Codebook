@@ -15,9 +15,9 @@
 \contentsline {subsection}{\numberline {5.4}GCD $O(log(a + b))$}{3}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Extended Euclidean Algorithm GCD $O(log(a + b))$}{3}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Prime Generator}{3}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}C++ Reference}{3}{subsection.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}scanf/printf reference}{3}{subsubsection.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.2}Map}{3}{subsubsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7}C++ Reference}{4}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}scanf/printf reference}{4}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Map}{4}{subsubsection.5.7.2}
 \contentsline {subsubsection}{\numberline {5.7.3}Set}{4}{subsubsection.5.7.3}
 \contentsline {subsubsection}{\numberline {5.7.4}Algorithm}{4}{subsubsection.5.7.4}
 \contentsline {subsubsection}{\numberline {5.7.5}String}{4}{subsubsection.5.7.5}
