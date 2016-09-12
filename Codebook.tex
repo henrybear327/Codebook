@@ -424,7 +424,16 @@ struct UFDS {
 
 \subsubsection{Floyd-Warshall}
 
-If diagonal numbers are negative $\leftarrow$ cycle 
+The initial state is $diagnal = 0$ and $others = INF$
+If diagonal numbers are negative $\leftarrow$ cycle . \\
+
+%UVA821 
+\begin{lstlisting}
+for(int k = 0; k < N; k++)
+	for(int i = 0; i < N; i++)
+		for(int j = 0; j < N; j++)
+			dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j]);
+\end{lstlisting}
 
 \subsection{MST}
 

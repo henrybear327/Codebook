@@ -65,8 +65,8 @@
 \contentsline {subsection}{\numberline {13.1}高斯消去法}{10}{subsection.13.1}
 \contentsline {subsection}{\numberline {13.2}高斯喬登}{10}{subsection.13.2}
 \contentsline {section}{\numberline {14}Geometry}{10}{section.14}
-\contentsline {subsection}{\numberline {14.1}EPS}{10}{subsection.14.1}
-\contentsline {subsection}{\numberline {14.2}Template}{10}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.1}EPS}{11}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Template}{11}{subsection.14.2}
 \contentsline {section}{\numberline {15}Math}{12}{section.15}
 \contentsline {subsection}{\numberline {15.1}Euclid's formula (Pythagorean Triples)}{12}{subsection.15.1}
 \contentsline {subsection}{\numberline {15.2}Difference between two consecutive numbers' square is odd}{12}{subsection.15.2}
