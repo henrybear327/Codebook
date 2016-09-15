@@ -30,7 +30,7 @@ int main()
         fill(d, d + n, INT_MAX);
         d[0] = 0;
         bool loop = false;
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
             bool hasChange = false;
 
             for (int j = 0; j < (int)edge.size(); j++) {
@@ -42,7 +42,7 @@ int main()
                 }
             }
 
-            if (hasChange == true && i == n)
+            if (hasChange == true && i == n - 1)
                 loop = true;
             else if (hasChange == false)
                 break;

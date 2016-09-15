@@ -6,7 +6,7 @@ void BellmanFord()
     fill(d, d + n, INT_MAX);
     d[0] = 0; // src is 0
     bool loop = false;
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
         // Do n - 1 times. If the n-th time still has relaxation, loop exists
         bool hasChange = false;
         for (int j = 0; j < (int)edge.size(); j++) {
@@ -17,7 +17,7 @@ void BellmanFord()
             }
         }
 
-        if (i == n && hasChange == true)
+        if (i == n - 1 && hasChange == true)
             loop = true;
         else if (hasChange == false)
             break;
