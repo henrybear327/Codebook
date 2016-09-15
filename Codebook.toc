@@ -46,35 +46,35 @@
 \contentsline {subsection}{\numberline {10.3}Shortest Path}{6}{subsection.10.3}
 \contentsline {subsubsection}{\numberline {10.3.1}Dijkatra (next-to-shortest path)}{6}{subsubsection.10.3.1}
 \contentsline {subsubsection}{\numberline {10.3.2}SPFA}{7}{subsubsection.10.3.2}
-\contentsline {subsubsection}{\numberline {10.3.3}Bellman-Ford}{7}{subsubsection.10.3.3}
-\contentsline {subsubsection}{\numberline {10.3.4}Floyd-Warshall}{7}{subsubsection.10.3.4}
-\contentsline {subsection}{\numberline {10.4}MST}{7}{subsection.10.4}
-\contentsline {subsubsection}{\numberline {10.4.1}Kruskal}{7}{subsubsection.10.4.1}
-\contentsline {subsubsection}{\numberline {10.4.2}Prim}{7}{subsubsection.10.4.2}
-\contentsline {section}{\numberline {11}Flow}{7}{section.11}
-\contentsline {subsection}{\numberline {11.1}Max Flow (Dinic)}{7}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {10.3.3}Bellman-Ford $O(VE)$}{7}{subsubsection.10.3.3}
+\contentsline {subsubsection}{\numberline {10.3.4}Floyd-Warshall $O(V^3)$}{7}{subsubsection.10.3.4}
+\contentsline {subsection}{\numberline {10.4}MST}{8}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}Kruskal}{8}{subsubsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.2}Prim}{8}{subsubsection.10.4.2}
+\contentsline {section}{\numberline {11}Flow}{8}{section.11}
+\contentsline {subsection}{\numberline {11.1}Max Flow (Dinic)}{8}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Min Cost Flow}{8}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Bipartite Matching}{9}{subsection.11.3}
-\contentsline {section}{\numberline {12}String}{9}{section.12}
-\contentsline {subsection}{\numberline {12.1}Rolling Hash}{9}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}KMP}{9}{subsection.12.2}
+\contentsline {section}{\numberline {12}String}{10}{section.12}
+\contentsline {subsection}{\numberline {12.1}Rolling Hash}{10}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}KMP}{10}{subsection.12.2}
 \contentsline {subsection}{\numberline {12.3}Z Algorithm}{10}{subsection.12.3}
 \contentsline {subsection}{\numberline {12.4}Trie}{10}{subsection.12.4}
-\contentsline {subsection}{\numberline {12.5}Suffix Array}{10}{subsection.12.5}
-\contentsline {section}{\numberline {13}Matrix}{10}{section.13}
-\contentsline {subsection}{\numberline {13.1}高斯消去法}{10}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}高斯喬登}{10}{subsection.13.2}
-\contentsline {section}{\numberline {14}Geometry}{10}{section.14}
+\contentsline {subsection}{\numberline {12.5}Suffix Array}{11}{subsection.12.5}
+\contentsline {section}{\numberline {13}Matrix}{11}{section.13}
+\contentsline {subsection}{\numberline {13.1}高斯消去法}{11}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}高斯喬登}{11}{subsection.13.2}
+\contentsline {section}{\numberline {14}Geometry}{11}{section.14}
 \contentsline {subsection}{\numberline {14.1}EPS}{11}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}Template}{11}{subsection.14.2}
 \contentsline {section}{\numberline {15}Math}{12}{section.15}
 \contentsline {subsection}{\numberline {15.1}Euclid's formula (Pythagorean Triples)}{12}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}Difference between two consecutive numbers' square is odd}{12}{subsection.15.2}
-\contentsline {subsection}{\numberline {15.3}Summation}{12}{subsection.15.3}
-\contentsline {subsection}{\numberline {15.4}FFT}{12}{subsection.15.4}
-\contentsline {subsection}{\numberline {15.5}Combination}{13}{subsection.15.5}
-\contentsline {subsubsection}{\numberline {15.5.1}Pascal triangle}{13}{subsubsection.15.5.1}
-\contentsline {subsubsection}{\numberline {15.5.2}線性}{13}{subsubsection.15.5.2}
+\contentsline {subsection}{\numberline {15.2}Difference between two consecutive numbers' square is odd}{13}{subsection.15.2}
+\contentsline {subsection}{\numberline {15.3}Summation}{13}{subsection.15.3}
+\contentsline {subsection}{\numberline {15.4}FFT}{13}{subsection.15.4}
+\contentsline {subsection}{\numberline {15.5}Combination}{14}{subsection.15.5}
+\contentsline {subsubsection}{\numberline {15.5.1}Pascal triangle}{14}{subsubsection.15.5.1}
+\contentsline {subsubsection}{\numberline {15.5.2}線性}{14}{subsubsection.15.5.2}
 \contentsline {subsection}{\numberline {15.6}重複組合}{14}{subsection.15.6}
 \contentsline {subsection}{\numberline {15.7}Chinese remainder theorem}{14}{subsection.15.7}
 \contentsline {subsection}{\numberline {15.8}2-Circle relations}{14}{subsection.15.8}

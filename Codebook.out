@@ -46,8 +46,8 @@
 \BOOKMARK [2][-]{subsection.10.3}{Shortest\040Path}{section.10}% 46
 \BOOKMARK [3][-]{subsubsection.10.3.1}{Dijkatra\040\(next-to-shortest\040path\)}{subsection.10.3}% 47
 \BOOKMARK [3][-]{subsubsection.10.3.2}{SPFA}{subsection.10.3}% 48
-\BOOKMARK [3][-]{subsubsection.10.3.3}{Bellman-Ford}{subsection.10.3}% 49
-\BOOKMARK [3][-]{subsubsection.10.3.4}{Floyd-Warshall}{subsection.10.3}% 50
+\BOOKMARK [3][-]{subsubsection.10.3.3}{Bellman-Ford\040O\(VE\)}{subsection.10.3}% 49
+\BOOKMARK [3][-]{subsubsection.10.3.4}{Floyd-Warshall\040O\(V3\)}{subsection.10.3}% 50
 \BOOKMARK [2][-]{subsection.10.4}{MST}{section.10}% 51
 \BOOKMARK [3][-]{subsubsection.10.4.1}{Kruskal}{subsection.10.4}% 52
 \BOOKMARK [3][-]{subsubsection.10.4.2}{Prim}{subsection.10.4}% 53
