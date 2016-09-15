@@ -36,7 +36,7 @@ int main()
             for (int j = 0; j < (int)edge.size(); j++) {
                 int u = edge[j].first.first, v = edge[j].first.second,
                     w = edge[j].second;
-                if (d[u] + w < d[v]) {
+                if (d[u] != INT_MAX && d[u] + w < d[v]) {
                     hasChange = true;
                     d[v] = d[u] + w;
                 }
