@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  15 SEP 2016 21:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  15 SEP 2016 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,47 +1482,47 @@ LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 293.
 
-[4] (./DS/segmentTree.cpp [5]) (./DS/sparse_table.cpp)
-(./graph/nextToShortestPath.cpp [6]) (./graph/SPFA.cpp)
+[4] (./DS/segmentTree.cpp [5]) (./DS/sparse_table.cpp) (./graph/dijkatra.cpp
+[6]) (./graph/nextToShortestPath.cpp) (./graph/SPFA.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 425.
-
-(./graph/bellmanFord.cpp)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 429.
+(hyperref)                removing `math shift' on input line 426.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 429.
+(hyperref)                removing `math shift' on input line 426.
+
+(./graph/bellmanFord.cpp [7])
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 430.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 429.
+(hyperref)                removing `superscript' on input line 430.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 430.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
-[7] (./flow/dinic.cpp) (./flow/minCostFlow.cpp [8])
-(./flow/bipartiteMatching.cpp) [9] (./string/RollingHash.cpp) (./string/KMP.cpp
-) (./string/TrieAmoshyc.cpp [10]) (./geometry/my_geometry.cpp [11])
-Underfull \hbox (badness 10000) in paragraph at lines 529--532
+(./flow/dinic.cpp [8]) (./flow/minCostFlow.cpp) (./flow/bipartiteMatching.cpp
+[9]) (./string/RollingHash.cpp) (./string/KMP.cpp) [10]
+(./string/TrieAmoshyc.cpp) (./geometry/my_geometry.cpp [11] [12])
+Underfull \hbox (badness 10000) in paragraph at lines 530--533
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 539--543
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--544
 
  []
 
-(./Math/fft.cpp [13]) (./Math/chineseRemainderTheorem.cpp)
+(./Math/fft.cpp [13]) (./Math/chineseRemainderTheorem.cpp [14])
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf" >
@@ -1538,39 +1538,39 @@ File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page1>
-File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
-
-<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page1> [14]
-File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
-
-<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2>
-File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
-
-<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2>
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page1> [15]
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
-<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2> [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 619.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 619.
+<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2>
+File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
+
+<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2>
+File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
+
+<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page1> [16]
+File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
+
+<use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2> [17] [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 619.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 619.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 626.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 626.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 619.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 626.
  ) 
 Here is how much of TeX's memory you used:
- 27773 strings out of 493706
- 517058 string characters out of 6145769
- 1084372 words of memory out of 5000000
- 30804 multiletter control sequences out of 15000+600000
+ 27780 strings out of 493706
+ 517142 string characters out of 6145769
+ 1053582 words of memory out of 5000000
+ 30808 multiletter control sequences out of 15000+600000
  6944 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  42i,21n,69p,10389b,1977s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Codebook.pdf (16 pages).
+Output written on Codebook.pdf (18 pages).
