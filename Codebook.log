@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  16 SEP 2016 12:16
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  18 SEP 2016 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,40 +1436,40 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ] (./contest_setup/main.cpp)
 (./contest_setup/Main.java) [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 228.
+(Font)              <12> on input line 229.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 228.
+(Font)              <8> on input line 229.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 228.
+(Font)              <6> on input line 229.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 228.
+(hyperref)                removing `math shift' on input line 229.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 228.
+(hyperref)                removing `math shift' on input line 229.
 
 (./useful_code/fast_pow.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 251.
+(hyperref)                removing `math shift' on input line 252.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 251.
+(hyperref)                removing `math shift' on input line 252.
 
 (./useful_code/ext_gcd.cpp) (./useful_code/prime_gen.cpp
 
@@ -1480,45 +1480,45 @@ LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (./useful_code/algorithm_API.cpp)
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 294.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 295.
 
 [4] (./DS/segmentTree.cpp [5]) (./DS/sparse_table.cpp) (./graph/dijkatra.cpp
 [6]) (./graph/nextToShortestPath.cpp) (./graph/SPFA.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
+(hyperref)                removing `math shift' on input line 428.
 
 (./graph/bellmanFord.cpp [7])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 431.
+(hyperref)                removing `math shift' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 431.
+(hyperref)                removing `superscript' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 431.
+(hyperref)                removing `math shift' on input line 432.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
+Underfull \hbox (badness 10000) in paragraph at lines 434--436
 
  []
 
 (./flow/dinic.cpp [8]) (./flow/minCostFlow.cpp) (./flow/bipartiteMatching.cpp
 [9]) (./string/RollingHash.cpp) (./string/KMP.cpp) [10]
 (./string/TrieAmoshyc.cpp) (./geometry/my_geometry.cpp [11] [12])
-Underfull \hbox (badness 10000) in paragraph at lines 531--534
+Underfull \hbox (badness 10000) in paragraph at lines 532--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--545
+Underfull \hbox (badness 10000) in paragraph at lines 542--546
 
  []
 
@@ -1553,16 +1553,16 @@ File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2> [17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 627.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 627.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 628.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 628.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 627.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 627.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 628.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 628.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 627.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 628.
  ) 
 Here is how much of TeX's memory you used:
  27780 strings out of 493706
