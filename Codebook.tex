@@ -172,10 +172,14 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \begin{enumerate}
 	\item Setup bashrc and vimrc
+	\item Install Java 8, Eclipse 32-bit, g++ compiler
+	\item Remove Chinese input method
 	\item Look for compilation parameter and code it into bashrc
 	\item Test if c++ and java templates work properly on local and judge machine
 	\item Test "divide by 0" $\rightarrow$ RE/TLE?
-	\item Test heap size
+	\item Make a complete graph and run Floyd warshall, to test time complexity upper bound
+	\item Make a linear graph and use DFS to test stack size
+	\item Print output with extra newline and spaces
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
@@ -211,9 +215,9 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item sorting, topological sort
 	\item binary search
 	\item 離散化
-	\item 矩陣快速冪
+	\item Dynamic programming, 矩陣快速冪
 	\item Pigeonhole 
-	\item DFS 轉換成 RMQ
+	\item LCA (倍增法, LCA轉RMQ)
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
@@ -393,6 +397,7 @@ struct UFDS {
 \subsection{Tree Centroid}
 
 \subsection{Treap}
+\lstinputlisting{Tree/treap.cpp}
 
 \subsection{Merge Tree}
 
@@ -410,11 +415,16 @@ struct UFDS {
 
 \subsubsection{SCC}
 
+First of all we run DFS on the graph and sort the vertices in decreasing of their finishing time (we can use a stack).\\
+Then, we start from the vertex with the greatest finishing time, and for each vertex v that is not yet in any SCC, do : for each u that v is reachable by u and u is not yet in any SCC, put it in the SCC of vertex v. The code is quite simple.
+
 \subsection{Shortest Path}
 
 Time complexity notations: V = vertex, E = edge
 
 \subsubsection{Dijkatra}
+
+密集圖別用priority queue!\\
 %http://amoshyc.github.io/ojsolution-build/template/graph/spfa.html
 \lstinputlisting{graph/dijkatra.cpp}
 
@@ -488,6 +498,8 @@ for(int k = 0; k < N; k++)
 
 \subsection{Z Algorithm}
 
+\lstinputlisting{string/Z_Algorithm.cpp}
+
 \subsection{Trie}
 %http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
 注意count的擺放位置，視題意可以擺在迴圈外
@@ -497,9 +509,12 @@ for(int k = 0; k < N; k++)
 
 \section{Matrix}
 
-\subsection{高斯消去法}
+\subsection{Gauss Jordan}
+\lstinputlisting{Matrix/gauss_jordan.cpp}
 
-\subsection{高斯喬登}
+\subsection{Determinant}
+
+\lstinputlisting{Matrix/matrix_det.cpp}
 
 %%%%%%%%%%%%%%%%%幾何%%%%%%%%%%%%%%%%%%%
 
