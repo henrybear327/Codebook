@@ -197,7 +197,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Binary search? 數學算式移項合併後查詢？
 	\item Two Pointer <--> Binary Search
 	\item Directed graph connectivity -> DFS. Undirected graph -> Union Find
-	\item Check connectivity of the graph if the problem statement doesn't say anything
+	\item Check connectivity of the graph if the problem statement doesn't say anything (just loop over all nodes!)
 	\item $long long = int * int$ won't work!
 	\item Shifting for $long long int$ should be something like $1LL << 35$
 	\item For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
@@ -390,13 +390,13 @@ struct UFDS {
 \subsection{Treap}
 \lstinputlisting{Tree/treap.cpp}
 
-\subsection{Merge Tree}
-
 %%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
 
 \section{Graph}
 
-\subsection{Articulation point / edge}
+\subsection{Articulation point / Bridge}
+\lstinputlisting{graph/ArticulationPointAndBridge.cpp}
+
 
 \subsection{CC}
 
@@ -413,13 +413,14 @@ Then, we start from the vertex with the greatest finishing time, and for each ve
 
 Time complexity notations: V = vertex, E = edge
 
-\subsubsection{Dijkatra}
+%\subsubsection{Dijkatra}
 
-密集圖別用priority queue!\\
+%密集圖別用priority queue!\\
 %http://amoshyc.github.io/ojsolution-build/template/graph/spfa.html
-\lstinputlisting{graph/dijkatra.cpp}
+%\lstinputlisting{graph/dijkatra.cpp}
 
 \subsubsection{Dijkatra (next-to-shortest path)}
+密集圖別用priority queue!
 % https://gist.github.com/amoshyc/f011abc6fad9b413c24b
 \lstinputlisting{graph/nextToShortestPath.cpp}
 
