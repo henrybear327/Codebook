@@ -46,12 +46,12 @@
 \contentsline {subsubsection}{\numberline {9.4.2}Prim}{10}{subsubsection.9.4.2}
 \contentsline {section}{\numberline {10}Flow}{10}{section.10}
 \contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{10}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Min Cost Flow}{10}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.2}Min Cost Flow}{11}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}Bipartite Matching}{11}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{12}{section.11}
 \contentsline {subsection}{\numberline {11.1}Rolling Hash}{12}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}KMP}{12}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Z Algorithm}{12}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.3}Z Algorithm}{13}{subsection.11.3}
 \contentsline {subsection}{\numberline {11.4}Trie}{13}{subsection.11.4}
 \contentsline {subsection}{\numberline {11.5}Suffix Array}{13}{subsection.11.5}
 \contentsline {section}{\numberline {12}Matrix}{13}{section.12}
@@ -70,6 +70,6 @@
 \contentsline {subsubsection}{\numberline {14.5.2}線性}{17}{subsubsection.14.5.2}
 \contentsline {subsection}{\numberline {14.6}重複組合}{17}{subsection.14.6}
 \contentsline {subsection}{\numberline {14.7}Chinese remainder theorem}{17}{subsection.14.7}
-\contentsline {subsection}{\numberline {14.8}2-Circle relations}{17}{subsection.14.8}
+\contentsline {subsection}{\numberline {14.8}2-Circle relations}{18}{subsection.14.8}
 \contentsline {subsection}{\numberline {14.9}Fun Facts}{18}{subsection.14.9}
-\contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{21}{section.15}
+\contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{18}{section.15}
