@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {9.5}MST}{11}{subsection.9.5}
 \contentsline {subsubsection}{\numberline {9.5.1}Kruskal}{11}{subsubsection.9.5.1}
 \contentsline {subsubsection}{\numberline {9.5.2}Prim}{11}{subsubsection.9.5.2}
-\contentsline {section}{\numberline {10}Flow}{12}{section.10}
-\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{12}{subsection.10.1}
+\contentsline {section}{\numberline {10}Flow}{11}{section.10}
+\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{11}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}Bipartite Matching}{13}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{13}{section.11}
@@ -66,7 +66,7 @@
 \contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{17}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{17}{subsection.14.2}
 \contentsline {subsection}{\numberline {14.3}Summation}{17}{subsection.14.3}
-\contentsline {subsection}{\numberline {14.4}FFT}{18}{subsection.14.4}
+\contentsline {subsection}{\numberline {14.4}FFT}{17}{subsection.14.4}
 \contentsline {subsection}{\numberline {14.5}Combination}{18}{subsection.14.5}
 \contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{18}{subsubsection.14.5.1}
 \contentsline {subsubsection}{\numberline {14.5.2}線性}{19}{subsubsection.14.5.2}
