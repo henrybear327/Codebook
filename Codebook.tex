@@ -454,6 +454,9 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 \subsection{CC}
 
 \subsubsection{BCC}
+%http://www.geeksforgeeks.org/biconnected-components/
+以 Edge 做分界的話，stack 要裝入 (u - v), 並 pop 終止條件為 != (u - v) \\
+以 Articulation point 做為分界 (code below)，注意有無坑人的重邊
 \lstinputlisting{graph/BCC.cpp}
 
 \subsubsection{SCC}
