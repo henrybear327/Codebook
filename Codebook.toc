@@ -38,10 +38,10 @@
 \contentsline {subsubsection}{\numberline {9.3.1}BCC vertex}{9}{subsubsection.9.3.1}
 \contentsline {subsubsection}{\numberline {9.3.2}BCC edge}{9}{subsubsection.9.3.2}
 \contentsline {subsubsection}{\numberline {9.3.3}SCC}{9}{subsubsection.9.3.3}
-\contentsline {subsection}{\numberline {9.4}Shortest Path}{9}{subsection.9.4}
-\contentsline {subsubsection}{\numberline {9.4.1}Dijkatra (next-to-shortest path)}{9}{subsubsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4}Shortest Path}{10}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}Dijkatra (next-to-shortest path)}{10}{subsubsection.9.4.1}
 \contentsline {subsubsection}{\numberline {9.4.2}SPFA}{10}{subsubsection.9.4.2}
-\contentsline {subsubsection}{\numberline {9.4.3}Bellman-Ford $O(VE)$}{10}{subsubsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.3}Bellman-Ford $O(VE)$}{11}{subsubsection.9.4.3}
 \contentsline {subsubsection}{\numberline {9.4.4}Floyd-Warshall $O(V^3)$}{11}{subsubsection.9.4.4}
 \contentsline {subsection}{\numberline {9.5}MST}{11}{subsection.9.5}
 \contentsline {subsubsection}{\numberline {9.5.1}Kruskal}{11}{subsubsection.9.5.1}
@@ -49,19 +49,19 @@
 \contentsline {section}{\numberline {10}Flow}{11}{section.10}
 \contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{11}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Bipartite Matching}{12}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.3}Bipartite Matching}{13}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{13}{section.11}
 \contentsline {subsection}{\numberline {11.1}Rolling Hash}{13}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}KMP}{13}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.2}KMP}{14}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Z Algorithm}{14}{subsection.11.3}
 \contentsline {subsection}{\numberline {11.4}Trie}{14}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Suffix Array}{14}{subsection.11.5}
-\contentsline {section}{\numberline {12}Matrix}{14}{section.12}
-\contentsline {subsection}{\numberline {12.1}Gauss Jordan}{14}{subsection.12.1}
+\contentsline {subsection}{\numberline {11.5}Suffix Array}{15}{subsection.11.5}
+\contentsline {section}{\numberline {12}Matrix}{15}{section.12}
+\contentsline {subsection}{\numberline {12.1}Gauss Jordan}{15}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Determinant}{15}{subsection.12.2}
-\contentsline {section}{\numberline {13}Geometry}{15}{section.13}
-\contentsline {subsection}{\numberline {13.1}EPS}{15}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Template}{15}{subsection.13.2}
+\contentsline {section}{\numberline {13}Geometry}{16}{section.13}
+\contentsline {subsection}{\numberline {13.1}EPS}{16}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Template}{16}{subsection.13.2}
 \contentsline {section}{\numberline {14}Math}{17}{section.14}
 \contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{17}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{17}{subsection.14.2}
@@ -69,9 +69,9 @@
 \contentsline {subsection}{\numberline {14.4}FFT}{17}{subsection.14.4}
 \contentsline {subsection}{\numberline {14.5}Combination}{18}{subsection.14.5}
 \contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{18}{subsubsection.14.5.1}
-\contentsline {subsubsection}{\numberline {14.5.2}線性}{18}{subsubsection.14.5.2}
-\contentsline {subsection}{\numberline {14.6}重複組合}{18}{subsection.14.6}
-\contentsline {subsection}{\numberline {14.7}Chinese remainder theorem}{18}{subsection.14.7}
+\contentsline {subsubsection}{\numberline {14.5.2}線性}{19}{subsubsection.14.5.2}
+\contentsline {subsection}{\numberline {14.6}重複組合}{19}{subsection.14.6}
+\contentsline {subsection}{\numberline {14.7}Chinese remainder theorem}{19}{subsection.14.7}
 \contentsline {subsection}{\numberline {14.8}2-Circle relations}{19}{subsection.14.8}
 \contentsline {subsection}{\numberline {14.9}Fun Facts}{19}{subsection.14.9}
 \contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{19}{section.15}

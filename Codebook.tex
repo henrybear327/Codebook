@@ -450,6 +450,8 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 First of all we run DFS on the graph and sort the vertices in decreasing of their finishing time (we can use a stack).\\
 Then, we start from the vertex with the greatest finishing time, and for each vertex v that is not yet in any SCC, do : for each u that v is reachable by u and u is not yet in any SCC, put it in the SCC of vertex v. The code is quite simple.
 
+\lstinputlisting{graph/SCC_AMO.cpp}
+
 \subsection{Shortest Path}
 
 Time complexity notations: V = vertex, E = edge
