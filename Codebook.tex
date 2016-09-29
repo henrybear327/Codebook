@@ -97,6 +97,8 @@
 
 \lstset{style=customc}
 
+\usepackage{amsmath}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document} 
@@ -398,6 +400,40 @@ struct UFDS {
 \subsection{Articulation point / Bridge}
 \lstinputlisting{graph/ArticulationPointAndBridge.cpp}
 
+\subsection{2-SAT}
+
+\begin{align*}
+ &(x_i \lor x_i) \textit{ 建邊 } (\lnot x_i,\, x_j) \\
+ &(x_i \lor x_j) \textit{ 建邊 } (\lnot x_i,\, x_j) ,\, (\lnot x_j,\, x_i) \\
+&p \lor (q \land r)  \\
+&= ((p \land q) \lor (p \land r)) \\
+&p \oplus q   \\
+&= \lnot ( (p \land q) \lor (\lnot p \land \lnot q))     \\
+&= (\lnot p \lor \lnot q) \land (p \lor q)     \\
+\end{align*}
+
+\begin{lstlisting}
+// 建圖
+// (x1 or x2) and ... and (xi or xj)
+// (xi or xj) 建邊
+// ~xi -> xj
+// ~xj -> xi
+
+tarjan(); // scc 建立的順序是倒序的拓璞排序
+for (int i = 0; i < 2 * N; i += 2) {
+    if (belong[i] == belong[i ^ 1]) {
+        // 無解
+    }
+}
+for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
+    if (belong[i] < belong[i ^ 1]) { // i 的拓璞排序比 ~i 的拓璞排序大
+        // i = T
+    }
+    else {
+        // i = F
+    }
+}
+\end{lstlisting}
 
 \subsection{CC}
 
@@ -625,8 +661,8 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 %%%%%%%%%%%%DP%%%%%%%%%%
 
 \section{Dynamic Programming - Problems collection}
+\lstinputlisting{DP/dp.cpp}
 
-好題收集
 
 %trig information
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}

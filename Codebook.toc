@@ -32,34 +32,35 @@
 \contentsline {subsection}{\numberline {8.3}Treap}{7}{subsection.8.3}
 \contentsline {section}{\numberline {9}Graph}{8}{section.9}
 \contentsline {subsection}{\numberline {9.1}Articulation point / Bridge}{8}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}CC}{8}{subsection.9.2}
-\contentsline {subsubsection}{\numberline {9.2.1}BCC vertex}{8}{subsubsection.9.2.1}
-\contentsline {subsubsection}{\numberline {9.2.2}BCC edge}{8}{subsubsection.9.2.2}
-\contentsline {subsubsection}{\numberline {9.2.3}SCC}{8}{subsubsection.9.2.3}
-\contentsline {subsection}{\numberline {9.3}Shortest Path}{8}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}Dijkatra (next-to-shortest path)}{8}{subsubsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.2}SPFA}{9}{subsubsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.3}Bellman-Ford $O(VE)$}{9}{subsubsection.9.3.3}
-\contentsline {subsubsection}{\numberline {9.3.4}Floyd-Warshall $O(V^3)$}{10}{subsubsection.9.3.4}
-\contentsline {subsection}{\numberline {9.4}MST}{10}{subsection.9.4}
-\contentsline {subsubsection}{\numberline {9.4.1}Kruskal}{10}{subsubsection.9.4.1}
-\contentsline {subsubsection}{\numberline {9.4.2}Prim}{10}{subsubsection.9.4.2}
+\contentsline {subsection}{\numberline {9.2}2-SAT}{8}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}CC}{9}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}BCC vertex}{9}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}BCC edge}{9}{subsubsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.3}SCC}{9}{subsubsection.9.3.3}
+\contentsline {subsection}{\numberline {9.4}Shortest Path}{9}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}Dijkatra (next-to-shortest path)}{9}{subsubsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.2}SPFA}{9}{subsubsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3}Bellman-Ford $O(VE)$}{10}{subsubsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.4}Floyd-Warshall $O(V^3)$}{10}{subsubsection.9.4.4}
+\contentsline {subsection}{\numberline {9.5}MST}{10}{subsection.9.5}
+\contentsline {subsubsection}{\numberline {9.5.1}Kruskal}{10}{subsubsection.9.5.1}
+\contentsline {subsubsection}{\numberline {9.5.2}Prim}{10}{subsubsection.9.5.2}
 \contentsline {section}{\numberline {10}Flow}{10}{section.10}
 \contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{10}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{11}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Bipartite Matching}{11}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.3}Bipartite Matching}{12}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{12}{section.11}
 \contentsline {subsection}{\numberline {11.1}Rolling Hash}{12}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}KMP}{12}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Z Algorithm}{13}{subsection.11.3}
 \contentsline {subsection}{\numberline {11.4}Trie}{13}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Suffix Array}{13}{subsection.11.5}
-\contentsline {section}{\numberline {12}Matrix}{13}{section.12}
-\contentsline {subsection}{\numberline {12.1}Gauss Jordan}{13}{subsection.12.1}
+\contentsline {subsection}{\numberline {11.5}Suffix Array}{14}{subsection.11.5}
+\contentsline {section}{\numberline {12}Matrix}{14}{section.12}
+\contentsline {subsection}{\numberline {12.1}Gauss Jordan}{14}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Determinant}{14}{subsection.12.2}
 \contentsline {section}{\numberline {13}Geometry}{14}{section.13}
 \contentsline {subsection}{\numberline {13.1}EPS}{14}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Template}{14}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.2}Template}{15}{subsection.13.2}
 \contentsline {section}{\numberline {14}Math}{16}{section.14}
 \contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{16}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{16}{subsection.14.2}
@@ -68,8 +69,8 @@
 \contentsline {subsection}{\numberline {14.5}Combination}{17}{subsection.14.5}
 \contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{17}{subsubsection.14.5.1}
 \contentsline {subsubsection}{\numberline {14.5.2}線性}{17}{subsubsection.14.5.2}
-\contentsline {subsection}{\numberline {14.6}重複組合}{17}{subsection.14.6}
-\contentsline {subsection}{\numberline {14.7}Chinese remainder theorem}{17}{subsection.14.7}
+\contentsline {subsection}{\numberline {14.6}重複組合}{18}{subsection.14.6}
+\contentsline {subsection}{\numberline {14.7}Chinese remainder theorem}{18}{subsection.14.7}
 \contentsline {subsection}{\numberline {14.8}2-Circle relations}{18}{subsection.14.8}
 \contentsline {subsection}{\numberline {14.9}Fun Facts}{18}{subsection.14.9}
 \contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{18}{section.15}
