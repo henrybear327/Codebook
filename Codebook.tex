@@ -115,7 +115,7 @@
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for NCPC 2016 (\today)}
+\fancyfoot[C]{for NCPC Preliminary Round, 2016 (\today)}
 \fancyfoot[R]{\thepage}
 
 % for page 1
@@ -126,7 +126,7 @@
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for NCPC 2016 (\today)}
+\fancyfoot[C]{for NCPC Preliminary Round, 2016 (\today)}
 \fancyfoot[R]{\thepage}
 }
 
@@ -425,7 +425,7 @@ struct UFDS {
 &= ((p \land q) \lor (p \land r)) \\
 &p \oplus q   \\
 &= \lnot ( (p \land q) \lor (\lnot p \land \lnot q))     \\
-&= (\lnot p \lor \lnot q) \land (p \lor q)     \\
+&= (\lnot p \lor \lnot q) \land (p \lor q)    
 \end{align*}
 
 \begin{lstlisting}
@@ -453,9 +453,8 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 
 \subsection{CC}
 
-\subsubsection{BCC vertex}
-
-\subsubsection{BCC edge}
+\subsubsection{BCC}
+\lstinputlisting{graph/BCC.cpp}
 
 \subsubsection{SCC}
 
@@ -552,8 +551,6 @@ for(int k = 0; k < N; k++)
 %http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
 注意count的擺放位置，視題意可以擺在迴圈外
 \lstinputlisting{string/TrieAmoshyc.cpp}
-
-\subsection{Suffix Array}
 
 \section{Matrix}
 
@@ -653,8 +650,6 @@ ll binomialCoeff(ll n, ll k)
     return res;
 }
 \end{lstlisting}
-
-\subsection{重複組合}
 
 \subsection{Chinese remainder theorem}
 %http://amoshyc.github.io/ojsolution-build/template/math/crt.html
