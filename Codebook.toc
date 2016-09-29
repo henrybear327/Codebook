@@ -23,13 +23,13 @@
 \contentsline {subsection}{\numberline {6.4}N Puzzle}{5}{subsection.6.4}
 \contentsline {section}{\numberline {7}Basic data structure}{5}{section.7}
 \contentsline {subsection}{\numberline {7.1}1D BIT}{5}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}2D BIT}{5}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.2}2D BIT}{6}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Union Find}{6}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Segment Tree}{6}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Sparse Table}{7}{subsection.7.5}
 \contentsline {section}{\numberline {8}Tree}{7}{section.8}
 \contentsline {subsection}{\numberline {8.1}LCA}{7}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Tree Center}{7}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.2}Tree Center}{8}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Treap}{8}{subsection.8.3}
 \contentsline {section}{\numberline {9}Graph}{9}{section.9}
 \contentsline {subsection}{\numberline {9.1}Articulation point / Bridge}{9}{subsection.9.1}
@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {9.5}MST}{11}{subsection.9.5}
 \contentsline {subsubsection}{\numberline {9.5.1}Kruskal}{11}{subsubsection.9.5.1}
 \contentsline {subsubsection}{\numberline {9.5.2}Prim}{11}{subsubsection.9.5.2}
-\contentsline {section}{\numberline {10}Flow}{11}{section.10}
-\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{11}{subsection.10.1}
+\contentsline {section}{\numberline {10}Flow}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{12}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}Bipartite Matching}{13}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{13}{section.11}
@@ -66,7 +66,7 @@
 \contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{17}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{17}{subsection.14.2}
 \contentsline {subsection}{\numberline {14.3}Summation}{17}{subsection.14.3}
-\contentsline {subsection}{\numberline {14.4}FFT}{17}{subsection.14.4}
+\contentsline {subsection}{\numberline {14.4}FFT}{18}{subsection.14.4}
 \contentsline {subsection}{\numberline {14.5}Combination}{18}{subsection.14.5}
 \contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{18}{subsubsection.14.5.1}
 \contentsline {subsubsection}{\numberline {14.5.2}線性}{19}{subsubsection.14.5.2}

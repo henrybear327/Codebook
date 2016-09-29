@@ -288,6 +288,18 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 
 \subsection{Ternary Search}
 
+\begin{lstlisting}
+double l = ..., r = ....; // input
+for(int i  = 0; i < 100; i++) {
+   double m1 = l + (r - l) / 3, m2 = r - (r - l) / 3;
+   if (f (m1) < f (m2)) // f - convex function
+      l = m1;
+   else
+      r = m2;
+}
+f(r) - maximum of function
+\end{lstlisting}
+
 \subsection{折半完全列舉}
 
 能用vector就用vector
