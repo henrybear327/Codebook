@@ -9,18 +9,17 @@
 \contentsline {section}{\numberline {3}Reminder}{3}{section.3}
 \contentsline {section}{\numberline {4}Topic list}{3}{section.4}
 \contentsline {section}{\numberline {5}Useful code}{3}{section.5}
-\contentsline {subsection}{\numberline {5.1}Leap year}{3}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Leap year $O(1)$}{3}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Fast Exponentiation $O(log(exp))$}{3}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Mod Inverse}{3}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}GCD $O(log(a + b))$}{3}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Extended Euclidean Algorithm GCD $O(log(a + b))$}{3}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Prime Generator}{3}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.3}Mod Inverse $ O(log n) $}{3}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}GCD $O(log( min(a + b) ))$}{3}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}{3}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Prime Generator $ O(n loglogn) $}{3}{subsection.5.6}
 \contentsline {subsection}{\numberline {5.7}C++ Reference}{4}{subsection.5.7}
 \contentsline {section}{\numberline {6}Search}{5}{section.6}
-\contentsline {subsection}{\numberline {6.1}Ternary Search}{5}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}折半完全列舉}{5}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Two-pointer 爬行法 （右跑左追）}{5}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}N Puzzle}{5}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.1}Ternary Search $O(nlogn)$}{5}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Two-pointer 爬行法 （右跑左追）}{5}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}N Puzzle}{5}{subsection.6.3}
 \contentsline {section}{\numberline {7}Basic data structure}{5}{section.7}
 \contentsline {subsection}{\numberline {7.1}1D BIT}{5}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}2D BIT}{6}{subsection.7.2}
@@ -71,4 +70,5 @@
 \contentsline {subsection}{\numberline {14.6}Chinese remainder theorem}{19}{subsection.14.6}
 \contentsline {subsection}{\numberline {14.7}2-Circle relations}{20}{subsection.14.7}
 \contentsline {subsection}{\numberline {14.8}Fun Facts}{20}{subsection.14.8}
+\contentsline {subsection}{\numberline {14.9}$2^n$ table}{20}{subsection.14.9}
 \contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{20}{section.15}

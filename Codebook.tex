@@ -98,6 +98,7 @@
 \lstset{style=customc}
 
 \usepackage{amsmath}
+\usepackage{array}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -182,7 +183,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Test "divide by 0" $\rightarrow$ RE/TLE?
 	\item Make a complete graph and run Floyd warshall, to test time complexity upper bound
 	\item Make a linear graph and use DFS to test stack size
-	\item Print output with extra newline and spaces
+	\item Test output with extra newline and spaces
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
@@ -221,13 +222,15 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Dynamic programming, 矩陣快速冪
 	\item Pigeonhole 
 	\item LCA (倍增法, LCA轉RMQ)
+	\item 折半完全列舉 (能用vector就用vector)
+	\item Offline (DFS, LCA)
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
 
 \section{Useful code}
 
-\subsection{Leap year}
+\subsection{Leap year $O(1)$}
 
 \begin{lstlisting}
 year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
@@ -239,13 +242,13 @@ Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$
 
 \lstinputlisting{useful_code/fast_pow.cpp}
 
-\subsection{Mod Inverse}
+\subsection{Mod Inverse $ O(log n) $}
 
 Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 
 \noindent Case 2: $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ 
 
-\subsection{GCD $O(log(a + b))$}
+\subsection{GCD $O(log( min(a + b) ))$}
 
 注意負數的case! C++ 是看被除數決定正負號的。
 
@@ -256,13 +259,13 @@ ll gcd(ll a, ll b)
 }
 \end{lstlisting}
 
-\subsection{Extended Euclidean Algorithm GCD $O(log(a + b))$}
+\subsection{Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}
 
 Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
 
 \lstinputlisting{useful_code/ext_gcd.cpp}
 
-\subsection{Prime Generator}
+\subsection{Prime Generator $ O(n loglogn) $}
 \lstinputlisting{useful_code/prime_gen.cpp}
 
 \subsection{C++ Reference}
@@ -286,7 +289,7 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 
 \section{Search}
 
-\subsection{Ternary Search}
+\subsection{Ternary Search $O(nlogn)$}
 
 \begin{lstlisting}
 double l = ..., r = ....; // input
@@ -299,10 +302,6 @@ for(int i  = 0; i < 100; i++) {
 }
 f(r) - maximum of function
 \end{lstlisting}
-
-\subsection{折半完全列舉}
-
-能用vector就用vector
 
 \subsection{Two-pointer 爬行法 （右跑左追）}
 
@@ -368,8 +367,8 @@ void add(int a, int b, ll x) {
 struct UFDS {
     int par[N];
 
-    void init() {
-        memset(par, -1, sizeof(par));
+    void init(int n) {
+        memset(par, -1, sizeof(int) * n);
     }
 
     int root(int x) {
@@ -674,16 +673,43 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 	\item 
 \end{enumerate}
 
+\subsection{$2^n$ table}
+
+$
+1 : 2 \\
+2 : 4 \\
+3 : 8 \\
+4 : 16 \\
+5 : 32 \\
+6 : 64 \\ 
+7 : 128 \\
+8 : 256 \\
+9 : 512 \\
+10 : 1024 \\
+11 : 2048 \\
+12 : 4096 \\
+13 : 8192 \\
+14 : 16384 \\
+15 : 32768 \\
+16 : 65536 \\
+17 : 131072 \\
+18 : 262144 \\
+19 : 524288 \\
+20 : 1048576 \\
+21 : 2097152 \\
+22 : 4194304 \\
+23 : 8388608 \\
+24 : 16777216 \\
+25 : 33554432 \\
+$
+
 %%%%%%%%%%%%DP%%%%%%%%%%
 
 \section{Dynamic Programming - Problems collection}
 \lstinputlisting{DP/dp.cpp}
 
-
 %trig information
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
-
-
 
 \end{multicols}
 \end{landscape}
