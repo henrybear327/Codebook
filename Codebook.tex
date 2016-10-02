@@ -40,10 +40,13 @@
 %%%%%%%%%%%%%%%%中文設定%%%%%%%%%%%%%%%%%%%
 
 \usepackage{fontspec} %加這個就可以設定字體 
+
 \usepackage{xeCJK} %讓中英文字體分開設置
 %\setmainfont{Arial}
 \setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
-\setmonofont{Courier} %等寬字體
+%\setmonofont{Courier} %等寬字體
+\setmonofont{Oxygen Mono}
+
 \XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt 
 
@@ -99,6 +102,36 @@
 
 \usepackage{amsmath}
 \usepackage{array}
+
+% sudo easy_install Pygments
+% Add -shell-escape to compile flag
+\usepackage{minted}
+
+\usemintedstyle{friendly}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\newmintedfile[cppCode]{cpp}{ % [alias][code type]
+%bgcolor=bg,
+fontfamily=tt,
+linenos=true,
+numberblanklines=true,
+numbersep=12pt,
+numbersep=5pt,
+gobble=0,
+frame=leftline,
+framerule=0.4pt,
+framesep=2mm,
+funcnamehighlighting=true,
+tabsize=4,
+obeytabs=false,
+mathescape=false
+samepage=false, %with this setting you can force the list to appear on the same page
+showspaces=false,
+showtabs =false,
+texcl=false,
+fontsize=\footnotesize,
+breaklines=true,
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -159,10 +192,12 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 \end{lstlisting}
 
 \subsection{C++ template}
-\lstinputlisting{contest_setup/main.cpp}
+\cppCode{contest_setup/main.cpp}
+\cppCode{contest_setup/main.cpp}
 
 \subsection{Java template}
-\lstinputlisting{contest_setup/Main.java}
+%\lstinputlisting{contest_setup/Main.java}
+\inputminted{java}{contest_setup/Main.java}
 
 \subsubsection{Java Issues}
 \begin{enumerate}
@@ -240,7 +275,7 @@ year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
 
 Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$
 
-\lstinputlisting{useful_code/fast_pow.cpp}
+\cppCode{useful_code/fast_pow.cpp}
 
 \subsection{Mod Inverse $ O(log n) $}
 
@@ -263,25 +298,25 @@ ll gcd(ll a, ll b)
 
 Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
 
-\lstinputlisting{useful_code/ext_gcd.cpp}
+\cppCode{useful_code/ext_gcd.cpp}
 
 \subsection{Prime Generator $ O(n loglogn) $}
-\lstinputlisting{useful_code/prime_gen.cpp}
+\cppCode{useful_code/prime_gen.cpp}
 
 \subsection{C++ Reference}
 
-\lstinputlisting{useful_code/cppReference.cpp}
+\cppCode{useful_code/cppReference.cpp}
 
 %\subsubsection{scanf/printf reference}
 
 %\subsubsection{Map}
-%\lstinputlisting{useful_code/map_API.cpp}
+%\cppCode{useful_code/map_API.cpp}
 
 %\subsubsection{Set}
-%\lstinputlisting{useful_code/set_API.cpp}
+%\cppCode{useful_code/set_API.cpp}
 
 %\subsubsection{Algorithm}
-%\lstinputlisting{useful_code/algorithm_API.cpp}
+%\cppCode{useful_code/algorithm_API.cpp}
 
 %\subsubsection{String}
 
@@ -306,7 +341,7 @@ f(r) - maximum of function
 \subsection{Two-pointer 爬行法 （右跑左追）}
 
 \subsection{N Puzzle}
-\lstinputlisting{Search/n-puzzle.cpp}
+\cppCode{Search/n-puzzle.cpp}
 
 
 %%%%%%%%%%%%%%%%資料結構%%%%%%%%%%%%%%%%%%
@@ -390,30 +425,30 @@ struct UFDS {
 \end{lstlisting}
 
 \subsection{Segment Tree}
-\lstinputlisting{DS/segmentTree.cpp}
+\cppCode{DS/segmentTree.cpp}
 
 \subsection{Sparse Table}
-\lstinputlisting{DS/sparse_table.cpp}
+\cppCode{DS/sparse_table.cpp}
 
 %%%%%%%%%%%%%%%%%%樹%%%%%%%%%%%%%%%%%%%%
 
 \section{Tree}
 
 \subsection{LCA}
-\lstinputlisting{Tree/lca.cpp}
+\cppCode{Tree/lca.cpp}
 
 \subsection{Tree Center}
-\lstinputlisting{Tree/TreeCenter.cpp}
+\cppCode{Tree/TreeCenter.cpp}
 
 \subsection{Treap}
-\lstinputlisting{Tree/treap.cpp}
+\cppCode{Tree/treap.cpp}
 
 %%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
 
 \section{Graph}
 
 \subsection{Articulation point / Bridge}
-\lstinputlisting{graph/ArticulationPointAndBridge.cpp}
+\cppCode{graph/ArticulationPointAndBridge.cpp}
 
 \subsection{2-SAT}
 
@@ -456,14 +491,14 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 %http://www.geeksforgeeks.org/biconnected-components/
 以 Edge 做分界的話，stack 要裝入 (u - v), 並 pop 終止條件為 != (u - v) \\
 以 Articulation point 做為分界 (code below)，注意有無坑人的重邊
-\lstinputlisting{graph/BCC.cpp}
+\cppCode{graph/BCC.cpp}
 
 \subsubsection{SCC}
 
 First of all we run DFS on the graph and sort the vertices in decreasing of their finishing time (we can use a stack).\\
 Then, we start from the vertex with the greatest finishing time, and for each vertex v that is not yet in any SCC, do : for each u that v is reachable by u and u is not yet in any SCC, put it in the SCC of vertex v. The code is quite simple.
 
-\lstinputlisting{graph/SCC_AMO.cpp}
+\cppCode{graph/SCC_AMO.cpp}
 
 \subsection{Shortest Path}
 
@@ -474,19 +509,19 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 
 %密集圖別用priority queue!\\
 %http://amoshyc.github.io/ojsolution-build/template/graph/spfa.html
-%\lstinputlisting{graph/dijkatra.cpp}
+%\cppCode{graph/dijkatra.cpp}
 
 \subsubsection{Dijkatra (next-to-shortest path)}
 密集圖別用priority queue!
 % https://gist.github.com/amoshyc/f011abc6fad9b413c24b
-\lstinputlisting{graph/nextToShortestPath.cpp}
+\cppCode{graph/nextToShortestPath.cpp}
 
 \subsubsection{SPFA}
-\lstinputlisting{graph/SPFA.cpp}
+\cppCode{graph/SPFA.cpp}
 
 \subsubsection{Bellman-Ford $O(VE)$}
 % UVa 558, 10449
-\lstinputlisting{graph/bellmanFord.cpp}
+\cppCode{graph/bellmanFord.cpp}
 
 \subsubsection{Floyd-Warshall $O(V^3)$}
 
@@ -513,21 +548,21 @@ for(int k = 0; k < N; k++)
 \end{enumerate}
 
 \subsubsection{Prim}
-\lstinputlisting{graph/prim.cpp }
+\cppCode{graph/prim.cpp}
 
 \section{Flow}
 
 \subsection{Max Flow (Dinic)}
 %http://amoshyc.github.io/ojsolution-build/template/graph/max_flow.html
-\lstinputlisting{flow/dinic.cpp }
+\cppCode{flow/dinic.cpp}
 
 \subsection{Min Cost Flow}
 %http://amoshyc.github.io/ojsolution-build/template/graph/min_cost_flow.html
-\lstinputlisting{flow/minCostFlow.cpp }
+\cppCode{flow/minCostFlow.cpp}
 
 \subsection{Bipartite Matching}
 %http://amoshyc.github.io/ojsolution-build/template/graph/bipartite_matching.html
-\lstinputlisting{flow/bipartiteMatching.cpp }
+\cppCode{flow/bipartiteMatching.cpp}
 
 %%%%%%%%%%%%%%%%%字串%%%%%%%%%%%%%%%%%%%
 
@@ -540,29 +575,29 @@ for(int k = 0; k < N; k++)
 	\item The prime for pre-calculation can be $137$ and $257$, for modulo can be $1e9 + 7$ and $0xdefaced$ 
 \end{enumerate}
 
-\lstinputlisting{string/RollingHash.cpp}
+\cppCode{string/RollingHash.cpp}
 
 \subsection{KMP}
 
-\lstinputlisting{string/KMP.cpp}
+\cppCode{string/KMP.cpp}
 
 \subsection{Z Algorithm}
 
-\lstinputlisting{string/Z_Algorithm.cpp}
+\cppCode{string/Z_Algorithm.cpp}
 
 \subsection{Trie}
 %http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
 注意count的擺放位置，視題意可以擺在迴圈外
-\lstinputlisting{string/TrieAmoshyc.cpp}
+\cppCode{string/TrieAmoshyc.cpp}
 
 \section{Matrix}
 
 \subsection{Gauss Jordan}
-\lstinputlisting{Matrix/gauss_jordan.cpp}
+\cppCode{Matrix/gauss_jordan.cpp}
 
 \subsection{Determinant}
 
-\lstinputlisting{Matrix/matrix_det.cpp}
+\cppCode{Matrix/matrix_det.cpp}
 
 %%%%%%%%%%%%%%%%%幾何%%%%%%%%%%%%%%%%%%%
 
@@ -585,8 +620,8 @@ $>0$: $ > +eps$
 
 \subsection{Template}
 
-% \lstinputlisting{geometry/geometry_stanford.cpp}
-\lstinputlisting{geometry/my_geometry.cpp}
+% \cppCode{geometry/geometry_stanford.cpp}
+\cppCode{geometry/my_geometry.cpp}
 
 \section{Math}
 
@@ -609,7 +644,7 @@ $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
 
 \subsection{FFT}
 %http://amoshyc.github.io/ojsolution-build/template/math/fft.html
-\lstinputlisting{Math/fft.cpp}
+\cppCode{Math/fft.cpp}
 
 \subsection{Combination}
 
@@ -656,7 +691,7 @@ ll binomialCoeff(ll n, ll k)
 
 \subsection{Chinese remainder theorem}
 %http://amoshyc.github.io/ojsolution-build/template/math/crt.html
-\lstinputlisting{Math/chineseRemainderTheorem.cpp}
+\cppCode{Math/chineseRemainderTheorem.cpp}
 
 \subsection{2-Circle relations}
 
@@ -707,7 +742,7 @@ $
 %%%%%%%%%%%%DP%%%%%%%%%%
 
 \section{Dynamic Programming - Problems collection}
-\lstinputlisting{DP/dp.cpp}
+\cppCode{DP/dp.cpp}
 
 %trig information
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}

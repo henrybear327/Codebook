@@ -1,0 +1,90 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}N} \PYG{o}{=} \PYG{l+m+mi}{100000}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}NN} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{l+m+mi}{20}\PYG{p}{);} \PYG{c+c1}{// should be bigger than MAX\PYGZus{}N}
+
+\PYG{k+kt}{int} \PYG{n}{N}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];}
+
+\PYG{k+kt}{int} \PYG{n}{NN}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n}{seg}\PYG{p}{[}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{MAX\PYGZus{}NN} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{n}{ll} \PYG{n}{lazy}\PYG{p}{[}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{MAX\PYGZus{}NN} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{c+c1}{// lazy[u] != 0 : the subtree of u (u not included) is not up\PYGZhy{}to\PYGZhy{}date}
+
+\PYG{k+kt}{void} \PYG{n+nf}{seg\PYGZus{}gather}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{seg\PYGZus{}push}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{m}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{m} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{)} \PYG{o}{*} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+        \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{m}\PYG{p}{)} \PYG{o}{*} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+
+        \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+        \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+        \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{seg\PYGZus{}init}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{NN} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{while} \PYG{p}{(}\PYG{n}{NN} \PYG{o}{\PYGZlt{}} \PYG{n}{N}\PYG{p}{)}
+        \PYG{n}{NN} \PYG{o}{*=} \PYG{l+m+mi}{2}\PYG{p}{;}
+
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{seg}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{seg}\PYG{p}{));} \PYG{c+c1}{// val that won\PYGZsq{}t affect result}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{lazy}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{lazy}\PYG{p}{));} \PYG{c+c1}{// val that won\PYGZsq{}t affect result}
+    \PYG{n}{memcpy}\PYG{p}{(}\PYG{n}{seg} \PYG{o}{+} \PYG{n}{NN} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{inp}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{ll}\PYG{p}{)} \PYG{o}{*} \PYG{n}{N}\PYG{p}{);} \PYG{c+c1}{// fill in leaves}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{seg\PYGZus{}build}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{u} \PYG{o}{\PYGZgt{}=} \PYG{n}{NN} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// leaf}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{n}{seg\PYGZus{}build}\PYG{p}{(}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}build}\PYG{p}{(}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{seg\PYGZus{}update}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{delta}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{b} \PYG{o}{||} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{a}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZlt{}=} \PYG{n}{l} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{)} \PYG{o}{*} \PYG{n}{delta}\PYG{p}{;}
+        \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{delta}\PYG{p}{;}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+    \PYG{n}{seg\PYGZus{}push}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}update}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{delta}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}update}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{delta}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ll} \PYG{n+nf}{seg\PYGZus{}query}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{b} \PYG{o}{||} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{a}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZlt{}=} \PYG{n}{l} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+    \PYG{n}{seg\PYGZus{}push}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+    \PYG{n}{ll} \PYG{n}{ans} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{ans} \PYG{o}{+=} \PYG{n}{seg\PYGZus{}query}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{);}
+    \PYG{n}{ans} \PYG{o}{+=} \PYG{n}{seg\PYGZus{}query}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+    \PYG{n}{seg\PYGZus{}gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

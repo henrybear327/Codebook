@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}define N 1000100}
+\PYG{c+cp}{\PYGZsh{}define B 137}
+\PYG{c+cp}{\PYGZsh{}define M 1000000007}
+
+\PYG{k}{typedef} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{ll}\PYG{p}{;}
+
+\PYG{k+kt}{char} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{len}\PYG{p}{;}
+\PYG{n}{ll} \PYG{n}{p}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{h}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];}
+
+\PYG{k+kt}{void} \PYG{n+nf}{init}\PYG{p}{()}
+\PYG{p}{\PYGZob{}} \PYG{c+c1}{// build polynomial table and hash value}
+    \PYG{n}{p}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{c+c1}{// b to the ith power}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{len}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{h}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{p}{(}\PYG{n}{h}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{*} \PYG{n}{B} \PYG{o}{\PYGZpc{}} \PYG{n}{M} \PYG{o}{+} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{])} \PYG{o}{\PYGZpc{}} \PYG{n}{M}\PYG{p}{;} \PYG{c+c1}{// hash value}
+        \PYG{n}{p}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{p}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{*} \PYG{n}{B} \PYG{o}{\PYGZpc{}} \PYG{n}{M}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ll} \PYG{n+nf}{get\PYGZus{}hash}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{c+c1}{// [l, r] of the inp string array}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{((}\PYG{n}{h}\PYG{p}{[}\PYG{n}{r} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{p}{(}\PYG{n}{h}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]} \PYG{o}{*} \PYG{n}{p}\PYG{p}{[}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]))} \PYG{o}{\PYGZpc{}} \PYG{n}{M} \PYG{o}{+} \PYG{n}{M}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{M}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

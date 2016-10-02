@@ -1,0 +1,69 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{dr}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{};}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{dc}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{};}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{dir}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+sc}{\PYGZsq{}R\PYGZsq{}}\PYG{p}{,} \PYG{l+s+sc}{\PYGZsq{}L\PYGZsq{}}\PYG{p}{,} \PYG{l+s+sc}{\PYGZsq{}D\PYGZsq{}}\PYG{p}{,} \PYG{l+s+sc}{\PYGZsq{}U\PYGZsq{}}\PYG{p}{\PYGZcb{};}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{INF} \PYG{o}{=} \PYG{l+m+mh}{0x3f3f3f3f}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{FOUND} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{char}\PYG{o}{\PYGZgt{}} \PYG{n}{path}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{A}\PYG{p}{[}\PYG{l+m+mi}{15}\PYG{p}{][}\PYG{l+m+mi}{15}\PYG{p}{],} \PYG{n}{Er}\PYG{p}{,} \PYG{n}{Ec}\PYG{p}{;}
+
+\PYG{k+kt}{int} \PYG{n+nf}{H}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{h} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{r} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{r} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{4}\PYG{p}{;} \PYG{n}{r}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{c} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{c} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{4}\PYG{p}{;} \PYG{n}{c}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{A}\PYG{p}{[}\PYG{n}{r}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}
+            \PYG{k+kt}{int} \PYG{n}{expect\PYGZus{}r} \PYG{o}{=} \PYG{p}{(}\PYG{n}{A}\PYG{p}{[}\PYG{n}{r}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{4}\PYG{p}{;}
+            \PYG{k+kt}{int} \PYG{n}{expect\PYGZus{}c} \PYG{o}{=} \PYG{p}{(}\PYG{n}{A}\PYG{p}{[}\PYG{n}{r}\PYG{p}{][}\PYG{n}{c}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{4}\PYG{p}{;}
+            \PYG{n}{h} \PYG{o}{+=} \PYG{n}{abs}\PYG{p}{(}\PYG{n}{expect\PYGZus{}r} \PYG{o}{\PYGZhy{}} \PYG{n}{r}\PYG{p}{)} \PYG{o}{+} \PYG{n}{abs}\PYG{p}{(}\PYG{n}{expect\PYGZus{}c} \PYG{o}{\PYGZhy{}} \PYG{n}{c}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{h}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{int} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{g}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{pdir}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{bound}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{h} \PYG{o}{=} \PYG{n}{H}\PYG{p}{();}
+    \PYG{k+kt}{int} \PYG{n}{f} \PYG{o}{=} \PYG{n}{g} \PYG{o}{+} \PYG{n}{h}\PYG{p}{;}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{f} \PYG{o}{\PYGZgt{}} \PYG{n}{bound}\PYG{p}{)} \PYG{k}{return} \PYG{n}{f}\PYG{p}{;}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{h} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return} \PYG{n}{FOUND}\PYG{p}{;}
+
+    \PYG{k+kt}{int} \PYG{n}{mn} \PYG{o}{=} \PYG{n}{INF}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{4}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{i} \PYG{o}{==} \PYG{p}{(}\PYG{n}{pdir} \PYG{o}{\PYGZca{}} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{k}{continue}\PYG{p}{;}
+
+        \PYG{k+kt}{int} \PYG{n}{nr} \PYG{o}{=} \PYG{n}{Er} \PYG{o}{+} \PYG{n}{dr}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+        \PYG{k+kt}{int} \PYG{n}{nc} \PYG{o}{=} \PYG{n}{Ec} \PYG{o}{+} \PYG{n}{dc}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{nr} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{o}{||} \PYG{n}{nr} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{4}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{nc} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{o}{||} \PYG{n}{nc} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{4}\PYG{p}{)} \PYG{k}{continue}\PYG{p}{;}
+
+        \PYG{n}{path}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{dir}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]);}
+        \PYG{n}{swap}\PYG{p}{(}\PYG{n}{A}\PYG{p}{[}\PYG{n}{nr}\PYG{p}{][}\PYG{n}{nc}\PYG{p}{],} \PYG{n}{A}\PYG{p}{[}\PYG{n}{Er}\PYG{p}{][}\PYG{n}{Ec}\PYG{p}{]);}
+        \PYG{n}{swap}\PYG{p}{(}\PYG{n}{nr}\PYG{p}{,} \PYG{n}{Er}\PYG{p}{);} \PYG{n}{swap}\PYG{p}{(}\PYG{n}{nc}\PYG{p}{,} \PYG{n}{Ec}\PYG{p}{);}
+        \PYG{k+kt}{int} \PYG{n}{t} \PYG{o}{=} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{g} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{i}\PYG{p}{,} \PYG{n}{bound}\PYG{p}{);}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{t} \PYG{o}{==} \PYG{n}{FOUND}\PYG{p}{)} \PYG{k}{return} \PYG{n}{FOUND}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{t} \PYG{o}{\PYGZlt{}} \PYG{n}{mn}\PYG{p}{)} \PYG{n}{mn} \PYG{o}{=} \PYG{n}{t}\PYG{p}{;}
+        \PYG{n}{swap}\PYG{p}{(}\PYG{n}{nr}\PYG{p}{,} \PYG{n}{Er}\PYG{p}{);} \PYG{n}{swap}\PYG{p}{(}\PYG{n}{nc}\PYG{p}{,} \PYG{n}{Ec}\PYG{p}{);}
+        \PYG{n}{swap}\PYG{p}{(}\PYG{n}{A}\PYG{p}{[}\PYG{n}{nr}\PYG{p}{][}\PYG{n}{nc}\PYG{p}{],} \PYG{n}{A}\PYG{p}{[}\PYG{n}{Er}\PYG{p}{][}\PYG{n}{Ec}\PYG{p}{]);}
+        \PYG{n}{path}\PYG{p}{.}\PYG{n}{pop\PYGZus{}back}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{return} \PYG{n}{mn}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{bool} \PYG{n+nf}{IDAstar}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{bound} \PYG{o}{=} \PYG{n}{H}\PYG{p}{();}
+    \PYG{k}{for} \PYG{p}{(;;)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{t} \PYG{o}{=} \PYG{n}{dfs}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{bound}\PYG{p}{);}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{t} \PYG{o}{==} \PYG{n}{FOUND}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{t} \PYG{o}{==} \PYG{n}{INF}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+        \PYG{c+c1}{// 下次要搜的 bound \PYGZgt{}= 50，真的解也一定 \PYGZgt{}= 50，剪枝}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{t} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{50}\PYG{p}{)} \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+        \PYG{n}{bound} \PYG{o}{=} \PYG{n}{t}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{bool} \PYG{n+nf}{solvable}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{// cnt：對於每一項 A[r][c] 有多少個小於它且在他之後的數，加總}
+    \PYG{c+c1}{// (cnt + Er(1\PYGZhy{}based) \PYGZpc{} 2 == 0) \PYGZlt{}\PYGZhy{}\PYGZgt{} 有解}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

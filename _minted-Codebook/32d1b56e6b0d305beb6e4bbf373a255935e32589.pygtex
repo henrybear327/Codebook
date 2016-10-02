@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n}{len} \PYG{o}{=} \PYG{n}{strlen}\PYG{p}{(}\PYG{n}{inp}\PYG{p}{),} \PYG{n}{z}\PYG{p}{[}\PYG{n}{len}\PYG{p}{];}
+\PYG{n}{z}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{c+c1}{// initial}
+
+\PYG{k+kt}{int} \PYG{n}{l} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{c+c1}{// z box bound [l, r]}
+\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{len}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{i} \PYG{o}{\PYGZgt{}} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// i not in z box}
+        \PYG{n}{l} \PYG{o}{=} \PYG{n}{r} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;} \PYG{c+c1}{// z box contains itself only}
+        \PYG{k}{while} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZlt{}} \PYG{n}{len} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{]} \PYG{o}{==} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{r}\PYG{p}{])}
+            \PYG{n}{r}\PYG{o}{++}\PYG{p}{;}
+        \PYG{n}{z}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{;}
+        \PYG{n}{r}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// i in z box}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{z}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{]} \PYG{o}{+} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{r}\PYG{p}{)} \PYG{c+c1}{// over shoot R bound}
+            \PYG{n}{z}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{z}\PYG{p}{[}\PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{];}
+        \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{l} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;}
+            \PYG{k}{while} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZlt{}} \PYG{n}{len} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{]} \PYG{o}{==} \PYG{n}{inp}\PYG{p}{[}\PYG{n}{r}\PYG{p}{])}
+                \PYG{n}{r}\PYG{o}{++}\PYG{p}{;}
+            \PYG{n}{z}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{;}
+            \PYG{n}{r}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
