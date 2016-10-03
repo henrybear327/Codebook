@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  2 OCT 2016 10:33
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  3 OCT 2016 09:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1403,30 +1403,30 @@ Package: xeCJK-listings 2016/05/14 v3.4.0 xeCJK patch file for listings
 (./Codebook.aux)
 \openout1 = `Codebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 138.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 139.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 139.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    ... okay on input line 139.
 \AtBeginShipoutBox=\box86
 
 *geometry* driver: auto-detecting
@@ -1463,7 +1463,7 @@ LaTeX Font Info:    ... okay on input line 138.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 138.
+Package hyperref Info: Link coloring ON on input line 139.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1472,9 +1472,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count270
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
 
 (./Codebook.out) (./Codebook.out)
 \@outlinefile=\write6
@@ -1487,59 +1487,59 @@ LaTeX Info: Redefining \nameref on input line 138.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 138.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 138.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 138.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 138.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 138.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 138.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 138.
-LaTeX Font Info:    Redeclaring math accent \check on input line 138.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 138.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 138.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 138.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 138.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 139.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 139.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 139.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 139.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 139.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 139.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 139.
+LaTeX Font Info:    Redeclaring math accent \check on input line 139.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 139.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 139.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 139.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 138.
+(Font)              `operators' in the math version `normal' on input line 139.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 138.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 138.
+(Font)              `operators' in the math version `bold' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 138.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 138.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 138.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 138.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 138.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> EU1/OxygenMono(0)/m/n on input line 13
-8.
+9.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 138.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 138.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 138.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/OxygenMono(0)/bx/n on input line 1
-38.
+39.
 \c@lstlisting=\count271
 
 (./_minted-Codebook/default-pyg-prefix.pygstyle) (./Codebook.toc)
@@ -1552,7 +1552,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 183.
+nput line 184.
 
 (./contest_setup/vimrc
 
@@ -1610,19 +1610,19 @@ ther\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/5db8638a0131119cfed8cf733e4cdd4ca1bdcd95.pygtex) [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
+(hyperref)                removing `math shift' on input line 269.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
+(hyperref)                removing `math shift' on input line 269.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 274.
+(hyperref)                removing `math shift' on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 274.
+(hyperref)                removing `math shift' on input line 275.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1637,32 +1637,32 @@ other\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/6f102f0581db5a436343372cf0165fdb470f958f.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
+(hyperref)                removing `math shift' on input line 281.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 280.
+(hyperref)                removing `math shift' on input line 281.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 286.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 286.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 297.
+(hyperref)                removing `math shift' on input line 298.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 297.
+(hyperref)                removing `math shift' on input line 298.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1677,11 +1677,11 @@ ther\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/d5cdf5e7cf40bd7179026e32b9e6468047637565.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 304.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1712,16 +1712,16 @@ keatother\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/5861f0a4de040490aca9f8f52b53fae3a8f0af1f.pygtex [3])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 327.
+(hyperref)                removing `math shift' on input line 328.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 327.
+(hyperref)                removing `math shift' on input line 328.
 
 [4]
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 341.
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 342.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1830,7 +1830,7 @@ endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
 (./_minted-Codebook/ee80965ffabac0574ab0372c4f47508530442cf8.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 505--507
+Underfull \hbox (badness 10000) in paragraph at lines 506--508
 
  []
 
@@ -1859,11 +1859,11 @@ input\n \"); f.close();")...executed.
 (./_minted-Codebook/c600f7412d977b429ba2e002631da7354871a8d7.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 522.
+(hyperref)                removing `math shift' on input line 523.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 522.
+(hyperref)                removing `math shift' on input line 523.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1878,18 +1878,18 @@ er\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/001a9d8f9e3c1b33e8798c7b389c9089d6a5b8e4.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 526.
+(hyperref)                removing `math shift' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 526.
+(hyperref)                removing `superscript' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 526.
+(hyperref)                removing `math shift' on input line 527.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 528--530
+Underfull \hbox (badness 10000) in paragraph at lines 529--531
 
  []
 
@@ -1904,12 +1904,6 @@ tedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest
 input\n \"); f.close();")...executed.
 
  (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/a26066c113fa3a883d6c715f160ac4e68af2e179.pygtex" "graph/prim
-.cpp" )...executed.
-
-
 (./_minted-Codebook/a26066c113fa3a883d6c715f160ac4e68af2e179.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1922,12 +1916,6 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/914b9fa06210b5e8f042aba5ec9b0e0c9cf94e9f.pygtex" "flow/dinic
-.cpp" )...executed.
-
-
 (./_minted-Codebook/914b9fa06210b5e8f042aba5ec9b0e0c9cf94e9f.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1940,12 +1928,6 @@ r\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/0c4ff861402b2111be9e1307d38e87d6f8e2d7b9.pygtex" "flow/minCo
-stFlow.cpp" )...executed.
-
-
 (./_minted-Codebook/0c4ff861402b2111be9e1307d38e87d6f8e2d7b9.pygtex [12])
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1958,12 +1940,6 @@ atother\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/329f8b0015097a51a8eba5a3ff88fd862eb6ab06.pygtex" "flow/bipar
-titeMatching.cpp" )...executed.
-
-
 (./_minted-Codebook/329f8b0015097a51a8eba5a3ff88fd862eb6ab06.pygtex [13])
 \openout5 = `Codebook.mintedcmd'.
 
@@ -2050,12 +2026,12 @@ other\\endinput\n \"); f.close();")...executed.
 (./Codebook.mintedmd5)
 (./_minted-Codebook/a5f9dc0f678763e86d2bf75fd8c33a2e950ab932.pygtex [16]
 [17])
-Underfull \hbox (badness 10000) in paragraph at lines 630--633
+Underfull \hbox (badness 10000) in paragraph at lines 631--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--644
+Underfull \hbox (badness 10000) in paragraph at lines 641--645
 
  []
 
@@ -2084,18 +2060,18 @@ pen(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 (./_minted-Codebook/22899afa02d56d4ef72f89b7aa28f1dc1ae8e519.pygtex) [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 712.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 712.
+(hyperref)                removing `superscript' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 712.
+(hyperref)                removing `math shift' on input line 713.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--741
+Underfull \hbox (badness 10000) in paragraph at lines 715--742
 
  []
 
@@ -2144,16 +2120,16 @@ runsystem(rm "Codebook.mintedcmd")...executed.
 
 runsystem(rm "Codebook.mintedmd5")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 753.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 753.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 754.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 753.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 753.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 754.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 754.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 753.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 754.
  ) 
 Here is how much of TeX's memory you used:
  30673 strings out of 493591

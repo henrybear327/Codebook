@@ -107,6 +107,7 @@
 % Add -shell-escape to compile flag
 \usepackage{minted}
 
+% Run in terminal for checking available styles: pygmentize -L styles
 \usemintedstyle{friendly}
 \definecolor{bg}{rgb}{0.95,0.95,0.95}
 \newmintedfile[cppCode]{cpp}{ % [alias][code type]
@@ -211,14 +212,14 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \begin{enumerate}
 	\item Setup bashrc and vimrc
-	\item Install Java 8, Eclipse 32-bit, g++ compiler
-	\item Remove Chinese input method
+	\item Test Java 8, g++ compiler 
 	\item Look for compilation parameter and code it into bashrc
-	\item Test if c++ and java templates work properly on local and judge machine
+	\item Test if c++ and java templates work properly on local and judge machine (bits, auto, etc.)
 	\item Test "divide by 0" $\rightarrow$ RE/TLE?
 	\item Make a complete graph and run Floyd warshall, to test time complexity upper bound
 	\item Make a linear graph and use DFS to test stack size
 	\item Test output with extra newline and spaces
+	\item Go to $Eclipse \rightarrow preference \rightarrow Java \rightarrow Editor \rightarrow Content Assist$, add $.abcdefghijklmnopqrstuvwxyz$ to auto activation triggers for Java in Eclipse
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
