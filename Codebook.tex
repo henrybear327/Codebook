@@ -1,23 +1,23 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-% 一定要用 xelatex 進行編譯，字體目前是使用Mac內建的中文字體
-% Empty codeblocks will cause formatting problem
+% Project note
+% 	1. 一定要用 xelatex 進行編譯，因為有牽扯到中文字
+% 	2. 中文字體字體目前是使用Mac內建的中文字體
+% 	3. Empty codeblocks will cause formatting problem
 
-%%%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%%%%%
+%%%%%% Page setting %%%%%%
 
- %\documentclass[10pt,twocolumn,oneside]{article} %垂直兩欄、單面列印
+%\documentclass[10pt,twocolumn,oneside]{article} %垂直兩欄、單面列印
 %\setlength{\columnsep}{14pt} %兩欄模式的間距
 %\setlength{\columnseprule}{0pt} %兩欄模式間格線粗細
 
 \documentclass[10pt,oneside]{article}
-\usepackage{pdflscape}
-\usepackage{multicol}
-\usepackage{tocloft}
+\usepackage{pdflscape} % landscape mode
+\usepackage{multicol} % two column
+\usepackage{tocloft} 
 \renewcommand\cftsecafterpnum{\vspace{-0.6ex}}
 \renewcommand\cftsubsecafterpnum{\vspace{-0.6ex}}
-
-\usepackage{pdfpages}
 
 \linespread{1} % 行距
 
@@ -27,19 +27,24 @@
 \usepackage{geometry} %定義邊界
 \geometry{a4paper, total={170mm,257mm}, left=10mm, top=20mm, right=10mm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Include special packages %%%%%%
 
-\usepackage{pdfpages} %導入pdf文檔, \includepdf[pages={3,4}]{problem_statement.pdf}
+%導入pdf文檔, \includepdf[pages={3,4}]{problem_statement.pdf}
+\usepackage{pdfpages} 
 
-\usepackage[colorlinks=true, urlcolor=cyan]{hyperref} %使用超連結, \href{http://codeforces.com/blog/entry/17974}{Codeforces}
+%使用超連結, \href{http://codeforces.com/blog/entry/17974}{Codeforces}
+\usepackage[colorlinks=true, urlcolor=cyan]{hyperref} 
 
-\usepackage{fancyhdr}	%設定頁首頁尾
+%設定頁首頁尾
+\usepackage{fancyhdr}	
 
-\usepackage{verbatim}  % 大量註解用 , \begin{comment}  % 註解開始,  \end{comment}  % 註解結尾
+ % 大量註解用 , \begin{comment}  % 註解開始,  \end{comment}  % 註解結尾
+\usepackage{verbatim} 
 
-%%%%%%%%%%%%%%%%中文設定%%%%%%%%%%%%%%%%%%%
+%%%%%% Font setting %%%%%%
 
 \usepackage{fontspec} %加這個就可以設定字體 
+
 
 \usepackage{xeCJK} %讓中英文字體分開設置
 %\setmainfont{Arial}
@@ -47,10 +52,11 @@
 %\setmonofont{Courier} %等寬字體
 \setmonofont{Oxygen Mono}
 
+
 \XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt 
 
-%%%%%%%%%%%%%%%程式碼設定%%%%%%%%%%%%%%%%%%%
+%%%%%% lstsetting code setting %%%%%%
 
 \usepackage{listings}
 \usepackage{xcolor}
@@ -134,12 +140,12 @@ breaklines=true,
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% 文件正式開始 %%%%%%
 
 \begin{document} 
 
-\begin{landscape}
-\begin{multicols}{2}
+\begin{landscape} % landscape mode
+\begin{multicols}{2} % two columns
 
 %%%%%%%%%%%%%%%%%頁首%%%%%%%%%%%%%%%%%%%%
 
