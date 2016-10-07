@@ -1,1 +1,2 @@
 alias g++="g++ -Wall -Wextra -std=c++11 -O2"
+alias myg++='g++ -Wall -Wextra -std=c++11 -O2'

@@ -41,17 +41,18 @@
  % 大量註解用 , \begin{comment}  % 註解開始,  \end{comment}  % 註解結尾
 \usepackage{verbatim} 
 
+\usepackage{amsmath}
+\usepackage{array}
+
 %%%%%% Font setting %%%%%%
 
 \usepackage{fontspec} %加這個就可以設定字體 
-
 
 \usepackage{xeCJK} %讓中英文字體分開設置
 %\setmainfont{Arial}
 \setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
 %\setmonofont{Courier} %等寬字體
 \setmonofont{Oxygen Mono}
-
 
 \XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
 \XeTeXlinebreakskip = 0pt plus 1pt 
@@ -106,8 +107,7 @@
 
 \lstset{style=customc}
 
-\usepackage{amsmath}
-\usepackage{array}
+
 
 % sudo easy_install Pygments
 % Add -shell-escape to compile flag
@@ -200,7 +200,6 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \subsection{C++ template}
 \cppCode{contest_setup/main.cpp}
-\cppCode{contest_setup/main.cpp}
 
 \subsection{Java template}
 %\lstinputlisting{contest_setup/Main.java}
@@ -208,19 +207,19 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \subsubsection{Java Issues}
 \begin{enumerate}
-	\item Random Shuffle before sorting: $Random\ rnd = new\ Random();\ rnd.nextInt();$
-	\item Use StringBuilder for large output
-	\item Java has strict parsing rules. e.g. using sc.nextInt() to read a long will result in RE
-	\item For class sorting, use code: implements Comparable<Class name>. Or, use code: new Comparator<Interval>() \{\} at Collections.sort() second argument
+	\item Random Shuffle before sorting: \mintinline{java}{Random rnd = new Random(); rnd.nextInt();}
+	\item Use \mintinline{java}{StringBuilder} for large output
+	\item Java has strict parsing rules. e.g. using \mintinline{java}{sc.nextInt()} to read a long will result in RE
+	\item For class sorting, use code \mintinline{java}{implements Comparable<Class name>}. Or, use code \mintinline{java}{new Comparator<Interval>() {}} at \mintinline{java}{Collections.sort()} second argument
 \end{enumerate}
 
 \section{System Testing}
 
 \begin{enumerate}
-	\item Setup bashrc and vimrc
-	\item Test Java 8, g++ compiler 
+	\item Setup vimrc and bashrc
+	\item Test g++ and Java 8 compiler
 	\item Look for compilation parameter and code it into bashrc
-	\item Test if c++ and java templates work properly on local and judge machine (bits, auto, etc.)
+	\item Test if c++ and Java templates work properly on local and judge machine (bits, auto, and other c++11 stuff)
 	\item Test "divide by 0" $\rightarrow$ RE/TLE?
 	\item Make a complete graph and run Floyd warshall, to test time complexity upper bound
 	\item Make a linear graph and use DFS to test stack size
@@ -233,40 +232,39 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 \section{Reminder}
 
 \begin{enumerate}
-	\item 隊友的建議，要認真聽！通常隊友的建議都會突破你盲點
-	\item Read the problem statements carefully. Input and output specifications and constraints are crucial!
-	\item Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
-	\item Time penalty is 20 minutes per WA, \textbf{don't rush}!
-	\item Sample test cases must all be tested and passed before every submission!
-	\item Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
-	\item Bus error: the code has $scanf, fgets$ but have nothing to read! Check if you have early termination but didn't handle it properly.
-	\item Binary search? 數學算式移項合併後查詢？
-	\item Two Pointer <--> Binary Search
-	\item Directed graph connectivity -> DFS. Undirected graph -> Union Find
-	\item Check connectivity of the graph if the problem statement doesn't say anything (just loop over all nodes!)
-	\item $long long = int * int$ won't work!
-	\item Shifting for $long long int$ should be something like $1LL << 35$
-	\item For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
-	\item Don't use anonymous struct
-	\item 因式分解
-	\item 有時候，從答案推回來會容易些！
-	\item 寫出數學式，有時就馬上出現答案了！ % CF Div2 R372 C
+	\item 隊友的建議，要認真聽！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
+	\item 每一題都要小心讀，尤其是IO的格式和限制都要看清楚。%Read the problem statements carefully. Input and output specifications and constraints are crucial!
+	\item 小心估計\textbf{時間複查度} 和 \textbf{空間複雜度}%Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
+	\item Coding 要兩人一組，要相信你的隊友的實力！
+	\item 1WA 罰 20 分鐘！ \textbf{放輕鬆，不要急}，多產幾組測資後再丟。%Time penalty is 20 minutes per WA, \textbf{don't rush}!
+	\item 範測一定要過！產個幾組極端測資，例如 input 下限、特殊 cases 0, 1, -1、空集合等等 %Sample test cases must all be tested and passed before every submission! Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
+	\item 比賽是連續測資，一定要全部讀完再開始 solve 喔！%For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
+	\item Bus error: 有\mintinline{c++}{scanf, fgets} 但是卻沒東西可以讀取了！可能有early termination但是時機不對。 % Bus error: the code has $scanf, fgets$ but have nothing to read! Check if you have early termination but didn't handle it properly.
+	\item 圖論一定要記得檢查連通性。最簡單的做法就是loop過所有的點%Check connectivity of the graph if the problem statement doesn't say anything (just loop over all nodes!)
+	\item \mintinline{c++}{long long = int * int} 會完蛋%$long\ long = int * int$ won't work!
+	\item \mintinline{c++}{long long int} 的位元運算要記得用 \mintinline{c++}{1LL << 35} %Shifting for $long long int$ should be something like $1LL << 35$
+	%\item Don't use anonymous struct
 	\item 記得清理Global variable
 \end{enumerate}
 
 \section{Topic list}
 
 \begin{enumerate}
-	\item enumeration
-	\item greedy 
-	\item sorting, topological sort
-	\item binary search
+	\item 列舉、窮舉 enumeration
+	\item 貪心 greedy 
+	\item 排序 sorting, topological sort
+	\item 二分搜 binary search (數學算式移項合併後查詢)
+	\item Two Pointer
 	\item 離散化
 	\item Dynamic programming, 矩陣快速冪
-	\item Pigeonhole 
-	\item LCA (倍增法, LCA轉RMQ)
+	\item 鴿籠原理 Pigeonhole 
+	\item 最近共同祖先 LCA (倍增法, LCA轉RMQ)
 	\item 折半完全列舉 (能用vector就用vector)
-	\item Offline (DFS, LCA)
+	\item 離線查詢 Offline (DFS, LCA)
+	\item 圖的連通性 Directed graph connectivity -> DFS. Undirected graph -> Union Find
+	\item 因式分解
+	\item 從答案推回來
+	\item 寫出數學式，有時就馬上出現答案了！ % CF Div2 R372 C
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
