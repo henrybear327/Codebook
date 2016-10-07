@@ -254,7 +254,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item 貪心 greedy 
 	\item 排序 sorting, topological sort
 	\item 二分搜 binary search (數學算式移項合併後查詢)
-	\item Two Pointer
+	\item 爬行法 （右跑左追）Two Pointer
 	\item 離散化
 	\item Dynamic programming, 矩陣快速冪
 	\item 鴿籠原理 Pigeonhole 
@@ -273,9 +273,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \subsection{Leap year $O(1)$}
 
-\begin{lstlisting}
-year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
-\end{lstlisting}
+\mintinline{c++}{(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))}
 
 \subsection{Fast Exponentiation $O(log(exp))$}
 
@@ -293,12 +291,12 @@ Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 
 注意負數的case! C++ 是看被除數決定正負號的。
 
-\begin{lstlisting}
+\begin{minted}{c++}
 ll gcd(ll a, ll b)
 {
     return b == 0 ? a : gcd(b, a % b);
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}
 
@@ -332,7 +330,7 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 
 \subsection{Ternary Search $O(nlogn)$}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 double l = ..., r = ....; // input
 for(int i  = 0; i < 100; i++) {
    double m1 = l + (r - l) / 3, m2 = r - (r - l) / 3;
@@ -342,9 +340,7 @@ for(int i  = 0; i < 100; i++) {
       r = m2;
 }
 f(r) - maximum of function
-\end{lstlisting}
-
-\subsection{Two-pointer 爬行法 （右跑左追）}
+\end{minted}
 
 \subsection{N Puzzle}
 \cppCode{Search/n-puzzle.cpp}
@@ -356,7 +352,7 @@ f(r) - maximum of function
 
 \subsection{1D BIT}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 // BIT is 1-based
 const int MAX_N = 20000; //這個記得改！
 ll bit[MAX_N + 1];
@@ -376,11 +372,11 @@ void add(int i, ll x) {
         i += (i & -i);
     }
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{2D BIT}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 // BIT is 1-based
 const int MAX_N = 20000, MAX_M = 20000; //這個記得改！
 ll bit[MAX_N + 1][MAX_M + 1];
@@ -399,11 +395,11 @@ void add(int a, int b, ll x) {
         for (int j = b; j <= MAX_M; j += (j & -j))
             bit[i][j] += x;
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{Union Find}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 #define N 20000 // 記得改
 struct UFDS {
     int par[N];
@@ -428,7 +424,7 @@ struct UFDS {
         }
     }
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{Segment Tree}
 \cppCode{DS/segmentTree.cpp}
@@ -468,7 +464,7 @@ struct UFDS {
 &= (\lnot p \lor \lnot q) \land (p \lor q)    
 \end{align*}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 // 建圖
 // (x1 or x2) and ... and (xi or xj)
 // (xi or xj) 建邊
@@ -489,7 +485,7 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
         // i = F
     }
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{CC}
 
@@ -535,12 +531,12 @@ The graph is stored using adjacency matrix. The initial state is $diagnal = 0$ a
 If diagonal numbers are negative $\leftarrow$ cycle . \\
 
 %UVA821 
-\begin{lstlisting}
+\begin{minted}{c++}
 for(int k = 0; k < N; k++)
-	for(int i = 0; i < N; i++)
-		for(int j = 0; j < N; j++)
-			dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j]);
-\end{lstlisting}
+    for(int i = 0; i < N; i++)
+        for(int j = 0; j < N; j++)
+            dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j]);
+\end{minted}
 
 \subsection{MST}
 
@@ -657,7 +653,7 @@ $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
 % Pi-You Uva 10943
 \subsubsection{Pascal triangle}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 #define N 210
 ll C[N][N];
 
@@ -673,11 +669,11 @@ void Combination() {
         }
     }
 }
-\end{lstlisting}
+\end{minted}
 
 \subsubsection{線性}
 
-\begin{lstlisting}
+\begin{minted}{c++}
 ll binomialCoeff(ll n, ll k)
 {
     ll res = 1;
@@ -693,7 +689,7 @@ ll binomialCoeff(ll n, ll k)
  
     return res;
 }
-\end{lstlisting}
+\end{minted}
 
 \subsection{Chinese remainder theorem}
 %http://amoshyc.github.io/ojsolution-build/template/math/crt.html
