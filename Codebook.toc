@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {8}Tree}{7}{section.8}
 \contentsline {subsection}{\numberline {8.1}LCA}{7}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Tree Center}{7}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Treap}{7}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.3}Treap}{8}{subsection.8.3}
 \contentsline {section}{\numberline {9}Graph}{8}{section.9}
 \contentsline {subsection}{\numberline {9.1}Articulation point / Bridge}{8}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}2-SAT}{9}{subsection.9.2}
@@ -43,8 +43,8 @@
 \contentsline {subsection}{\numberline {9.5}MST}{11}{subsection.9.5}
 \contentsline {subsubsection}{\numberline {9.5.1}Kruskal}{11}{subsubsection.9.5.1}
 \contentsline {subsubsection}{\numberline {9.5.2}Prim}{11}{subsubsection.9.5.2}
-\contentsline {section}{\numberline {10}Flow}{11}{section.10}
-\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{11}{subsection.10.1}
+\contentsline {section}{\numberline {10}Flow}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{12}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}Bipartite Matching}{13}{subsection.10.3}
 \contentsline {section}{\numberline {11}String}{13}{section.11}
@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {12}Matrix}{15}{section.12}
 \contentsline {subsection}{\numberline {12.1}Gauss Jordan}{15}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Determinant}{15}{subsection.12.2}
-\contentsline {section}{\numberline {13}Geometry}{15}{section.13}
+\contentsline {section}{\numberline {13}Geometry}{16}{section.13}
 \contentsline {subsection}{\numberline {13.1}EPS}{16}{subsection.13.1}
 \contentsline {subsection}{\numberline {13.2}Template}{16}{subsection.13.2}
 \contentsline {section}{\numberline {14}Math}{17}{section.14}
@@ -65,9 +65,10 @@
 \contentsline {subsection}{\numberline {14.4}FFT}{17}{subsection.14.4}
 \contentsline {subsection}{\numberline {14.5}Combination}{18}{subsection.14.5}
 \contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{18}{subsubsection.14.5.1}
-\contentsline {subsubsection}{\numberline {14.5.2}線性}{18}{subsubsection.14.5.2}
+\contentsline {subsubsection}{\numberline {14.5.2}線性}{19}{subsubsection.14.5.2}
 \contentsline {subsection}{\numberline {14.6}Chinese remainder theorem}{19}{subsection.14.6}
 \contentsline {subsection}{\numberline {14.7}2-Circle relations}{19}{subsection.14.7}
 \contentsline {subsection}{\numberline {14.8}Fun Facts}{19}{subsection.14.8}
 \contentsline {subsection}{\numberline {14.9}$2^n$ table}{19}{subsection.14.9}
 \contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{20}{section.15}
+\contentsline {section}{\numberline {16}隊伍表}{21}{section.16}
