@@ -3,7 +3,7 @@ typedef vector<ll> vec;
 typedef vector<vec> mat;
 
 vec gauss_jordan(mat A) {
-    int n = A.size(), m = A[0].size();
+    int n = A.size(), m = A[0].size(); // 增廣矩陣
     for (int i = 0; i < n; i++) {
         // float: find j s.t. A[j][i] is max
         // mod: find min j s.t. A[j][i] is not 0
