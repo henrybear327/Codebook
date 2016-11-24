@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  14 OCT 2016 22:03
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  24 NOV 2016 08:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1593,10 +1593,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(./contest_setup/bashrc) [1
-
-
-]
+(./contest_setup/bashrc)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -1612,7 +1609,10 @@ her\\endinput\n \"); f.close();")...executed.
 LaTeX Font Warning: Font shape `EU1/OxygenMono(0)/m/it' undefined
 (Font)              using `EU1/OxygenMono(0)/m/n' instead on input line 2.
 
-)
+[1
+
+
+])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -1732,7 +1732,7 @@ dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
 put\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/07be00209f1e87d7bc2ae2af1a927a348d7963f1.pygtex)
+(./_minted-Codebook/07be00209f1e87d7bc2ae2af1a927a348d7963f1.pygtex) [2]
 \openout5 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -1774,7 +1774,7 @@ put\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/ae3b04e9d1f90da5099ceb442068e4282601067d.pygtex) [2]
+(./_minted-Codebook/ae3b04e9d1f90da5099ceb442068e4282601067d.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 274.
@@ -2187,7 +2187,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/914b9fa06210b5e8f042aba5ec9b0e0c9cf94e9f.pygtex [11])
+(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex [11])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2199,7 +2199,7 @@ r\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/0c4ff861402b2111be9e1307d38e87d6f8e2d7b9.pygtex [12])
+(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex [12])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2271,7 +2271,7 @@ ther\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/f533935de624603dea7a7dfd4f40503cb8cb7c8a.pygtex)
+(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2415,30 +2415,27 @@ File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 File: Math/Trig_Cheat_Sheet_Reduced.pdf Graphic file (type QTm)
 
 <use  "Math/Trig_Cheat_Sheet_Reduced.pdf"  page2> [23]
-runsystem(rm "_minted-Codebook/96e91b36a030d57bc673a4c44ce595d78102cdb2.pygtex"
-)...executed.
-
 runsystem(rm "Codebook.mintedcmd")...executed.
 
 runsystem(rm "Codebook.mintedmd5")...executed.
 
 runsystem(rm "Codebook.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 776.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 776.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 780.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 780.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 776.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 776.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 780.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 780.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 776.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 780.
  ) 
 Here is how much of TeX's memory you used:
- 30743 strings out of 493591
- 573092 string characters out of 6143546
- 775840 words of memory out of 5000000
+ 30742 strings out of 493591
+ 573052 string characters out of 6143546
+ 776690 words of memory out of 5000000
  33575 multiletter control sequences out of 15000+600000
  8136 words of font info for 63 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191

@@ -1,7 +1,7 @@
 #define st first
 #define nd second
 
-typedef pair<double, int> pii;
+typedef pair<double, int> pii; // 改成用int
 const double INF = 1e10;
 
 struct Edge {
@@ -53,7 +53,7 @@ double min_cost_flow(int s, int t, int f) {
         }
 
         // 找不到增廣路徑
-        if (d[t] == INF) return -1;
+        if (d[t] == INF) return -1; // double時不能這樣判
 
         // 維護 h[v]
         for (int v = 0; v < V; v++)

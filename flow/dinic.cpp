@@ -20,7 +20,7 @@ inline void add_edge(int u, int v, int cap) {
 }
 
 void bfs(int s) {
-    memset(level, -1, sizeof(level));
+    memset(level, -1, sizeof(level)); // 用fill
     queue<int> q;
 
     level[s] = 0;
@@ -40,7 +40,7 @@ void bfs(int s) {
 
 int dfs(int v, int t, int f) {
     if (v == t) return f;
-    for (int& i = iter[v]; i < int(g[v].size()); i++) {
+    for (int& i = iter[v]; i < int(g[v].size()); i++) { // &很重要
         Edge& e = g[v][i];
         if (e.cap > 0 && level[v] < level[e.to]) {
             int d = dfs(e.to, t, min(f, e.cap));
