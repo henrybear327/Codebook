@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  24 NOV 2016 08:39
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  24 NOV 2016 09:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1566,16 +1566,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 48.
 \c@lstlisting=\count272
 
-(./_minted-Codebook/default-pyg-prefix.pygstyle) (./Codebook.toc
-
-LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
-(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 74.
-
-)
+(./_minted-Codebook/default-pyg-prefix.pygstyle) (./Codebook.toc)
 \tf@toc=\write7
 \openout7 = `Codebook.toc'.
 
- (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
@@ -1708,20 +1704,17 @@ put\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
 (./_minted-Codebook/84a9aee0c5b888dd43524be8b719bd1102e8635e.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-[]\EU1/Arial(0)/m/n/7 For class sorting, use code []. Or, use code
+Overfull \hbox (15.35677pt too wide) in paragraph at lines 217--218
+\EU1/Arial(0)/m/n/10 Or, use code [] at []
  []
 
-
-Underfull \hbox (badness 7064) in paragraph at lines 230--231
-[]\EU1/Arial(0)/m/n/7 Go to $\OML/cmm/m/it/7 Eclipse \OMS/cmsy/m/n/7 ! \OML/cmm
-/m/it/7 preference \OMS/cmsy/m/n/7 ! \OML/cmm/m/it/7 Java \OMS/cmsy/m/n/7 ! \OM
-L/cmm/m/it/7 Editor \OMS/cmsy/m/n/7 ! \OML/cmm/m/it/7 ContentAssist$\EU1/Arial(
-0)/m/n/7 , add
- []
-
+[2]
 File: images/sorting3.jpeg Graphic file (type QTm)
-<use  "images/sorting3.jpeg" > [2]
+ <use  "images/sorting3.jpeg" >
+
+LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
+(Font)              using `EU1/STKaiti(0)/m/n' instead on input line 247.
+
 \openout5 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -1733,7 +1726,7 @@ dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
- (./Codebook.mintedmd5)
+(./Codebook.mintedmd5)
 (./_minted-Codebook/07be00209f1e87d7bc2ae2af1a927a348d7963f1.pygtex)
 \openout5 = `Codebook.pyg'.
 
@@ -1779,11 +1772,11 @@ put\n \"); f.close();")...executed.
 (./_minted-Codebook/ae3b04e9d1f90da5099ceb442068e4282601067d.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 287.
 
 \openout5 = `Codebook.pyg'.
 
@@ -1800,11 +1793,11 @@ put\n \"); f.close();")...executed.
 (./_minted-Codebook/57a8ae6f6d75afa56a2dd116d220ac22c3265845.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 291.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 291.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1819,24 +1812,24 @@ other\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/6f102f0581db5a436343372cf0165fdb470f958f.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 297.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 297.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 305.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 305.
 
 \openout3 = `Codebook.pyg'.
 
@@ -1853,11 +1846,11 @@ put\n \"); f.close();")...executed.
 (./_minted-Codebook/ef78255cad434618256e58ab8ea94f3390651ac5.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 316.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 316.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1869,14 +1862,14 @@ hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeato
 ther\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/d5cdf5e7cf40bd7179026e32b9e6468047637565.pygtex)
+(./_minted-Codebook/d5cdf5e7cf40bd7179026e32b9e6468047637565.pygtex [3])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 312.
+(hyperref)                removing `math shift' on input line 324.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 312.
+(hyperref)                removing `math shift' on input line 324.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -1893,7 +1886,7 @@ tother\\endinput\n \"); f.close();")...executed.
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 2.
 
-[3])
+)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -1907,11 +1900,11 @@ keatother\\endinput\n \"); f.close();")...executed.
 (./_minted-Codebook/5861f0a4de040490aca9f8f52b53fae3a8f0af1f.pygtex [4])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 348.
 
 \openout3 = `Codebook.pyg'.
 
@@ -1951,7 +1944,7 @@ put\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/6ab26a8fc85a6d350eb8f660c4ab3337e0bfcf81.pygtex)
+(./_minted-Codebook/6ab26a8fc85a6d350eb8f660c4ab3337e0bfcf81.pygtex [5])
 \openout3 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -1965,7 +1958,7 @@ put\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/9009e042d7b94674ea077c62a434d985b0aeddb9.pygtex [5])
+(./_minted-Codebook/9009e042d7b94674ea077c62a434d985b0aeddb9.pygtex)
 \openout3 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -2015,7 +2008,7 @@ put\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/b475ac3052a05d07f780a15ddb429c7dce207df8.pygtex)
+(./_minted-Codebook/b475ac3052a05d07f780a15ddb429c7dce207df8.pygtex [7])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2027,7 +2020,7 @@ igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/c0ae753592f79676058a9e0a8f69ce0f7b7e0b27.pygtex [7])
+(./_minted-Codebook/c0ae753592f79676058a9e0a8f69ce0f7b7e0b27.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2090,7 +2083,7 @@ endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
 (./_minted-Codebook/ee80965ffabac0574ab0372c4f47508530442cf8.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 512--514
+Underfull \hbox (badness 10000) in paragraph at lines 531--535
 
  []
 
@@ -2119,11 +2112,11 @@ input\n \"); f.close();")...executed.
 (./_minted-Codebook/c600f7412d977b429ba2e002631da7354871a8d7.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 529.
+(hyperref)                removing `math shift' on input line 548.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 529.
+(hyperref)                removing `math shift' on input line 548.
 
 \openout5 = `Codebook.mintedcmd'.
 
@@ -2135,21 +2128,21 @@ xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
 er\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/001a9d8f9e3c1b33e8798c7b389c9089d6a5b8e4.pygtex)
+(./_minted-Codebook/001a9d8f9e3c1b33e8798c7b389c9089d6a5b8e4.pygtex [11])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 533.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 533.
+(hyperref)                removing `math shift' on input line 552.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `superscript' on input line 552.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--537
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 552.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--557
 
  []
 
@@ -2177,7 +2170,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/a26066c113fa3a883d6c715f160ac4e68af2e179.pygtex [11])
+(./_minted-Codebook/a26066c113fa3a883d6c715f160ac4e68af2e179.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2189,7 +2182,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex)
+(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex [12])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2201,7 +2194,7 @@ r\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex [12])
+(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2237,7 +2230,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/e1a83e4a729a88c29ccb2d004306a00e60be014f.pygtex)
+(./_minted-Codebook/e1a83e4a729a88c29ccb2d004306a00e60be014f.pygtex [14])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2261,7 +2254,7 @@ her\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/efaf28c1c08f55bf9f68db7a1df6eaa48e0050ee.pygtex [14])
+(./_minted-Codebook/efaf28c1c08f55bf9f68db7a1df6eaa48e0050ee.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2273,7 +2266,7 @@ ther\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex)
+(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex [15])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2285,7 +2278,7 @@ er\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/dae669081808509a794d35ff1922432cd4130462.pygtex [15])
+(./_minted-Codebook/dae669081808509a794d35ff1922432cd4130462.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2297,13 +2290,14 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/a5f9dc0f678763e86d2bf75fd8c33a2e950ab932.pygtex [16])
-Underfull \hbox (badness 10000) in paragraph at lines 637--640
+(./_minted-Codebook/a5f9dc0f678763e86d2bf75fd8c33a2e950ab932.pygtex [16]
+[17])
+Underfull \hbox (badness 10000) in paragraph at lines 668--672
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 647--651
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--687
 
  []
 
@@ -2357,25 +2351,30 @@ pen(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/22899afa02d56d4ef72f89b7aa28f1dc1ae8e519.pygtex)
+(./_minted-Codebook/22899afa02d56d4ef72f89b7aa28f1dc1ae8e519.pygtex [19])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 718.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 718.
+(hyperref)                removing `math shift' on input line 758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 718.
+(hyperref)                removing `superscript' on input line 758.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--747
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 758.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--789
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--789
 
  []
 
-[19] [20]
+[20]
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2423,22 +2422,22 @@ runsystem(rm "Codebook.mintedmd5")...executed.
 
 runsystem(rm "Codebook.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 785.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 785.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 803.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 803.
  (./Codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 785.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 785.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 803.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 803.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 785.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 803.
  ) 
 Here is how much of TeX's memory you used:
- 30759 strings out of 493591
- 573164 string characters out of 6143546
- 776703 words of memory out of 5000000
- 33576 multiletter control sequences out of 15000+600000
+ 30761 strings out of 493591
+ 573324 string characters out of 6143546
+ 775516 words of memory out of 5000000
+ 33578 multiletter control sequences out of 15000+600000
  8136 words of font info for 63 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  43i,21n,72p,10348b,1403s stack positions out of 5000i,500n,10000p,200000b,80000s

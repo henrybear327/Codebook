@@ -209,15 +209,18 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 \inputminted{java}{contest_setup/Main.java}
 
 \subsubsection{Java Issues}
+{\normalsize
 \begin{enumerate}
-	\item Random Shuffle before sorting: \mintinline{java}{Random rnd = new Random(); rnd.nextInt();}
+	\item Random Shuffle before sorting:\\ \mintinline{java}{Random rnd = new Random(); rnd.nextInt();}
 	\item Use \mintinline{java}{StringBuilder} for large output
 	\item Java has strict parsing rules. e.g. using \mintinline{java}{sc.nextInt()} to read a long will result in RE
 	\item For class sorting, use code \mintinline{java}{implements Comparable<Class name>}. Or, use code \mintinline{java}{new Comparator<Interval>() {}} at \mintinline{java}{Collections.sort()} second argument
 \end{enumerate}
+}
 
 \section{System Testing}
 
+{\normalsize
 \begin{enumerate}
 	\item Setup vimrc and bashrc
 	\item Test g++ and Java 8 compiler
@@ -229,6 +232,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item Test output with extra newline and spaces
 	\item Go to $Eclipse \rightarrow preference \rightarrow Java \rightarrow Editor \rightarrow Content Assist$, add $.abcdefghijklmnopqrstuvwxyz$ to auto activation triggers for Java in Eclipse
 \end{enumerate}
+}
 
 %%%%%%%%%%%%%%%%%忠告%%%%%%%%%%%%%%%%%%%%
 
@@ -236,6 +240,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \includegraphics{sorting3}
 
+{\normalsize
 \begin{enumerate}
 	\item 隊友的建議，要認真聽！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
 	\item 每一題都要小心讀，尤其是IO的格式和限制都要看清楚。%Read the problem statements carefully. Input and output specifications and constraints are crucial!
@@ -251,9 +256,11 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	%\item Don't use anonymous struct
 	\item 記得清理Global variable
 \end{enumerate}
+}
 
 \section{Topic list}
 
+{\normalsize
 \begin{enumerate}
 	\item 列舉、窮舉 enumeration
 	\item 貪心 greedy 
@@ -271,6 +278,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item 從答案推回來
 	\item 寫出數學式，有時就馬上出現答案了！ % CF Div2 R372 C
 \end{enumerate}
+}
 
 %%%%%%%%%%%%%%%%實用代碼%%%%%%%%%%%%%%%%%%
 
@@ -282,19 +290,21 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \subsection{Fast Exponentiation $O(log(exp))$}
 
-Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$
+{\normalsize Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$}
 
 \cppCode{useful_code/fast_pow.cpp}
 
 \subsection{Mod Inverse $ O(log n) $}
 
+{\normalsize 
 Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 
 \noindent Case 2: $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ 
+}
 
 \subsection{GCD $O(log( min(a + b) ))$}
 
-注意負數的case! C++ 是看被除數決定正負號的。
+{\normalsize 注意負數的case! C++ 是看被除數決定正負號的。}
 
 \begin{minted}{c++}
 ll gcd(ll a, ll b)
@@ -305,7 +315,9 @@ ll gcd(ll a, ll b)
 
 \subsection{Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}
 
+{\normalsize 
 Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
+}
 
 \cppCode{useful_code/ext_gcd.cpp}
 
@@ -459,6 +471,7 @@ struct UFDS {
 
 \subsection{2-SAT}
 
+{\normalsize 
 \begin{align*}
  &(x_i \lor x_i) \textit{ 建邊 } (\lnot x_i,\, x_j) \\
  &(x_i \lor x_j) \textit{ 建邊 } (\lnot x_i,\, x_j) ,\, (\lnot x_j,\, x_i) \\
@@ -468,6 +481,7 @@ struct UFDS {
 &= \lnot ( (p \land q) \lor (\lnot p \land \lnot q))     \\
 &= (\lnot p \lor \lnot q) \land (p \lor q)    
 \end{align*}
+}
 
 \begin{minted}{c++}
 // 建圖
@@ -495,23 +509,28 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 \subsection{CC}
 
 \subsubsection{BCC}
+{\normalsize 
 %http://www.geeksforgeeks.org/biconnected-components/
 以 Edge 做分界的話，stack 要裝入 (u - v), 並 pop 終止條件為 != (u - v) \\
 以 Articulation point 做為分界 (code below)，注意有無坑人的重邊
 \cppCode{graph/BCC.cpp}
+}
 
 \subsubsection{SCC}
 
+{\normalsize 
 First of all we run DFS on the graph and sort the vertices in decreasing of their finishing time (we can use a stack).\\
 Then, we start from the vertex with the greatest finishing time, and for each vertex v that is not yet in any SCC, do : for each u that v is reachable by u and u is not yet in any SCC, put it in the SCC of vertex v. The code is quite simple.
+}
 
 \cppCode{graph/SCC_AMO.cpp}
 
 \subsection{Shortest Path}
 
+{\normalsize 
 Time complexity notations: V = vertex, E = edge \\
 Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
-
+}
 %\subsubsection{Dijkatra}
 
 %密集圖別用priority queue!\\
@@ -519,7 +538,7 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 %\cppCode{graph/dijkatra.cpp}
 
 \subsubsection{Dijkatra (next-to-shortest path)}
-密集圖別用priority queue!
+{\normalsize 密集圖別用priority queue! }
 % https://gist.github.com/amoshyc/f011abc6fad9b413c24b
 \cppCode{graph/nextToShortestPath.cpp}
 
@@ -531,9 +550,10 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 \cppCode{graph/bellmanFord.cpp}
 
 \subsubsection{Floyd-Warshall $O(V^3)$}
-
+{\normalsize 
 The graph is stored using adjacency matrix. The initial state is $diagnal = 0$ and $others = INF$. (If $INF$ is int, use long long for the matrix)\\
 If diagonal numbers are negative $\leftarrow$ cycle . \\
+}
 
 %UVA821 
 \begin{minted}{c++}
@@ -547,12 +567,14 @@ for(int k = 0; k < N; k++)
 
 \subsubsection{Kruskal}
 
+{\normalsize 
 \begin{enumerate}
 	\item Store the graph by $(weight, (from , to))$
 	\item Sort the graph by $weight$ 
 	\item Start from the smallest weight, and keep adding edges that won't form a cycle with the current MST set
 	\item Early termination condition: $n - 1$ edges has been added, NOT size of the union-find set
 \end{enumerate}
+}
 
 \subsubsection{Prim}
 \cppCode{graph/prim.cpp}
@@ -577,10 +599,12 @@ for(int k = 0; k < N; k++)
 
 \subsection{Rolling Hash}
 
+{\normalsize 
 \begin{enumerate}
 	\item Use two rolling hashes if needed.  
 	\item The prime for pre-calculation can be $137$ and $257$, for modulo can be $1e9 + 7$ and $0xdefaced$ 
 \end{enumerate}
+}
 
 \cppCode{string/RollingHash.cpp}
 
@@ -593,9 +617,11 @@ for(int k = 0; k < N; k++)
 \cppCode{string/Z_Algorithm.cpp}
 
 \subsection{Trie}
+{\normalsize 
 %http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
 注意count的擺放位置，視題意可以擺在迴圈外
 \cppCode{string/TrieAmoshyc.cpp}
+}
 
 \section{Matrix}
 
@@ -610,20 +636,24 @@ for(int k = 0; k < N; k++)
 
 \section{Geometry}
 
+{\normalsize 
 \begin{enumerate}
 	\item Keep things in integers as much as possible!
 	\item Try not to divide
 	\item If you have decimals, if they are fixed precision, you can usually just multiply all the input and use integers instead
 \end{enumerate}
+}
 
 \subsection{EPS}
 
+{\normalsize 
 %$a > b \rightarrow a - b > 0 \rightarrow a - b > EPS$ (stands for positive)\\
 %$a \geq b \rightarrow  a - b \geq 0 \rightarrow a - b > -EPS$ (stands for positive or zero)\\
 
 $=0$: $fabs \leq eps$\\
 $<0$: $ < -eps$\\
 $>0$: $ > +eps$
+}
 
 \subsection{Template}
 
@@ -634,20 +664,26 @@ $>0$: $ > +eps$
 
 \subsection{Euclid's formula (Pythagorean Triples)}
 
+{\normalsize 
 $a = p^2 - q^2 $\\
 $b = 2pq \; \textbf{(always even)}$ \\
 $c = p^2 + q^2$\\
+}
 
 \subsection{Difference between two consecutive numbers' square is odd}
 
+{\normalsize 
 $(k + 1)^2 - k^2 = 2k + 1$
+}
 
 \subsection{Summation}
 
+{\normalsize 
 $\sum_{k=1}^{n} 1= n$\\
 $\sum_{k=1}^{n} k= \frac{n(n+1)}{2}$\\
 $\sum_{k=1}^{n} k^2= \frac{n(n+1)(2n+1)}{6}$\\
 $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
+}
 
 \subsection{FFT}
 %http://amoshyc.github.io/ojsolution-build/template/math/fft.html
@@ -702,21 +738,26 @@ ll binomialCoeff(ll n, ll k)
 
 \subsection{2-Circle relations}
 
+{\normalsize 
 $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 內切: $d = R - r$\\
 外切: $d = R + r$\\
 內離: $d < R - r$\\
 外離: $d > R + r$\\
 相交: $d < R + r$ 且 $d > R - r$
+}
 
 \subsection{Fun Facts}
 
+{\normalsize 
 \begin{enumerate}
 	\item 如果 $\frac b a$ 是最簡分數，則 $1 - \frac b a$也是%http://amoshyc.github.io/ojsolution-build/cf/cf369/pe.html
 \end{enumerate}
+}
 
 \subsection{$2^n$ table}
 
+{\normalsize 
 $
 1 : 2 \\
 2 : 4 \\
@@ -744,6 +785,7 @@ $
 24 : 16777216 \\
 25 : 33554432 \\
 $
+}
 
 %%%%%%%%%%%%DP%%%%%%%%%%
 
@@ -751,30 +793,6 @@ $
 \section{Dynamic Programming - Problems collection}
 %\cppCode{DP/dp.cpp}
 \cppCode{DP/dp_noComment.cpp}
-
-\section{隊伍表}
-
-\begin{tabular}{|c|c|}
-	\hline 
-	Team number &  Team name \\ 
-	\hline 
-	Team 12 & CCU\_Earthrise \\ 
-	\hline 
-	Team 22 & NCTU\_Verthandi \\ 
-	\hline 
-	Team 34 & NCTU\_Aurora \\ 
-	\hline 
-	Team 37 & CCU\_KooChuLai \\ 
-	\hline 
-	Team 51 & CCU\_ChiYuMi \\ 
-	\hline 
-	Team 72 & CCU\_Explosion \\ 
-	\hline 
-	Team 74 & StandarD \\ 
-	\hline 
-	Team 106 & CCU\_NOTE7 \\ 
-	\hline 
-\end{tabular} 
 
 %trig information
 \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
