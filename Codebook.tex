@@ -44,6 +44,9 @@
 \usepackage{amsmath}
 \usepackage{array}
 
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
 %%%%%% Font setting %%%%%%
 
 \usepackage{fontspec} %加這個就可以設定字體 
@@ -231,10 +234,12 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 
 \section{Reminder}
 
+\includegraphics{sorting3}
+
 \begin{enumerate}
 	\item 隊友的建議，要認真聽！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
 	\item 每一題都要小心讀，尤其是IO的格式和限制都要看清楚。%Read the problem statements carefully. Input and output specifications and constraints are crucial!
-	\item 小心估計\textbf{時間複查度} 和 \textbf{空間複雜度}%Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
+	\item 小心估計\textbf{時間複雜度} 和 \textbf{空間複雜度}%Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
 	\item Coding 要兩人一組，要相信你的隊友的實力！
 	\item 1WA 罰 20 分鐘！ \textbf{放輕鬆，不要急}，多產幾組測資後再丟。%Time penalty is 20 minutes per WA, \textbf{don't rush}!
 	\item 範測一定要過！產個幾組極端測資，例如 input 下限、特殊 cases 0, 1, -1、空集合等等 %Sample test cases must all be tested and passed before every submission! Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
