@@ -157,6 +157,7 @@ breaklines=true,
 % generate header
 \fancyhead[L]{National Chung Cheng University -- CCU\_ToInfinityAndBeyond}
 \fancyhead[R]{\thepage}
+% \rhead{\includegraphics[width=1cm]{buzz}}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
 \fancyfoot[C]{for 2017 桂冠賽 (Built on: \today)}
@@ -186,6 +187,10 @@ breaklines=true,
 %%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%機器設定%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\includegraphics[width=10cm]{buzz1}
+\end{center}
 
 \section{Contest Setup}
 
@@ -238,7 +243,7 @@ breaklines=true,
 
 \section{Reminder}
 
-\includegraphics{sorting3}
+% \includegraphics{sorting3}
 
 {\large
 \begin{enumerate}
@@ -546,7 +551,7 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 
 \subsubsection{Bellman-Ford $O(VE)$}
 % UVa 558, 10449
-\cppCode{graph/bellmanFord.cpp}
+\cppCode{graph/bellmanFord1.cpp}
 
 \subsubsection{Floyd-Warshall $O(V^3)$}
 {\normalsize 
@@ -775,7 +780,7 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 
 \section{Dynamic Programming - Problems collection}
 %\cppCode{DP/dp.cpp}
-\cppCode{DP/dp_noComment.cpp}
+\VerbatimInput{DP/dp_noComment.txt}
 
 %trig information
 % \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}

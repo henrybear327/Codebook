@@ -32,8 +32,8 @@ void seg_init()
     while (NN < N)
         NN *= 2;
 
-    memset(seg, 0, sizeof(seg)); // val that won't affect result
-    memset(lazy, 0, sizeof(lazy)); // val that won't affect result
+    memset(seg, 0, sizeof(seg));               // val that won't affect result
+    memset(lazy, 0, sizeof(lazy));             // val that won't affect result
     memcpy(seg + NN - 1, inp, sizeof(ll) * N); // fill in leaves
 }
 
