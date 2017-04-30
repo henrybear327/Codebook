@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{algorithm}
+    \PYG{o}{::}\PYG{n+nl}{find}\PYG{p}{:} \PYG{p}{[}\PYG{n}{it} \PYG{n}{s}\PYG{p}{,} \PYG{n}{it} \PYG{n}{t}\PYG{p}{,} \PYG{n}{val}\PYG{p}{]} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{it}
+    \PYG{o}{::}\PYG{n+nl}{count}\PYG{p}{:} \PYG{p}{[}\PYG{n}{it} \PYG{n}{s}\PYG{p}{,} \PYG{n}{it} \PYG{n}{t}\PYG{p}{,} \PYG{n}{val}\PYG{p}{]} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{int}
+    \PYG{o}{::}\PYG{n+nl}{unique}\PYG{p}{:} \PYG{p}{[}\PYG{n}{it} \PYG{n}{s}\PYG{p}{,} \PYG{n}{it} \PYG{n}{t}\PYG{p}{]} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{it} \PYG{p}{(}\PYG{n}{it} \PYG{o}{=} \PYG{k}{new} \PYG{n}{end}\PYG{p}{)}
+    \PYG{o}{::}\PYG{n+nl}{merge}\PYG{p}{:} \PYG{p}{[}\PYG{n}{it} \PYG{n}{s1}\PYG{p}{,} \PYG{n}{it} \PYG{n}{t1}\PYG{p}{,} \PYG{n}{it} \PYG{n}{s2}\PYG{p}{,} \PYG{n}{it} \PYG{n}{t2}\PYG{p}{,} \PYG{n}{it} \PYG{n}{o}\PYG{p}{]} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{void} \PYG{p}{(}\PYG{n}{o} \PYG{n}{allocated}\PYG{p}{)}
+
+\PYG{n}{string}\PYG{o}{::}
+    \PYG{o}{::}\PYG{n}{replace}\PYG{p}{(}\PYG{n}{idx}\PYG{p}{,} \PYG{n}{len}\PYG{p}{,} \PYG{n}{string}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{void}
+    \PYG{o}{::}\PYG{n}{find} \PYG{p}{(}\PYG{n}{str}\PYG{p}{,} \PYG{n}{pos} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{idx}
+    \PYG{o}{::}\PYG{n}{substr} \PYG{p}{(}\PYG{n}{pos} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{len} \PYG{o}{=} \PYG{n}{npos}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{string}
+\PYG{n}{string} \PYG{o}{\PYGZlt{}\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{int}
+    \PYG{o}{::}\PYG{n}{stringstream}\PYG{p}{;} \PYG{c+c1}{// remember to clear}
+    \PYG{o}{::}\PYG{n}{sscanf}\PYG{p}{(}\PYG{n}{s}\PYG{p}{.}\PYG{n}{c\PYGZus{}str}\PYG{p}{(),} \PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZdq{}}\PYG{p}{,} \PYG{o}{\PYGZam{}}\PYG{n}{i}\PYG{p}{);}
+    \PYG{o}{::}\PYG{n}{sprintf}\PYG{p}{(}\PYG{n}{result}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZdq{}}\PYG{p}{,} \PYG{n}{i}\PYG{p}{);} \PYG{n}{string} \PYG{n}{s} \PYG{o}{=} \PYG{n}{result}\PYG{p}{;}
+
+\PYG{n}{math}\PYG{o}{/}\PYG{n}{cstdlib}
+    \PYG{o}{::}\PYG{n}{atan2}\PYG{p}{(}\PYG{n}{y}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{pi}
+
+\PYG{n}{io} \PYG{n}{printf}\PYG{o}{/}\PYG{n}{scanf}
+    \PYG{o}{::}\PYG{k+kt}{int}\PYG{o}{:}                \PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZdq{}}       \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZdq{}}
+    \PYG{o}{::}\PYG{k+kt}{double}\PYG{o}{:}             \PYG{l+s}{\PYGZdq{}\PYGZpc{}lf\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}f\PYGZdq{}}  \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}lf\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{string}\PYG{p}{:}             \PYG{l+s}{\PYGZdq{}\PYGZpc{}s\PYGZdq{}}       \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}s\PYGZdq{}}
+    \PYG{o}{::}\PYG{k+kt}{long} \PYG{k+kt}{long}\PYG{o}{:}          \PYG{l+s}{\PYGZdq{}\PYGZpc{}lld\PYGZdq{}}     \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}lld\PYGZdq{}}
+    \PYG{o}{::}\PYG{k+kt}{long} \PYG{k+kt}{double}\PYG{o}{:}        \PYG{l+s}{\PYGZdq{}\PYGZpc{}Lf\PYGZdq{}}      \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}Lf\PYGZdq{}}
+    \PYG{o}{::}\PYG{k+kt}{unsigned} \PYG{k+kt}{int}\PYG{o}{:}       \PYG{l+s}{\PYGZdq{}\PYGZpc{}u\PYGZdq{}}       \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}u\PYGZdq{}}
+    \PYG{o}{::}\PYG{k+kt}{unsigned} \PYG{k+kt}{long} \PYG{k+kt}{long}\PYG{o}{:} \PYG{l+s}{\PYGZdq{}\PYGZpc{}ull\PYGZdq{}}     \PYG{o}{/}   \PYG{l+s}{\PYGZdq{}\PYGZpc{}ull\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{oct}\PYG{p}{:}                \PYG{l+s}{\PYGZdq{}0\PYGZpc{}o\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{hex}\PYG{p}{:}                \PYG{l+s}{\PYGZdq{}0x\PYGZpc{}x\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{scientific}\PYG{p}{:}         \PYG{l+s}{\PYGZdq{}\PYGZpc{}e\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{width}\PYG{p}{:}              \PYG{l+s}{\PYGZdq{}\PYGZpc{}05d\PYGZdq{}}
+    \PYG{o}{::}\PYG{n+nl}{precision}\PYG{p}{:}          \PYG{l+s}{\PYGZdq{}\PYGZpc{}.5f\PYGZdq{}}
+    \PYG{o}{::}\PYG{n}{adjust} \PYG{n+nl}{left}\PYG{p}{:}        \PYG{l+s}{\PYGZdq{}\PYGZpc{}\PYGZhy{}5d\PYGZdq{}}
+
+\PYG{n}{io} \PYG{n}{cin}\PYG{o}{/}\PYG{n}{cout}
+    \PYG{o}{::}\PYG{n+nl}{oct}\PYG{p}{:}                \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{oct} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{showbase}\PYG{p}{;}
+    \PYG{o}{::}\PYG{n+nl}{hex}\PYG{p}{:}                \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{hex} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{showbase}\PYG{p}{;}
+    \PYG{o}{::}\PYG{n+nl}{scientific}\PYG{p}{:}         \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{scientific}\PYG{p}{;}
+    \PYG{o}{::}\PYG{n+nl}{width}\PYG{p}{:}              \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{setw}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{);}
+    \PYG{o}{::}\PYG{n+nl}{precision}\PYG{p}{:}          \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{fixed} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{setprecision}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{);}
+    \PYG{o}{::}\PYG{n}{adjust} \PYG{n+nl}{left}\PYG{p}{:}        \PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{setw}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{left}\PYG{p}{;}
+\end{Verbatim}

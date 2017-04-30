@@ -64,4 +64,19 @@ bool IDAstar() {
 bool solvable() {
     // cnt：對於每一項 A[r][c] 有多少個小於它且在他之後的數，加總
     // (cnt + Er(1-based) % 2 == 0) <-> 有解
+    int cnt = 0;
+    bool occur[16] = {false};
+    for (int r = 0; r < 4; r++) {
+        for (int c = 0; c < 4; c++) {
+            if (A[r][c] == 0) {
+                Er = r;
+                Ec = c;
+            }
+            else {
+                cnt += count(occur + 1, occur + A[r][c], false);
+                occur[A[r][c]] = true;
+            }
+        }
+    }
+    return (cnt + (Er + 1)) % 2 == 0;
 }

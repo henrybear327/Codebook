@@ -5,19 +5,6 @@
     \PYG{n}{ll} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{;}
 \PYG{p}{\PYGZcb{};}
 
-\PYG{n}{ll} \PYG{n+nf}{extgcd}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{b}\PYG{p}{,} \PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{x}\PYG{p}{,} \PYG{n}{ll} \PYG{o}{\PYGZam{}}\PYG{n}{y}\PYG{p}{)}
-\PYG{p}{\PYGZob{}}
-    \PYG{k}{if} \PYG{p}{(}\PYG{n}{b} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-        \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
-        \PYG{n}{y} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
-        \PYG{k}{return} \PYG{n}{a}\PYG{p}{;}
-    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
-        \PYG{n}{ll} \PYG{n}{d} \PYG{o}{=} \PYG{n}{extgcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,} \PYG{n}{a} \PYG{o}{\PYGZpc{}} \PYG{n}{b}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{x}\PYG{p}{);}
-        \PYG{n}{y} \PYG{o}{\PYGZhy{}=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{/} \PYG{n}{b}\PYG{p}{)} \PYG{o}{*} \PYG{n}{x}\PYG{p}{;}
-        \PYG{k}{return} \PYG{n}{d}\PYG{p}{;}
-    \PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}
-
 \PYG{n}{Item} \PYG{n+nf}{extcrt}\PYG{p}{(}\PYG{k}{const} \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{Item}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{v}\PYG{p}{)}
 \PYG{p}{\PYGZob{}}
     \PYG{n}{ll} \PYG{n}{m1} \PYG{o}{=} \PYG{n}{v}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{].}\PYG{n}{m}\PYG{p}{,} \PYG{n}{r1} \PYG{o}{=} \PYG{n}{v}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{].}\PYG{n}{r}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{;}

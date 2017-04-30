@@ -1,4 +1,4 @@
-struct {
+struct sptb{
     int sp[MAX_LOG_N][MAX_N]; // MAX_LOG_N = ceil(lg(MAX_N))
 
     void build(int inp[], int n)
@@ -16,4 +16,4 @@ struct {
         int k = floor(log2(r - l));
         return min(sp[k][l], sp[k][r - (1 << k)]);
     }
-} sptb;
+};

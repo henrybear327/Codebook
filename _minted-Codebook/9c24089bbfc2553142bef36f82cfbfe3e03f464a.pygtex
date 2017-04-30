@@ -1,0 +1,39 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{typedef} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{ll}\PYG{p}{;}
+
+\PYG{n}{ll} \PYG{n+nf}{fast\PYGZus{}pow}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{b}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{ans} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{n}{ll} \PYG{n}{base} \PYG{o}{=} \PYG{n}{a} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+    \PYG{n}{b} \PYG{o}{=} \PYG{n}{b} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{);} \PYG{c+c1}{// Fermat\PYGZsq{}s little theorem}
+    \PYG{k}{while} \PYG{p}{(}\PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{b} \PYG{o}{\PYGZam{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{ans} \PYG{o}{=} \PYG{p}{(}\PYG{n}{ans} \PYG{o}{*} \PYG{n}{base}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{base} \PYG{o}{=} \PYG{p}{(}\PYG{n}{base} \PYG{o}{*} \PYG{n}{base}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+        \PYG{n}{b} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ll} \PYG{n+nf}{inv}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{a}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{fast\PYGZus{}pow}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{p}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ll} \PYG{n+nf}{C}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{n}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{m}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZlt{}} \PYG{n}{m}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{m} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{m}\PYG{p}{,} \PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{n}{m}\PYG{p}{);}
+    \PYG{n}{ll} \PYG{n}{nom} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{den} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{n}{ll} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{m}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{nom} \PYG{o}{=} \PYG{p}{(}\PYG{n}{nom} \PYG{o}{*} \PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+        \PYG{n}{den} \PYG{o}{=} \PYG{p}{(}\PYG{n}{den} \PYG{o}{*} \PYG{n}{i}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{nom} \PYG{o}{*} \PYG{n}{inv}\PYG{p}{(}\PYG{n}{den}\PYG{p}{,} \PYG{n}{p}\PYG{p}{))} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// To make C(n, m) \PYGZpc{} p computed in O(log(p, n) * p) instead of O(m)}
+\PYG{c+c1}{// https://en.wikipedia.org/wiki/Lucas\PYGZsq{}s\PYGZus{}theorem}
+\PYG{n}{ll} \PYG{n+nf}{lucas}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{n}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{m}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{m} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n}{C}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{,} \PYG{n}{m} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{,} \PYG{n}{p}\PYG{p}{)} \PYG{o}{*} \PYG{n}{lucas}\PYG{p}{(}\PYG{n}{n} \PYG{o}{/} \PYG{n}{p}\PYG{p}{,} \PYG{n}{m} \PYG{o}{/} \PYG{n}{p}\PYG{p}{,} \PYG{n}{p}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

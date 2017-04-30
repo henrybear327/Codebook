@@ -155,28 +155,28 @@ breaklines=true,
 % for all other pages
 \pagestyle{fancy}
 % generate header
-\fancyhead[L]{National Chung Cheng University -- CCU\_Earthrise}
+\fancyhead[L]{National Chung Cheng University -- CCU\_ToInfinityAndBeyond}
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for 2016 ACM-ICPC Asia Chung-Li Regional Contest (Built on: \today)}
+\fancyfoot[C]{for 2017 桂冠賽 (Built on: \today)}
 \fancyfoot[R]{\thepage}
 
 % for page 1
 \fancypagestyle{plain}
 {
 % generate header
-\fancyhead[L]{National Chung Cheng University -- CCU\_Earthrise}
+\fancyhead[L]{National Chung Cheng University -- CCU\_ToInfinityAndBeyond}
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for 2016 ACM-ICPC Asia Chung-Li Regional Contest (Built on: \today)}
+\fancyfoot[C]{for 2017 桂冠賽 (Built on: \today)}
 \fancyfoot[R]{\thepage}
 }
 
 % generate table of content on in a new page
 \scriptsize
-\tableofcontents
+%\tableofcontents
 \pagestyle{fancy}
 
 %\newpage
@@ -189,20 +189,20 @@ breaklines=true,
 
 \section{Contest Setup}
 
-\subsection{vimrc}
-\lstinputlisting[style=,basicstyle=\footnotesize\ttfamily]{contest_setup/vimrc}
+% \subsection{vimrc}
+% \lstinputlisting[style=,basicstyle=\footnotesize\ttfamily]{contest_setup/vimrc}
 
-\subsection{bashrc}
-\lstinputlisting[style=,language=bash,basicstyle=\footnotesize\ttfamily]{contest_setup/bashrc}
+% \subsection{bashrc}
+% \lstinputlisting[style=,language=bash,basicstyle=\footnotesize\ttfamily]{contest_setup/bashrc}
 
-\subsection{Grep Error and Warnings}
+% \subsection{Grep Error and Warnings}
 
-\begin{lstlisting}
-g++ main.cpp 2>&1 | grep -E 'warning|error'
-\end{lstlisting}
+% \begin{lstlisting}
+% g++ main.cpp 2>&1 | grep -E 'warning|error'
+% \end{lstlisting}
 
-\subsection{C++ template}
-\cppCode{contest_setup/main.cpp}
+% \subsection{C++ template}
+% \cppCode{contest_setup/main.cpp}
 
 \subsection{Java template}
 %\lstinputlisting{contest_setup/Main.java}
@@ -277,6 +277,7 @@ g++ main.cpp 2>&1 | grep -E 'warning|error'
 	\item 因式分解
 	\item 從答案推回來
 	\item 寫出數學式，有時就馬上出現答案了！ % CF Div2 R372 C
+	\item 奇偶性質
 \end{enumerate}
 }
 
@@ -304,7 +305,6 @@ Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 
 \subsection{GCD $O(log( min(a + b) ))$}
 
- 注意負數的case! C++ 是看被除數決定正負號的
 {\large 注意負數的case! C++ 是看被除數決定正負號的。}
 
 \begin{minted}{c++}
@@ -317,7 +317,7 @@ ll gcd(ll a, ll b)
 \subsection{Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}
 
 {\normalsize 
-Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positive integer that can be written as ax + by, and every integer of the form ax + by is a multiple of $gcd(a, b)$.
+Bezout identity $ax + by = gcd(a, b)$, where $\mid x \mid \leq \frac b d$ and $\mid y \mid \leq \frac a d$.
 }
 
 \cppCode{useful_code/ext_gcd.cpp}
@@ -327,7 +327,7 @@ Bezout identity $ax + by = gcd(a, b)$, where $gcd(a, b)$ is the smallest positiv
 
 \subsection{C++ Reference}
 
-\cppCode{useful_code/cppReference.cpp}
+\cppCode{useful_code/cppReference2.cpp}
 
 %\subsubsection{scanf/printf reference}
 
@@ -360,8 +360,8 @@ for(int i  = 0; i < 100; i++) {
 f(r) - maximum of function
 \end{minted}
 
-\subsection{N Puzzle}
-\cppCode{Search/n-puzzle.cpp}
+% \subsection{N Puzzle}
+% \cppCode{Search/n-puzzle.cpp}
 
 
 %%%%%%%%%%%%%%%%資料結構%%%%%%%%%%%%%%%%%%
@@ -408,7 +408,7 @@ ll sum(int a, int b) {
 }
 
 void add(int a, int b, ll x) {
-	// MAX_N, MAX_M 須適時調整！
+    // MAX_N, MAX_M 須適時調整！
     for (int i = a; i <= MAX_N; i += (i & -i))
         for (int j = b; j <= MAX_M; j += (j & -j))
             bit[i][j] += x;
@@ -418,9 +418,9 @@ void add(int a, int b, ll x) {
 \subsection{Union Find}
 
 \begin{minted}{c++}
-#define N 20000 // 記得改
+const int MAX_N = 20000; // 記得改
 struct UFDS {
-    int par[N];
+    int par[MAX_N];
 
     void init(int n) {
         memset(par, -1, sizeof(int) * n);
@@ -441,11 +441,11 @@ struct UFDS {
             par[y] = x;
         }
     }
-}
+};
 \end{minted}
 
 \subsection{Segment Tree}
-\cppCode{DS/segmentTree.cpp}
+\cppCode{DS/segmentTree2.cpp}
 
 \subsection{Sparse Table}
 \cppCode{DS/sparse_table.cpp}
@@ -460,8 +460,8 @@ struct UFDS {
 \subsection{Tree Center}
 \cppCode{Tree/TreeCenter.cpp}
 
-\subsection{Treap}
-\cppCode{Tree/treap.cpp}
+% \subsection{Treap}
+% \cppCode{Tree/treap.cpp}
 
 %%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
 
@@ -474,8 +474,6 @@ struct UFDS {
 
 {\normalsize 
 \begin{align*}
- &(x_i \lor x_i) \textit{ 建邊 } (\lnot x_i,\, x_j) \\
- &(x_i \lor x_j) \textit{ 建邊 } (\lnot x_i,\, x_j) ,\, (\lnot x_j,\, x_i) \\
 &p \lor (q \land r)  \\
 &= ((p \land q) \lor (p \land r)) \\
 &p \oplus q   \\
@@ -538,13 +536,13 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 %http://amoshyc.github.io/ojsolution-build/template/graph/spfa.html
 %\cppCode{graph/dijkatra.cpp}
 
-\subsubsection{Dijkatra (next-to-shortest path)}
+\subsubsection{Dijkatra (next-to-shortest path) $O(VlogE)$}
 {\normalsize 密集圖別用priority queue! }
 % https://gist.github.com/amoshyc/f011abc6fad9b413c24b
 \cppCode{graph/nextToShortestPath.cpp}
 
-\subsubsection{SPFA}
-\cppCode{graph/SPFA.cpp}
+% \subsubsection{SPFA}
+% \cppCode{graph/SPFA.cpp}
 
 \subsubsection{Bellman-Ford $O(VE)$}
 % UVa 558, 10449
@@ -577,8 +575,8 @@ for(int k = 0; k < N; k++)
 \end{enumerate}
 }
 
-\subsubsection{Prim}
-\cppCode{graph/prim.cpp}
+% \subsubsection{Prim}
+% \cppCode{graph/prim.cpp}
 
 \section{Flow}
 
@@ -590,7 +588,7 @@ for(int k = 0; k < N; k++)
 %http://amoshyc.github.io/ojsolution-build/template/graph/min_cost_flow.html
 \cppCode{flow/minCostFlow.cpp}
 
-\subsection{Bipartite Matching}
+\subsection{Bipartite Matching, Unweighted}
 %http://amoshyc.github.io/ojsolution-build/template/graph/bipartite_matching.html
 \cppCode{flow/bipartiteMatching.cpp}
 
@@ -617,19 +615,23 @@ for(int k = 0; k < N; k++)
 
 \cppCode{string/Z_Algorithm.cpp}
 
-\subsection{Trie}
-{\normalsize 
+% \subsection{Trie}
+% {\normalsize 
 %http://amoshyc.github.io/ojsolution-build/template/ds/trie.html
-注意count的擺放位置，視題意可以擺在迴圈外
-\cppCode{string/TrieAmoshyc.cpp}
-}
+% 注意count的擺放位置，視題意可以擺在迴圈外
+% \cppCode{string/TrieAmoshyc.cpp}
+% }
 
 \section{Matrix}
 
-\subsection{Gauss Jordan}
+\subsection{Gauss Jordan Elimination}
 \cppCode{Matrix/gauss_jordan.cpp}
 
 \subsection{Determinant}
+
+{\normalsize 
+整數版本
+}
 
 \cppCode{Matrix/matrix_det.cpp}
 
@@ -659,7 +661,7 @@ $>0$: $ > +eps$
 \subsection{Template}
 
 % \cppCode{geometry/geometry_stanford.cpp}
-\cppCode{geometry/my_geometry.cpp}
+\cppCode{geometry/my_geometry2.cpp}
 
 \section{Math}
 
@@ -686,9 +688,9 @@ $\sum_{k=1}^{n} k^2= \frac{n(n+1)(2n+1)}{6}$\\
 $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
 }
 
-\subsection{FFT}
+% \subsection{FFT}
 %http://amoshyc.github.io/ojsolution-build/template/math/fft.html
-\cppCode{Math/fft.cpp}
+% \cppCode{Math/fft.cpp}
 
 \subsection{Combination}
 
@@ -712,6 +714,19 @@ void Combination() {
     }
 }
 \end{minted}
+
+\subsubsection{Lucus}
+
+\begin{equation}
+\begin{split}&\binom{n}{m} \equiv \prod_{i=0}^k \binom{n_i}{m_i} \pmod p \\
+\text{where}& \\
+&n = n_kp^k+n_{k-1}p^{k-1}+\cdots +n_1p+n_0, \\
+&m = m_kp^k+m_{k-1}p^{k-1}+\cdots +m_1p+m_0 \\
+&p \text{ is prime}
+c\end{split}
+\end{equation}
+
+\cppCode{Math/lucas.cpp}
 
 \subsubsection{線性}
 
@@ -756,47 +771,14 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 \end{enumerate}
 }
 
-\subsection{$2^n$ table}
-
-{\normalsize 
-$
-1 : 2 \\
-2 : 4 \\
-3 : 8 \\
-4 : 16 \\
-5 : 32 \\
-6 : 64 \\ 
-7 : 128 \\
-8 : 256 \\
-9 : 512 \\
-10 : 1024 \\
-11 : 2048 \\
-12 : 4096 \\
-13 : 8192 \\
-14 : 16384 \\
-15 : 32768 \\
-16 : 65536 \\
-17 : 131072 \\
-18 : 262144 \\
-19 : 524288 \\
-20 : 1048576 \\
-21 : 2097152 \\
-22 : 4194304 \\
-23 : 8388608 \\
-24 : 16777216 \\
-25 : 33554432 \\
-$
-}
-
 %%%%%%%%%%%%DP%%%%%%%%%%
 
-\newpage
 \section{Dynamic Programming - Problems collection}
 %\cppCode{DP/dp.cpp}
 \cppCode{DP/dp_noComment.cpp}
 
 %trig information
-\includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
+% \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
 
 \end{multicols}
 \end{landscape}

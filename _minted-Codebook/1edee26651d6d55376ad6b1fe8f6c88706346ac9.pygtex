@@ -132,41 +132,4 @@
 
     \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
 \PYG{p}{\PYGZcb{}}
-
-\PYG{k+kt}{bool} \PYG{n}{completelyInside}\PYG{p}{(}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{pt}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{outer}\PYG{p}{,} \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{pt}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{inner}\PYG{p}{)}
-\PYG{p}{\PYGZob{}}
-    \PYG{k+kt}{int} \PYG{n}{even} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{odd} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
-    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{inner}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-        \PYG{c+c1}{// y = slope * x + offset}
-        \PYG{k+kt}{int} \PYG{n}{cntIntersection} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
-        \PYG{n}{ll} \PYG{n}{slope} \PYG{o}{=} \PYG{n}{rand}\PYG{p}{()} \PYG{o}{\PYGZpc{}} \PYG{n}{INT\PYGZus{}MAX} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{;}
-        \PYG{n}{ll} \PYG{n}{offset} \PYG{o}{=} \PYG{n}{inner}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{slope} \PYG{o}{*} \PYG{n}{inner}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{x}\PYG{p}{;}
-
-        \PYG{n}{ll} \PYG{n}{farx} \PYG{o}{=} \PYG{l+m+mi}{111111} \PYG{o}{*} \PYG{p}{(}\PYG{n}{slope} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0} \PYG{o}{?} \PYG{l+m+mi}{1} \PYG{o}{:} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{);}
-        \PYG{n}{ll} \PYG{n}{fary} \PYG{o}{=} \PYG{n}{farx} \PYG{o}{*} \PYG{n}{slope} \PYG{o}{+} \PYG{n}{offset}\PYG{p}{;}
-        \PYG{n}{seg} \PYG{n}{a} \PYG{o}{=} \PYG{n}{seg}\PYG{p}{(}\PYG{n}{pt}\PYG{p}{(}\PYG{n}{inner}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{x}\PYG{p}{,} \PYG{n}{inner}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{y}\PYG{p}{),} \PYG{n}{pt}\PYG{p}{(}\PYG{n}{farx}\PYG{p}{,} \PYG{n}{fary}\PYG{p}{));}
-        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{outer}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-            \PYG{n}{seg} \PYG{n}{b} \PYG{o}{=} \PYG{n}{seg}\PYG{p}{(}\PYG{n}{outer}\PYG{p}{[}\PYG{n}{j}\PYG{p}{],} \PYG{n}{outer}\PYG{p}{[(}\PYG{n}{j} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{outer}\PYG{p}{.}\PYG{n}{size}\PYG{p}{()]);}
-
-            \PYG{k}{if} \PYG{p}{((}\PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{.}\PYG{n}{x} \PYG{o}{*} \PYG{n}{slope} \PYG{o}{+} \PYG{n}{offset} \PYG{o}{==} \PYG{n}{b}\PYG{p}{.}\PYG{n}{x}\PYG{p}{.}\PYG{n}{y}\PYG{p}{)} \PYG{o}{||}
-                \PYG{p}{(}\PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{.}\PYG{n}{x} \PYG{o}{*} \PYG{n}{slope} \PYG{o}{+} \PYG{n}{offset} \PYG{o}{==} \PYG{n}{b}\PYG{p}{.}\PYG{n}{y}\PYG{p}{.}\PYG{n}{y}\PYG{p}{))} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// on\PYGZhy{}line}
-                \PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
-                \PYG{k}{break}\PYG{p}{;}
-            \PYG{p}{\PYGZcb{}}
-
-            \PYG{k}{if} \PYG{p}{(}\PYG{n}{intersect}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)} \PYG{o}{==} \PYG{n+nb}{true}\PYG{p}{)}
-                \PYG{n}{cntIntersection}\PYG{o}{++}\PYG{p}{;}
-        \PYG{p}{\PYGZcb{}}
-
-        \PYG{k}{if} \PYG{p}{(}\PYG{n}{cntIntersection} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{c+c1}{// outside}
-            \PYG{n}{even}\PYG{o}{++}\PYG{p}{;}
-        \PYG{k}{else}
-            \PYG{n}{odd}\PYG{o}{++}\PYG{p}{;}
-    \PYG{p}{\PYGZcb{}}
-
-    \PYG{k}{return} \PYG{n}{odd} \PYG{o}{==} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{inner}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}
-\PYG{p}{\PYGZcb{}}
-
-\PYG{c+c1}{// srand(time(NULL))}
-\PYG{c+c1}{// rand()}
 \end{Verbatim}

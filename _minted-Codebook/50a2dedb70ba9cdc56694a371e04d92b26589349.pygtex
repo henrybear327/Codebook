@@ -1,0 +1,71 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{typedef} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{n}{ll}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}N} \PYG{o}{=} \PYG{l+m+mi}{100000}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}NN} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{l+m+mi}{20}\PYG{p}{);} \PYG{c+c1}{// bigger than MAX\PYGZus{}N}
+
+\PYG{k}{struct} \PYG{n}{SegTree} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{NN}\PYG{p}{;} \PYG{c+c1}{// size of tree}
+    \PYG{n}{ll} \PYG{n}{dflt}\PYG{p}{;} \PYG{c+c1}{// default val}
+    \PYG{n}{ll} \PYG{n}{seg}\PYG{p}{[}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{MAX\PYGZus{}NN}\PYG{p}{];} \PYG{c+c1}{// 0\PYGZhy{}based index, 2 * MAX\PYGZus{}NN \PYGZhy{} 1 in fact}
+    \PYG{n}{ll} \PYG{n}{lazy}\PYG{p}{[}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{MAX\PYGZus{}NN}\PYG{p}{];} \PYG{c+c1}{// 0\PYGZhy{}based index, 2 * MAX\PYGZus{}NN \PYGZhy{} 1 in fact}
+    \PYG{c+c1}{// lazy[u] != 0 \PYGZlt{}\PYGZhy{}\PYGZgt{}}
+    \PYG{c+c1}{// substree of u (u not inclued) is not up\PYGZhy{}to\PYGZhy{}date (it\PYGZsq{}s dirty)}
+
+    \PYG{k+kt}{void} \PYG{n+nf}{init}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{val}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{dflt} \PYG{o}{=} \PYG{n}{val}\PYG{p}{;}
+        \PYG{n}{NN} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{k}{while} \PYG{p}{(}\PYG{n}{NN} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{)} \PYG{n}{NN} \PYG{o}{\PYGZlt{}\PYGZlt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{fill}\PYG{p}{(}\PYG{n}{seg}\PYG{p}{,} \PYG{n}{seg} \PYG{o}{+} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{NN}\PYG{p}{,} \PYG{n}{dflt}\PYG{p}{);}
+        \PYG{n}{fill}\PYG{p}{(}\PYG{n}{lazy}\PYG{p}{,} \PYG{n}{lazy} \PYG{o}{+} \PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{NN}\PYG{p}{,} \PYG{n}{dflt}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{void} \PYG{n+nf}{gather}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{];}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{void} \PYG{n+nf}{push}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+
+            \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{m} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{)} \PYG{o}{*} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+            \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{m}\PYG{p}{)} \PYG{o}{*} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+
+            \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+            \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+            \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{void} \PYG{n+nf}{build}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{return}\PYG{p}{;}
+        \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+        \PYG{n}{build}\PYG{p}{(}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{);}
+        \PYG{n}{build}\PYG{p}{(}\PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+        \PYG{n}{gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{n}{ll} \PYG{n+nf}{query}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{b} \PYG{o}{||} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{a}\PYG{p}{)} \PYG{k}{return} \PYG{n}{dflt}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{a} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{b}\PYG{p}{)} \PYG{k}{return} \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+        \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+        \PYG{n}{push}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+        \PYG{n}{ll} \PYG{n}{res1} \PYG{o}{=} \PYG{n}{query}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{);}
+        \PYG{n}{ll} \PYG{n}{res2} \PYG{o}{=} \PYG{n}{query}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+        \PYG{n}{gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);} \PYG{c+c1}{// data is dirty since previous push}
+        \PYG{k}{return} \PYG{n}{res1} \PYG{o}{+} \PYG{n}{res2}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kt}{void} \PYG{n+nf}{update}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{l}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{r}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{b} \PYG{o}{||} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{a}\PYG{p}{)} \PYG{k}{return}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{l} \PYG{o}{\PYGZgt{}=} \PYG{n}{a} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{r} \PYG{o}{\PYGZlt{}=} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{seg}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{n}{l}\PYG{p}{)} \PYG{o}{*} \PYG{n}{x}\PYG{p}{;} \PYG{c+c1}{// update u and}
+            \PYG{n}{lazy}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{x}\PYG{p}{;} \PYG{c+c1}{// set subtree u is not up\PYGZhy{}to\PYGZhy{}date}
+            \PYG{k}{return}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k+kt}{int} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{/} \PYG{l+m+mi}{2}\PYG{p}{;}
+        \PYG{n}{push}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+        \PYG{n}{update}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{m}\PYG{p}{);}
+        \PYG{n}{update}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{u} \PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);}
+        \PYG{n}{gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{);} \PYG{c+c1}{// remember this}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{};}
+\end{Verbatim}
