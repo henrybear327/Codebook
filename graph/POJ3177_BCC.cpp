@@ -12,11 +12,9 @@ vector<int> g[N];
 int cnt, root, dfsTime[N], dfsLow[N], timer;
 stack<int> s;
 int group[N];
-bool in[N];
 void dfs(int u, int p)
 {
     s.push(u);
-    in[u] = true;
 
     dfsTime[u] = dfsLow[u] = timer++;
 
@@ -30,8 +28,7 @@ void dfs(int u, int p)
             dfs(v, u);
             dfsLow[u] = min(dfsLow[u], dfsLow[v]);
         } else {
-            if (in[u]) // gain speed
-                dfsLow[u] = min(dfsLow[u], dfsTime[v]);
+            dfsLow[u] = min(dfsLow[u], dfsTime[v]);
         }
     }
 
@@ -40,7 +37,6 @@ void dfs(int u, int p)
         while (true) {
             int v = s.top();
             s.pop();
-            in[v] = false;
 
             group[v] = cnt;
             if (v == u)
@@ -62,8 +58,8 @@ int main()
         int u, v;
         scanf("%d %d", &u, &v);
 
-        if (seen[u][v]) // bull shit
-            continue;
+        // if (seen[u][v]) // bull shit
+        // continue;
         g[u].push_back(v);
         g[v].push_back(u);
         seen[u][v] = seen[v][u] = true;
@@ -73,7 +69,6 @@ int main()
     memset(dfsTime, 0, sizeof(dfsTime));
     memset(dfsLow, 0, sizeof(dfsLow));
     memset(group, 0, sizeof(group));
-    memset(in, false, sizeof(in));
     cnt = 0;
     for (int i = 1; i <= n; i++) {
         if (dfsTime[i] == 0) {

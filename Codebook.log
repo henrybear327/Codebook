@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  2 MAY 2017 09:57
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  2 MAY 2017 17:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1987,20 +1987,20 @@ igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/A
-rticulationPointAndBridge.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f
- = open(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(1
-23) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro 
-+ \"\\makeatother\\endinput\n \"); f.close();")...executed.
+rticulationPointAndBridge-1.cpp\", \"rb\"); hasher.update(f.read()); f.close();
+ f = open(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr
+(123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macr
+o + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
 runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
 le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/f0c7b1b760323fd8fe9283c571abe1a3d6f9a40e.pygtex" "graph/Arti
-culationPointAndBridge.cpp" )...executed.
+ "_minted-Codebook/f58c8478aa793ab9be3c5518d040a5830e5da08b.pygtex" "graph/Arti
+culationPointAndBridge-1.cpp" )...executed.
 
 
-(./_minted-Codebook/f0c7b1b760323fd8fe9283c571abe1a3d6f9a40e.pygtex)
+(./_minted-Codebook/f58c8478aa793ab9be3c5518d040a5830e5da08b.pygtex)
 \openout3 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -2026,12 +2026,6 @@ nput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/28db46361c9e16433ecdbab1a350e9e53f95acce.pygtex" "graph/BCC.
-cpp" )...executed.
-
-
 (./_minted-Codebook/28db46361c9e16433ecdbab1a350e9e53f95acce.pygtex [6])
 \openout5 = `Codebook.mintedcmd'.
 
@@ -2044,12 +2038,6 @@ endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/4be0491b286c98d4844cd47b20f8c277475d4563.pygtex" "graph/SCC_
-AMO.cpp" )...executed.
-
-
 (./_minted-Codebook/4be0491b286c98d4844cd47b20f8c277475d4563.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 535--539
 
@@ -2073,12 +2061,6 @@ sher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\ma
 keatother\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/f445f7db29be8113342c7975e5e0ea240a87d580.pygtex" "graph/next
-ToShortestPath.cpp" )...executed.
-
-
 (./_minted-Codebook/f445f7db29be8113342c7975e5e0ea240a87d580.pygtex [7])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2098,12 +2080,6 @@ exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
-le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
- "_minted-Codebook/a6481171e8ce368e5d27af07cd61d970d3fa6dac.pygtex" "graph/bell
-manFord1.cpp" )...executed.
-
-
 (./_minted-Codebook/a6481171e8ce368e5d27af07cd61d970d3fa6dac.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2247,12 +2223,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 676--680
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 690--695
 
  []
 
-[13]
 \openout3 = `Codebook.pyg'.
 
 \openout5 = `Codebook.mintedcmd'.
@@ -2264,7 +2239,7 @@ dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
- (./Codebook.mintedmd5)
+(./Codebook.mintedmd5)
 (./_minted-Codebook/fc638613652dce2537d5f3d101889d6bac630b52.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
@@ -2305,19 +2280,7 @@ pen(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 (./Codebook.mintedmd5)
 (./_minted-Codebook/e8a1a2a5cf84d43f3e48dcb75fcb2072bac96869.pygtex [14])
 [15] [16]
-runsystem(rm "_minted-Codebook/c4f5d662f6c72ef646f10b55b7644c4bc26acbf7.pygtex"
-)...executed.
-
-runsystem(rm "_minted-Codebook/c42c02db82c377efbdc19439a93cd7d18d820b31.pygtex"
-)...executed.
-
-runsystem(rm "_minted-Codebook/ee80965ffabac0574ab0372c4f47508530442cf8.pygtex"
-)...executed.
-
-runsystem(rm "_minted-Codebook/0b9fd65defa9813c13377245aae94210e1b13e01.pygtex"
-)...executed.
-
-runsystem(rm "_minted-Codebook/a6f1e9d15f9215f2794a6099c4a9cc8d76d5b918.pygtex"
+runsystem(rm "_minted-Codebook/f0c7b1b760323fd8fe9283c571abe1a3d6f9a40e.pygtex"
 )...executed.
 
 runsystem(rm "Codebook.mintedcmd")...executed.
@@ -2338,9 +2301,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 791.
  ) 
 Here is how much of TeX's memory you used:
- 30417 strings out of 493591
- 568010 string characters out of 6143546
- 658166 words of memory out of 5000000
+ 30413 strings out of 493591
+ 567850 string characters out of 6143546
+ 670166 words of memory out of 5000000
  33284 multiletter control sequences out of 15000+600000
  8120 words of font info for 61 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
