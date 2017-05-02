@@ -7,7 +7,7 @@ typedef pair<int, int> ii;
 typedef long long ll;
 
 const int N = 1111;
-vector< ii > g[N];
+vector<ii> g[N];
 
 int n, m;
 
@@ -24,21 +24,21 @@ bool SPFA()
     inqueue[0] = true;
     cnt[0]++;
 
-    while(q.empty() == false) {
+    while (q.empty() == false) {
         int u = q.front();
         q.pop();
         inqueue[u] = false;
 
-        for(auto i : g[u]) {
+        for (auto i : g[u]) {
             int v = i.first, w = i.second;
-            if(d[u] + w < d[v]) {
+            if (d[u] + w < d[v]) {
                 d[v] = d[u] + w;
-                if(inqueue[v] == false) {
+                if (inqueue[v] == false) {
                     q.push(v);
                     inqueue[v] = true;
                     cnt[v]++;
 
-                    if(cnt[v] == n) {
+                    if (cnt[v] == n) {
                         // loop!
                         return true;
                     }
@@ -58,7 +58,7 @@ int main()
     while (ncase--) {
         scanf("%d %d", &n, &m);
 
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             g[i].clear();
 
         for (int i = 0; i < m; i++) {

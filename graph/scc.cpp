@@ -15,9 +15,9 @@ void dfs(int v)
     used[v] = true;
     for (int i = 0; i < G[v].size(); i++) {
         if(!used[[G[v][i])
-                 dfs(G[v][i]);
-    }
-   vs.push_back(v);
+                      dfs(G[v][i]);
+         }
+        vs.push_back(v);
 }
 void rdfs(int v, int k)
 {

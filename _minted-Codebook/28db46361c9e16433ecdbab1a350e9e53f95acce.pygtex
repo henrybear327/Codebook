@@ -24,7 +24,7 @@
         \PYG{p}{\PYGZcb{}}
     \PYG{p}{\PYGZcb{}}
 
-    \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{==} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{//dfsLow[u]== dfsTime[u] \PYGZhy{}\PYGZgt{} SCC found}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{==} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// dfsLow[u]== dfsTime[u] \PYGZhy{}\PYGZgt{} SCC found}
         \PYG{n}{cnt}\PYG{o}{++}\PYG{p}{;}
         \PYG{k}{while} \PYG{p}{(}\PYG{n+nb}{true}\PYG{p}{)} \PYG{p}{\PYGZob{}}
             \PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{s}\PYG{p}{.}\PYG{n}{top}\PYG{p}{();}
@@ -41,7 +41,8 @@
 \PYG{c+c1}{// get SCC degree}
 \PYG{k+kt}{int} \PYG{n}{deg}\PYG{p}{[}\PYG{n}{n} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{];}
 \PYG{n}{memset}\PYG{p}{(}\PYG{n}{deg}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{deg}\PYG{p}{));}
-\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
     \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZlt{}} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)}\PYG{n}{g}\PYG{p}{[}\PYG{n}{i}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();} \PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
         \PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{g}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{];}
         \PYG{k}{if} \PYG{p}{(}\PYG{n}{group}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{!=} \PYG{n}{group}\PYG{p}{[}\PYG{n}{v}\PYG{p}{])}

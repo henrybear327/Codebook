@@ -11,7 +11,8 @@ int belong[MAX_V];
 bool in_st[MAX_V];
 vector<int> st;
 
-void scc(int v) {
+void scc(int v)
+{
     dfn[v] = low[v] = dfn_idx++;
     st.push_back(v);
     in_st[v] = true;
@@ -21,8 +22,7 @@ void scc(int v) {
         if (dfn[u] == -1) {
             scc(u);
             low[v] = min(low[v], low[u]);
-        }
-        else if (in_st[u]) {
+        } else if (in_st[u]) {
             low[v] = min(low[v], dfn[u]);
         }
     }
@@ -30,7 +30,8 @@ void scc(int v) {
     if (dfn[v] == low[v]) {
         int k;
         do {
-            k = st.back(); st.pop_back();
+            k = st.back();
+            st.pop_back();
             in_st[k] = false;
             belong[k] = scc_cnt;
         } while (k != v);
@@ -38,7 +39,8 @@ void scc(int v) {
     }
 }
 
-void tarjan() { // scc 建立的順序即為反向的拓璞排序
+void tarjan() // scc 建立的順序即為反向的拓璞排序
+{
     st.clear();
     fill(dfn, dfn + V, -1);
     fill(low, low + V, INF);

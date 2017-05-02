@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// timer = 1, dfs arrays init to 0, set root carefully!}
+\PYG{k+kt}{int} \PYG{n}{timer}\PYG{p}{,} \PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{N}\PYG{p}{],} \PYG{n}{root}\PYG{p}{;}
+\PYG{k+kt}{bool} \PYG{n}{articulationPoint}\PYG{p}{[}\PYG{n}{N}\PYG{p}{];} \PYG{c+c1}{// set\PYGZlt{}ii\PYGZgt{} bridge;}
+\PYG{k+kt}{void} \PYG{n+nf}{findArticulationPoint}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{p}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{timer}\PYG{o}{++}\PYG{p}{;}
+
+    \PYG{k+kt}{int} \PYG{n}{child} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}        \PYG{c+c1}{// root child counter for articulation point}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{v} \PYG{p}{:} \PYG{n}{g}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// vector\PYGZlt{}int\PYGZgt{} g[N]; // undirected graph}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{v} \PYG{o}{==} \PYG{n}{p}\PYG{p}{)}         \PYG{c+c1}{// don\PYGZsq{}t go back to parent}
+            \PYG{k}{continue}\PYG{p}{;}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{child}\PYG{o}{++}\PYG{p}{;} \PYG{c+c1}{// root child counter for articulation point}
+            \PYG{n}{findArticulationPoint}\PYG{p}{(}\PYG{n}{v}\PYG{p}{,} \PYG{n}{u}\PYG{p}{);}
+            \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]);}
+
+            \PYG{c+c1}{// \PYGZlt{}= for articulation point, \PYGZlt{} for bridge}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{\PYGZlt{}=} \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{root} \PYG{o}{!=} \PYG{n}{u}\PYG{p}{)}
+                \PYG{n}{articulationPoint}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+            \PYG{c+c1}{// special case for articulation point root only}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{u} \PYG{o}{==} \PYG{n}{root} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{child} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{2}\PYG{p}{)}
+                \PYG{n}{articulationPoint}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// visited before (back edge)}
+            \PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{dfsLow}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{dfsTime}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

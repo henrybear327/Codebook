@@ -14,24 +14,27 @@ vector<Edge> g[MAX_V];
 int d[MAX_V];
 int cnt[MAX_V];
 
-bool spfa() { // 回傳有無負環
+bool spfa() // 回傳有無負環
+{
     fill(d, d + V, INF);
     fill(cnt, cnt + V, 0);
-    priority_queue< pii, vector<pii>, greater<pii> > pq;
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
 
     d[S] = 0;
     pq.push(pii(0, S));
     cnt[S] = 1;
 
     while (!pq.empty()) {
-        pii top = pq.top(); pq.pop();
+        pii top = pq.top();
+        pq.pop();
         int u = top.nd;
 
-        if (d[u] < top.st) continue;
+        if (d[u] < top.st)
+            continue;
 
         // for (const Edge& e : g[u]) {
         for (size_t i = 0; i < g[u].size(); i++) {
-            const Edge& e = g[u][i];
+            const Edge &e = g[u][i];
             if (d[e.to] > d[u] + e.w) {
                 d[e.to] = d[u] + e.w;
                 pq.push(pii(d[e.to], e.to));

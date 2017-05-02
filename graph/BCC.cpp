@@ -23,7 +23,7 @@ void dfs(int u, int p)
         }
     }
 
-    if (dfsTime[u] == dfsLow[u]) { //dfsLow[u]== dfsTime[u] -> SCC found
+    if (dfsTime[u] == dfsLow[u]) { // dfsLow[u]== dfsTime[u] -> SCC found
         cnt++;
         while (true) {
             int v = s.top();
@@ -40,11 +40,11 @@ void dfs(int u, int p)
 // get SCC degree
 int deg[n + 1];
 memset(deg, 0, sizeof(deg));
-for (int i = 1; i <= n; i++) {
+for (int i = 1; i <= n; i++)
+{
     for (int j = 0; j < (int)g[i].size(); j++) {
         int v = g[i][j];
         if (group[i] != group[v])
             deg[group[i]]++;
     }
 }
-

@@ -1,5 +1,5 @@
 typedef pair<int, int> ii;
-vector< ii > g[N];
+vector<ii> g[N];
 
 bool SPFA()
 {
@@ -13,21 +13,21 @@ bool SPFA()
     inqueue[0] = true;
     cnt[0]++;
 
-    while(q.empty() == false) {
+    while (q.empty() == false) {
         int u = q.front();
         q.pop();
         inqueue[u] = false;
 
-        for(auto i : g[u]) {
+        for (auto i : g[u]) {
             int v = i.first, w = i.second;
-            if(d[u] + w < d[v]) {
+            if (d[u] + w < d[v]) {
                 d[v] = d[u] + w;
-                if(inqueue[v] == false) {
+                if (inqueue[v] == false) {
                     q.push(v);
                     inqueue[v] = true;
                     cnt[v]++;
 
-                    if(cnt[v] == n) { // loop!
+                    if (cnt[v] == n) { // loop!
                         return true;
                     }
                 }

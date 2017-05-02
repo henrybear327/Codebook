@@ -15,7 +15,8 @@ bool in_st[MAX_V];
 vector<int> g[MAX_V];
 vector<int> st;
 
-void scc(int v) {
+void scc(int v)
+{
     dfn[v] = low[v] = dfn_idx++;
     st.push_back(v);
     in_st[v] = true;
@@ -25,8 +26,7 @@ void scc(int v) {
         if (dfn[u] == -1) {
             scc(u);
             low[v] = min(low[v], low[u]);
-        }
-        else if (in_st[u]) {
+        } else if (in_st[u]) {
             low[v] = min(low[v], dfn[u]);
         }
     }
@@ -34,7 +34,8 @@ void scc(int v) {
     if (dfn[v] == low[v]) {
         int k;
         do {
-            k = st.back(); st.pop_back();
+            k = st.back();
+            st.pop_back();
             in_st[k] = false;
             belong[k] = scc_cnt;
         } while (k != v);
@@ -42,7 +43,8 @@ void scc(int v) {
     }
 }
 
-void tarjan(int V) { // scc 建立的順序即為反向的拓璞排序
+void tarjan(int V) // scc 建立的順序即為反向的拓璞排序
+{
     st.clear();
     fill(dfn, dfn + V, -1);
     fill(low, low + V, INF);
@@ -55,8 +57,10 @@ void tarjan(int V) { // scc 建立的順序即為反向的拓璞排序
     }
 }
 
-int get_inp() {
-    int id; char gender[3];
+int get_inp()
+{
+    int id;
+    char gender[3];
     scanf("%d%s", &id, gender);
     id *= 2;
     if (gender[0] == 'w')
@@ -64,7 +68,8 @@ int get_inp() {
     return id;
 }
 
-int main() {
+int main()
+{
     // [0, 2 * N) : h
     // [2 * N, 4 * N) : w
 
@@ -76,7 +81,8 @@ int main() {
     // = (~h or ~w) and (h or w)
 
     while (scanf("%d %d", &N, &M)) {
-        if (N == 0 && M == 0) break;
+        if (N == 0 && M == 0)
+            break;
 
         // init
         for (int i = 0; i < 4 * N; i++)
@@ -120,7 +126,8 @@ int main() {
         bool is_first = true;
         for (int h = 2; h < 2 * N; h += 2) {
             if (belong[h] < belong[h ^ 1]) {
-                if (is_first) is_first = false;
+                if (is_first)
+                    is_first = false;
                 else {
                     printf(" ");
                 }
@@ -129,7 +136,8 @@ int main() {
         }
         for (int w = 2 * N + 2; w < 4 * N; w += 2) {
             if (belong[w] < belong[w ^ 1]) {
-                if (is_first) is_first = false;
+                if (is_first)
+                    is_first = false;
                 else {
                     printf(" ");
                 }
