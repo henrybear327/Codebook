@@ -7,7 +7,7 @@
 \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{ii}\PYG{o}{\PYGZgt{}} \PYG{n}{ans}\PYG{p}{;}
 
 \PYG{c+c1}{// for articulation point}
-\PYG{k+kt}{int} \PYG{n}{root}\PYG{p}{;} \PYG{c+c1}{// set it before dfs() call}
+\PYG{k+kt}{int} \PYG{n}{root}\PYG{p}{;}                \PYG{c+c1}{// set it before dfs() call}
 \PYG{k+kt}{bool} \PYG{n}{isCutVertex}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];} \PYG{c+c1}{// init to false}
 
 \PYG{k+kt}{int} \PYG{n}{tt} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{],} \PYG{n}{low}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];} \PYG{c+c1}{// init array to \PYGZhy{}1}
