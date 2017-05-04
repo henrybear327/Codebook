@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  3 MAY 2017 20:35
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  4 MAY 2017 18:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2044,6 +2044,18 @@ keatother\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
 (./_minted-Codebook/f445f7db29be8113342c7975e5e0ea240a87d580.pygtex)
+\openout5 = `Codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/S
+PFA-1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.m
+intedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdige
+st() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\e
+ndinput\n \"); f.close();")...executed.
+
+
+(./Codebook.mintedmd5)
+(./_minted-Codebook/ea70ee766f972eaebb39cc3239c0d2ceb8b8f634.pygtex [7])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 554.
@@ -2062,7 +2074,7 @@ exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/a6481171e8ce368e5d27af07cd61d970d3fa6dac.pygtex [7])
+(./_minted-Codebook/a6481171e8ce368e5d27af07cd61d970d3fa6dac.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 558.
@@ -2116,7 +2128,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex)
+(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex [9])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2128,7 +2140,7 @@ r\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex [9])
+(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex [10])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2140,7 +2152,7 @@ atother\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/329f8b0015097a51a8eba5a3ff88fd862eb6ab06.pygtex [10])
+(./_minted-Codebook/329f8b0015097a51a8eba5a3ff88fd862eb6ab06.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2164,7 +2176,7 @@ input\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/e1a83e4a729a88c29ccb2d004306a00e60be014f.pygtex)
+(./_minted-Codebook/e1a83e4a729a88c29ccb2d004306a00e60be014f.pygtex [11])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2176,7 +2188,19 @@ her\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/32d1b56e6b0d305beb6e4bbf373a255935e32589.pygtex [11])
+(./_minted-Codebook/32d1b56e6b0d305beb6e4bbf373a255935e32589.pygtex)
+\openout5 = `Codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"string/
+TrieAmoshyc.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
+exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
+her\\endinput\n \"); f.close();")...executed.
+
+
+(./Codebook.mintedmd5)
+(./_minted-Codebook/efaf28c1c08f55bf9f68db7a1df6eaa48e0050ee.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2188,7 +2212,7 @@ ther\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex)
+(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex [12])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2200,7 +2224,7 @@ er\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/dae669081808509a794d35ff1922432cd4130462.pygtex) [12]
+(./_minted-Codebook/dae669081808509a794d35ff1922432cd4130462.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2212,7 +2236,8 @@ tother\\endinput\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/1edee26651d6d55376ad6b1fe8f6c88706346ac9.pygtex [13])
+(./_minted-Codebook/1edee26651d6d55376ad6b1fe8f6c88706346ac9.pygtex [13]
+[14])
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2222,14 +2247,13 @@ book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
-
-(./Codebook.mintedmd5)
-(./_minted-Codebook/3cf2da7f749de37ecc08466749b28c0c91abaf99.pygtex [14])
+ (./Codebook.mintedmd5)
+(./_minted-Codebook/3cf2da7f749de37ecc08466749b28c0c91abaf99.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 685--689
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 699--704
 
  []
@@ -2272,7 +2296,7 @@ put\n \"); f.close();")...executed.
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/5d47d00b88f36fc2b2267594f401c2aaca628b6a.pygtex [15])
+(./_minted-Codebook/5d47d00b88f36fc2b2267594f401c2aaca628b6a.pygtex)
 \openout5 = `Codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
@@ -2284,8 +2308,8 @@ pen(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 
 
 (./Codebook.mintedmd5)
-(./_minted-Codebook/e8a1a2a5cf84d43f3e48dcb75fcb2072bac96869.pygtex) [16]
-[17]
+(./_minted-Codebook/e8a1a2a5cf84d43f3e48dcb75fcb2072bac96869.pygtex [16])
+[17] [18]
 runsystem(rm "Codebook.mintedcmd")...executed.
 
 runsystem(rm "Codebook.mintedmd5")...executed.
@@ -2304,12 +2328,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 800.
  ) 
 Here is how much of TeX's memory you used:
- 30418 strings out of 493591
- 568079 string characters out of 6143546
- 686303 words of memory out of 5000000
- 33285 multiletter control sequences out of 15000+600000
+ 30430 strings out of 493591
+ 568617 string characters out of 6143546
+ 672537 words of memory out of 5000000
+ 33287 multiletter control sequences out of 15000+600000
  8120 words of font info for 61 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  38i,17n,72p,10348b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Codebook.pdf (17 pages).
+Output written on Codebook.pdf (18 pages).
