@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  5 MAY 2017 23:31
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  5 MAY 2017 23:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1634,20 +1634,6 @@ put\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/5343580d22ac40d846dbd3a998726e8386a2e81b.pygtex)
-\openout5 = `codebook.pyg'.
-
-\openout5 = `codebook.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
-dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
- + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
-put\n \"); f.close();")...executed.
-
-
-(./codebook.mintedmd5)
 (./_minted-codebook/6daa4dcf44f57de687707dce4e0032e72cb5f4d0.pygtex)
 \openout5 = `codebook.pyg'.
 
@@ -1836,7 +1822,7 @@ hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeato
 ther\\endinput\n \"); f.close();")...executed.
 
 (./codebook.mintedmd5)
-(./_minted-codebook/c70ab619e37194bbbcaa6a1d7b23a272e99f70ab.pygtex [2])
+(./_minted-codebook/c70ab619e37194bbbcaa6a1d7b23a272e99f70ab.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 332.
@@ -1860,7 +1846,7 @@ tother\\endinput\n \"); f.close();")...executed.
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 2.
 
-)
+[2])
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -1946,7 +1932,7 @@ igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/44167dbeba71e391f417710bda5581b965582f09.pygtex [4])
+(./_minted-codebook/44167dbeba71e391f417710bda5581b965582f09.pygtex)
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -1958,7 +1944,7 @@ igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/2632b28f33ed4c55c585e7d20f2084c525e540f1.pygtex)
+(./_minted-codebook/2632b28f33ed4c55c585e7d20f2084c525e540f1.pygtex [4])
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -1994,7 +1980,7 @@ input\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/29ca9d1a063f79a574986a6ef5f4ab52be02fd61.pygtex [6])
+(./_minted-codebook/29ca9d1a063f79a574986a6ef5f4ab52be02fd61.pygtex)
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2006,7 +1992,7 @@ o + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/5ce78a4c8cf2f3e7442f4f4372662b5606515ffa.pygtex)
+(./_minted-codebook/5ce78a4c8cf2f3e7442f4f4372662b5606515ffa.pygtex [6])
 \openout3 = `codebook.pyg'.
 
 \openout5 = `codebook.mintedcmd'.
@@ -2119,7 +2105,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--573
 
  []
 
-[9]
 \openout3 = `codebook.pyg'.
 
 \openout5 = `codebook.mintedcmd'.
@@ -2131,8 +2116,8 @@ dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
- (./codebook.mintedmd5)
-(./_minted-codebook/ef7a5363cdc0a8dd839cb9a5c7d198375db4762f.pygtex)
+(./codebook.mintedmd5)
+(./_minted-codebook/ef7a5363cdc0a8dd839cb9a5c7d198375db4762f.pygtex) [9]
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2148,6 +2133,24 @@ r\\endinput\n \"); f.close();")...executed.
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/p
+rim-1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.m
+intedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdige
+st() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\e
+ndinput\n \"); f.close();")...executed.
+
+
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/7e2f6450b8aa7f7c2384d82c28ed4dc360be8986.pygtex" "graph/prim
+-1.cpp" )...executed.
+
+
+(./_minted-codebook/7e2f6450b8aa7f7c2384d82c28ed4dc360be8986.pygtex [10])
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"flow/di
 nic.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.min
 tedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest
@@ -2156,7 +2159,7 @@ input\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/0d62f281aa79c422d84309db961a4d01d4b6c309.pygtex [10])
+(./_minted-codebook/0d62f281aa79c422d84309db961a4d01d4b6c309.pygtex)
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2352,30 +2355,45 @@ pen(\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 
 (./codebook.mintedmd5)
 (./_minted-codebook/2f70ad82254e25028d0acab6f43ce68bfe29b012.pygtex [18])
-[19] [20]
+[19]
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"DP/TSP.
+cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.mintedm
+d5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest() +
+ chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endinpu
+t\n \"); f.close();")...executed.
+
+ (./codebook.mintedmd5)
+(./_minted-codebook/0f1548113c80b98439a4d4cb433fc0e416650d83.pygtex) [20]
+runsystem(rm "_minted-codebook/eae6dd6af9e300a09acd1d69240f430a3183d60c.pygtex"
+)...executed.
+
 runsystem(rm "codebook.mintedcmd")...executed.
 
 runsystem(rm "codebook.mintedmd5")...executed.
 
 runsystem(rm "codebook.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
- (./codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 836.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 836.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 838.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 838.
+
+(./codebook.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 838.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 838.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 836.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 838.
  ) 
 Here is how much of TeX's memory you used:
- 30512 strings out of 493591
- 573356 string characters out of 6143546
- 679989 words of memory out of 5000000
- 33354 multiletter control sequences out of 15000+600000
- 8120 words of font info for 61 fonts, out of 8000000 for 9000
+ 30494 strings out of 493591
+ 572327 string characters out of 6143546
+ 703686 words of memory out of 5000000
+ 33331 multiletter control sequences out of 15000+600000
+ 8112 words of font info for 60 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  38i,21n,72p,10348b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
 

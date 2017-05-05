@@ -218,7 +218,7 @@
 \begin{enumerate}
 \item Random Shuffle before sorting:\\ \mintinline{java}{Random rnd = new Random(); rnd.nextInt();}
 \item Use \mintinline{java}{StringBuilder} for large output
-\item Java has strict parsing rules. e.g. using \mintinline{java}{sc.nextInt()} to read a long will result in RE
+%\item Java has strict parsing rules. e.g. using \mintinline{java}{sc.nextInt()} to read a long will result in RE
 \item For class sorting, use code \mintinline{java}{implements Comparable<Class name>}. Or, use code \mintinline{java}{new Comparator<Interval>() {}} at \mintinline{java}{Collections.sort()} second argument
 \end{enumerate}
 }
@@ -244,7 +244,7 @@
 
 % \includegraphics{sorting3}
 
-{\large
+{\normalsize
 \begin{enumerate}
 \item 隊友的建議，要認真聽！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
 \item 每一題都要小心讀，尤其是IO的格式和限制都要看清楚。%Read the problem statements carefully. Input and output specifications and constraints are crucial!
@@ -267,7 +267,7 @@
 
 \section{Topic list}
 
-{\large
+{\normalsize
 \begin{enumerate}
 \item 列舉、窮舉 enumeration
 \item 貪心 greedy 
@@ -596,8 +596,8 @@ for(int k = 0; k < N; k++)
 % https://amoshyc.github.io/blog/template-ci-xiao-sheng-cheng-shu.html
 \cppCode{graph/second_MST.cpp}
 
-% \subsubsection{Prim}
-% \cppCode{graph/prim.cpp}
+\subsubsection{Prim}
+\cppCode{graph/prim-1.cpp}
 
 \section{Flow}
 
@@ -826,6 +826,8 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 \section{Dynamic Programming - Problems collection}
 %\cppCode{DP/dp.cpp}
 \VerbatimInput{DP/dp_noComment.txt}
+
+\cppCode{DP/TSP.cpp}
 
 %trig information
 % \includepdf[pages={1-},scale=1, angle=90]{Math/Trig_Cheat_Sheet_Reduced.pdf}
