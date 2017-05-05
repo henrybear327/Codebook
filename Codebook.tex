@@ -467,8 +467,8 @@ struct UFDS {
 \subsection{Tree Center}
 \cppCode{Tree/TreeCenter.cpp}
 
-% \subsection{Treap}
-% \cppCode{Tree/treap.cpp}
+\subsection{Treap}
+\cppCode{Tree/treap.cpp}
 
 %%%%%%%%%%%%%%%%%圖論%%%%%%%%%%%%%%%%%%%
 
@@ -512,18 +512,26 @@ for (int i = 0; i < 2 * N; i += 2) { // 迭代所有變數
 }
 \end{minted}
 
-\subsection{CC}
+\subsection{BCC}
 
-\subsubsection{BCC}
-{\normalsize 
-%http://www.geeksforgeeks.org/biconnected-components/
-以 Edge 做分界的話，stack 要裝入 (u - v), 並 pop 終止條件為 != (u - v) \\
-以 Articulation point 做為分界 (code below)，注意有無坑人的重邊 \\
-注意，用SCC的code的話，只要多判一個 u 是否為 p, 如果是的話就直接 return (加在第21行之後)
+{\normalsize
+一張無向圖上，不會產生關節點 (articulation point) 的連通分量，稱作「雙連通分量」(Biconnected Component)。\\
+一張無向圖上，不會產生橋 (bridge) 的連通分量，稱作「橋連通分量」(Bridge-connected Component)。
 }
-%\cppCode{graph/BCC.cpp}
 
-\subsubsection{SCC}
+\subsubsection{Biconnected Component }
+{\normalsize 
+    %http://www.geeksforgeeks.org/biconnected-components/
+    以 Edge 做分界的話，stack 要裝入 (u - v), 並 pop 終止條件為 != (u - v) \\
+    以 Articulation point 做為分界 (code below)，注意有無坑人的重邊 \\
+    
+    用SCC的code的話，只要多判一個 u 是否為 p, 如果是的話就直接 return (加在第21行之後)
+}
+
+\subsubsection{Bridge-connected Component}
+\cppCode{graph/BCC-1.cpp}
+
+\subsection{SCC}
 
 {\normalsize 
 First of all we run DFS on the graph and sort the vertices in decreasing of their finishing time (we can use a stack).\\
@@ -550,7 +558,8 @@ Minimax: $dp[u][v] = min(dp[u][v], max(dp[u][k], dp[k][v]))$ \\
 \cppCode{graph/nextToShortestPath.cpp}
 
 \subsubsection{SPFA}
-\cppCode{graph/SPFA-1.cpp}
+\cppCode{graph/SPFA.cpp}
+% \cppCode{graph/SPFA-1.cpp}
 
 \subsubsection{Bellman-Ford $O(VE)$}
 % UVa 558, 10449
@@ -608,9 +617,6 @@ for(int k = 0; k < N; k++)
 最小點覆蓋數：選取最少的點，使任意一條邊至少有一個端點被選擇\\
 最大獨立數：選取最多的點，使任意所選兩點均不相連\\
 最小路徑覆蓋數：對於一個 DAG（有向無環圖），選取最少條路徑，使得每個頂點屬於且僅屬於一條路徑。路徑長可以為 0（即單個點）\\
-}
-
-{\normalsize
 定理1：最大匹配數 = 最小點覆蓋數（這是 Konig 定理）\\
 定理2：最大匹配數 = 最大獨立數\\
 定理3：最小路徑覆蓋數 = 頂點數 - 最大匹配數\\
@@ -647,6 +653,9 @@ for(int k = 0; k < N; k++)
 注意count的擺放位置，視題意可以擺在迴圈外
 \cppCode{string/TrieAmoshyc.cpp}
 }
+
+\subsection{Suffix Array}
+\cppCode{string/sa.cpp}
 
 \section{Matrix}
 
@@ -772,13 +781,25 @@ ll binomialCoeff(ll n, ll k)
         res *= (n - i);
         res /= (i + 1);
     }
-    
+
     return res;
 }
 \end{minted}
 
 \subsection{Chinese remainder theorem}
 %http://amoshyc.github.io/ojsolution-build/template/math/crt.html
+
+\begin{equation}
+\begin{split}
+\begin{cases}
+        x \equiv r_1 \pmod {m_1} \\
+        x \equiv r_2 \pmod {m_2} \\
+        \dots \\
+        x \equiv r_n \pmod {m_n}
+\end{cases}
+\end{split}
+\end{equation}
+
 \cppCode{Math/chineseRemainderTheorem.cpp}
 
 \subsection{2-Circle relations}
