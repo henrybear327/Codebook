@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// BIT is 1\PYGZhy{}based}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}N} \PYG{o}{=} \PYG{l+m+mi}{20000}\PYG{p}{,} \PYG{n}{MAX\PYGZus{}M} \PYG{o}{=} \PYG{l+m+mi}{20000}\PYG{p}{;} \PYG{c+c1}{//這個記得改！}
+\PYG{n}{ll} \PYG{n}{bit}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{][}\PYG{n}{MAX\PYGZus{}M} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{];}
+
+\PYG{n}{ll} \PYG{n+nf}{sum}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{s} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{a}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZhy{}=} \PYG{p}{(}\PYG{n}{i} \PYG{o}{\PYGZam{}} \PYG{o}{\PYGZhy{}}\PYG{n}{i}\PYG{p}{))}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{n}{b}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZhy{}=} \PYG{p}{(}\PYG{n}{j} \PYG{o}{\PYGZam{}} \PYG{o}{\PYGZhy{}}\PYG{n}{j}\PYG{p}{))}
+            \PYG{n}{s} \PYG{o}{+=} \PYG{n}{bit}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{];}
+        \PYG{k}{return} \PYG{n}{s}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{add}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{x}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{// MAX\PYGZus{}N, MAX\PYGZus{}M 須適時調整！}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{a}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{MAX\PYGZus{}N}\PYG{p}{;} \PYG{n}{i} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{i} \PYG{o}{\PYGZam{}} \PYG{o}{\PYGZhy{}}\PYG{n}{i}\PYG{p}{))}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{n}{b}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZlt{}=} \PYG{n}{MAX\PYGZus{}M}\PYG{p}{;} \PYG{n}{j} \PYG{o}{+=} \PYG{p}{(}\PYG{n}{j} \PYG{o}{\PYGZam{}} \PYG{o}{\PYGZhy{}}\PYG{n}{j}\PYG{p}{))}
+            \PYG{n}{bit}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{x}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

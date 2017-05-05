@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ll} \PYG{n+nf}{binomialCoeff}\PYG{p}{(}\PYG{n}{ll} \PYG{n}{n}\PYG{p}{,} \PYG{n}{ll} \PYG{n}{k}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{ll} \PYG{n}{res} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+
+    \PYG{k}{if} \PYG{p}{(} \PYG{n}{k} \PYG{o}{\PYGZgt{}} \PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{n}{k} \PYG{p}{)} \PYG{c+c1}{// Since C(n, k) = C(n, n\PYGZhy{}k)}
+    \PYG{n}{k} \PYG{o}{=} \PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{n}{k}\PYG{p}{;}
+
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{k}\PYG{p}{;} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)} \PYG{c+c1}{// n...n\PYGZhy{}k / 1...k}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{res} \PYG{o}{*=} \PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{n}{i}\PYG{p}{);}
+        \PYG{n}{res} \PYG{o}{/=} \PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
