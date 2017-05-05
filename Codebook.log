@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  4 MAY 2017 18:02
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  5 MAY 2017 20:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**Codebook.tex
-(./Codebook.tex
+**codebook.tex
+(./codebook.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -1347,11 +1347,11 @@ Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "Codebook.w18")...executed.
+runsystem(uname -s > "codebook.w18")...executed.
 
 
-(./Codebook.w18)
-runsystem(rm -- "Codebook.w18")...executed.
+(./codebook.w18)
+runsystem(rm -- "codebook.w18")...executed.
 
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1408,12 +1408,12 @@ LaTeX Info: Redefining \\ on input line 3056.
 \@float@every@listing=\toks34
 \c@listing=\count268
 )
-runsystem(mkdir -p "_minted-Codebook")...executed.
+runsystem(mkdir -p "_minted-codebook")...executed.
 
- (./_minted-Codebook/default.pygstyle) (./_minted-Codebook/friendly.pygstyle)
-runsystem(which "pygmentize" && touch "Codebook.aex")...executed.
+ (./_minted-codebook/default.pygstyle) (./_minted-codebook/friendly.pygstyle)
+runsystem(which "pygmentize" && touch "codebook.aex")...executed.
 
-runsystem(rm "Codebook.aex")...executed.
+runsystem(rm "codebook.aex")...executed.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
@@ -1421,8 +1421,8 @@ Package: xeCJK-listings 2016/05/14 v3.4.0 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count269
 \l__xeCJK_listings_flag_int=\count270
 )
-(./Codebook.aux)
-\openout1 = `Codebook.aux'.
+(./codebook.aux)
+\openout1 = `codebook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
 LaTeX Font Info:    ... okay on input line 148.
@@ -1497,9 +1497,9 @@ LaTeX Info: Redefining \ref on input line 148.
 LaTeX Info: Redefining \pageref on input line 148.
 LaTeX Info: Redefining \nameref on input line 148.
 
-(./Codebook.out) (./Codebook.out)
+(./codebook.out) (./codebook.out)
 \@outlinefile=\write6
-\openout6 = `Codebook.out'.
+\openout6 = `codebook.out'.
 
 .................................................
 . fontspec info: "setup-math"
@@ -1566,25 +1566,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 48.
 \c@lstlisting=\count272
 
-(./_minted-Codebook/default-pyg-prefix.pygstyle)
+(./_minted-codebook/default-pyg-prefix.pygstyle)
 File: images/buzz1.jpg Graphic file (type QTm)
  <use  "images/buzz1.jpg" >
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"contest
-_setup/Main.java\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Cod
+_setup/Main.java\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"cod
 ebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.
 hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeato
 ther\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/5db8638a0131119cfed8cf733e4cdd4ca1bdcd95.pygtex
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/cf6834ef4a8fff2afcf92dd1d3ac8c2a37d24935.pygtex" "contest_setup/
+Main.java" )...executed.
+
+
+(./_minted-codebook/cf6834ef4a8fff2afcf92dd1d3ac8c2a37d24935.pygtex
 
 LaTeX Font Warning: Font shape `EU1/OxygenMono(0)/bx/n' undefined
 (Font)              using `EU1/OxygenMono(0)/m/n' instead on input line 2.
@@ -1594,89 +1599,119 @@ LaTeX Font Warning: Font shape `EU1/OxygenMono(0)/m/it' undefined
 (Font)              using `EU1/OxygenMono(0)/m/n' instead on input line 11.
 
 )
-\openout5 = `Codebook.pyg'.
+\openout5 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
- (./Codebook.mintedmd5)
-(./_minted-Codebook/d8b9cf9271422ad8e342ba8982576c2f29b2ebcd.pygtex)
-\openout5 = `Codebook.pyg'.
-
-\openout5 = `Codebook.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
-dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
- + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
-put\n \"); f.close();")...executed.
+ (./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/b820f3ea5955b27e7f5639354d68177cd20f2f8a.pygtex" "codebook.pyg" 
+)...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/98c65d8b071b290204fb6bf8b95c52ed1dcc8649.pygtex)
-\openout5 = `Codebook.pyg'.
+(./_minted-codebook/b820f3ea5955b27e7f5639354d68177cd20f2f8a.pygtex)
+\openout5 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ca231e44bf98972a1bef6e9ae4dc6b9e52b07245.pygtex)
-\openout5 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/fcdef90edae678bc01fb5900cee510871c552d27.pygtex" "codebook.pyg" 
+)...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/fcdef90edae678bc01fb5900cee510871c552d27.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ecdc19b811016024e57c8313fb3794ed75ee4b0c.pygtex)
-\openout5 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/5343580d22ac40d846dbd3a998726e8386a2e81b.pygtex" "codebook.pyg" 
+)...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/5343580d22ac40d846dbd3a998726e8386a2e81b.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/1d36f5d677d3ad5010299d25a8bbf553167f4689.pygtex)
-\openout5 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/6daa4dcf44f57de687707dce4e0032e72cb5f4d0.pygtex" "codebook.pyg" 
+)...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/6daa4dcf44f57de687707dce4e0032e72cb5f4d0.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/84a9aee0c5b888dd43524be8b719bd1102e8635e.pygtex)
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/c51b0ed5b058562e1e858cefcb18d97e3524359a.pygtex" "codebook.pyg" 
+)...executed.
+
+
+(./_minted-codebook/c51b0ed5b058562e1e858cefcb18d97e3524359a.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
+dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
+ + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
+put\n \"); f.close();")...executed.
+
+
+(./codebook.mintedmd5)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-codebook/0e935e594f480a57354aa583a0e8fa6eb11152fd.pygtex" "codebook.pyg" 
+)...executed.
+
+
+(./_minted-codebook/0e935e594f480a57354aa583a0e8fa6eb11152fd.pygtex)
 Overfull \hbox (15.35677pt too wide) in paragraph at lines 222--223
 \EU1/Arial(0)/m/n/10 Or, use code [] at []
  []
@@ -1689,61 +1724,81 @@ Overfull \hbox (15.35677pt too wide) in paragraph at lines 222--223
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/bx/n' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 252.
 
-\openout5 = `Codebook.pyg'.
+\openout5 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/07be00209f1e87d7bc2ae2af1a927a348d7963f1.pygtex)
-\openout5 = `Codebook.pyg'.
-
-\openout5 = `Codebook.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
-dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
- + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
-put\n \"); f.close();")...executed.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/e52c114e23f2762ad167fd14b3aef822e120f952.pygtex" "codebook.pyg" )
+...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/c03b58b8d28a20d90e5a9340d5867b4e259ffc30.pygtex)
-\openout5 = `Codebook.pyg'.
+(./_minted-codebook/e52c114e23f2762ad167fd14b3aef822e120f952.pygtex)
+\openout5 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/4fcb756b0a42b0885a5a93cfe05ae007fcaa476c.pygtex)
-\openout5 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/88a165df8cbbfdda81f3b2ae158a1ca3339eef71.pygtex" "codebook.pyg" )
+...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/88a165df8cbbfdda81f3b2ae158a1ca3339eef71.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ae3b04e9d1f90da5099ceb442068e4282601067d.pygtex)
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/2921e9fc39333325e053658695d099dd23ac6da6.pygtex" "codebook.pyg" )
+...executed.
+
+
+(./_minted-codebook/2921e9fc39333325e053658695d099dd23ac6da6.pygtex)
+\openout5 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
+dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
+ + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
+put\n \"); f.close();")...executed.
+
+
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/7d537c8acef86d3e0bdfaa347f91f24a5f37861f.pygtex" "codebook.pyg" )
+...executed.
+
+
+(./_minted-codebook/7d537c8acef86d3e0bdfaa347f91f24a5f37861f.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 294.
@@ -1752,19 +1807,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 294.
 
-\openout5 = `Codebook.pyg'.
+\openout5 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/57a8ae6f6d75afa56a2dd116d220ac22c3265845.pygtex)
+(./codebook.mintedmd5)
+(./_minted-codebook/d777729b2e4a28b6e187d110512005a41fd13ded.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 298.
@@ -1773,17 +1828,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 298.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"useful_
-code/fast_pow.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Co
+code/fast_pow.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"co
 debook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher
 .hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeat
 other\\endinput\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/6f102f0581db5a436343372cf0165fdb470f958f.pygtex)
+(./codebook.mintedmd5)
+(./_minted-codebook/adc8852242b834b129416bb198da1a1b2bc5a38c.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 304.
@@ -1805,19 +1860,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 312.
 
-\openout3 = `Codebook.pyg'.
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ef78255cad434618256e58ab8ea94f3390651ac5.pygtex)
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/e12ead1ec27e8ceb52067d2c3ca25260bce11285.pygtex" "codebook.pyg" )
+...executed.
+
+
+(./_minted-codebook/e12ead1ec27e8ceb52067d2c3ca25260bce11285.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 323.
@@ -1826,17 +1886,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 323.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"useful_
-code/ext_gcd.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Cod
+code/ext_gcd.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"cod
 ebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.
 hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeato
 ther\\endinput\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/d5cdf5e7cf40bd7179026e32b9e6468047637565.pygtex [2])
+(./codebook.mintedmd5)
+(./_minted-codebook/c70ab619e37194bbbcaa6a1d7b23a272e99f70ab.pygtex [2])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 331.
@@ -1845,33 +1905,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 331.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"useful_
-code/prime_gen.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"C
+code/prime_gen.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"c
 odebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hashe
 r.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makea
 tother\\endinput\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/1205c35a9b3e556d7f507376f8249bb46c055661.pygtex
+(./codebook.mintedmd5)
+(./_minted-codebook/18ad2fc7d62677967694b69d5143dd312195b7f7.pygtex
 
 LaTeX Font Warning: Font shape `EU1/STKaiti(0)/m/it' undefined
 (Font)              using `EU1/STKaiti(0)/m/n' instead on input line 2.
 
 )
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"useful_
 code/cppReference2.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open
-(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + h
+(\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + h
 asher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\m
 akeatother\\endinput\n \"); f.close();")...executed.
 
- (./Codebook.mintedmd5)
-(./_minted-Codebook/5cbeea2b578b2c89c47564f124f025b74cd5b787.pygtex)
+ (./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/673a475ff38522bcd9dde21ad2c3f685419ae5b7.pygtex" "useful_cod
+e/cppReference2.cpp" )...executed.
+
+
+(./_minted-codebook/673a475ff38522bcd9dde21ad2c3f685419ae5b7.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 355.
@@ -1880,147 +1946,172 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 355.
 
-\openout3 = `Codebook.pyg'.
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/c4d65358f1d2810e1ee2ca81459644910d95e4d8.pygtex)
-\openout3 = `Codebook.pyg'.
-
-\openout5 = `Codebook.mintedcmd'.
-
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
-dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
- + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
-put\n \"); f.close();")...executed.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/e9c11d59a1aa7998613de9390af28e6918fd899d.pygtex" "codebook.pyg" )
+...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/6ab26a8fc85a6d350eb8f660c4ab3337e0bfcf81.pygtex)
-\openout3 = `Codebook.pyg'.
+(./_minted-codebook/e9c11d59a1aa7998613de9390af28e6918fd899d.pygtex)
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/885f5dc70aa6e311ed521dd10afc68b59ee6b98e.pygtex [3])
-\openout3 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/5679fbdb9a5f48902b05efa0004c17c917876b17.pygtex" "codebook.pyg" )
+...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/5679fbdb9a5f48902b05efa0004c17c917876b17.pygtex)
+\openout3 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/b1c5ce3b7676ef8aba63e09a75336e472e4b9554.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/8aeddf2f1ffb2aa24d931978417de4888497834b.pygtex" "codebook.pyg" )
+...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/8aeddf2f1ffb2aa24d931978417de4888497834b.pygtex [3])
+\openout3 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
+dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
+ + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
+put\n \"); f.close();")...executed.
+
+
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/1a9791e4a3b98194ba421088e1f8c0d7adf29a42.pygtex" "codebook.pyg" )
+...executed.
+
+
+(./_minted-codebook/1a9791e4a3b98194ba421088e1f8c0d7adf29a42.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"DS/segm
-entTree2.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
+entTree2.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
 k.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexd
 igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 \\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/0379e60f68330a8fe34b9fc2d6fb0705d2a36924.pygtex [4])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/44167dbeba71e391f417710bda5581b965582f09.pygtex [4])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"DS/spar
-se_table.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
+se_table.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
 k.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexd
 igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 \\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/699b7abd5fb4fc50d072b6539181bc9549879180.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/2632b28f33ed4c55c585e7d20f2084c525e540f1.pygtex)
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Tree/lc
-a.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+a.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/b475ac3052a05d07f780a15ddb429c7dce207df8.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/2ba79ec99986c939165cca3c011cf4294ceaa839.pygtex)
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Tree/Tr
-eeCenter.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
+eeCenter.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
 k.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexd
 igest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother
 \\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/c0ae753592f79676058a9e0a8f69ce0f7b7e0b27.pygtex [5])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/bbad9020bc90414756845ec98de2b712d299f108.pygtex [5])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/A
 rticulationPointAndBridge-1.cpp\", \"rb\"); hasher.update(f.read()); f.close();
- f = open(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr
+ f = open(\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr
 (123) + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macr
 o + \"\\makeatother\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ee242908bf8ef6a484ae2639a3456faf03371390.pygtex)
-\openout3 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+(./_minted-codebook/5ce78a4c8cf2f3e7442f4f4372662b5606515ffa.pygtex)
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/9185c925e35da2a66b11a0786ae735f458f0e8ce.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/ba21aa66109f18e73d0a46accb449a37fbb16c50.pygtex" "codebook.pyg" )
+...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/ba21aa66109f18e73d0a46accb449a37fbb16c50.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/S
-CC_AMO.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.
+CC_AMO.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.
 mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdig
 est() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\
 endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/4be0491b286c98d4844cd47b20f8c277475d4563.pygtex [6])
+(./codebook.mintedmd5)
+(./_minted-codebook/944f4615d0da5ac48977859f9f0b87bdf30aeff9.pygtex [6])
 Underfull \hbox (badness 10000) in paragraph at lines 537--541
 
  []
@@ -2033,29 +2124,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 546.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/n
 extToShortestPath.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(
-\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + ha
+\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + ha
 sher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\ma
 keatother\\endinput\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/f445f7db29be8113342c7975e5e0ea240a87d580.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/7509bcd9eafc2c17c1839d944e77a6f21ab38b55.pygtex)
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/S
-PFA-1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.m
+PFA-1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.m
 intedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdige
 st() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\e
 ndinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/ea70ee766f972eaebb39cc3239c0d2ceb8b8f634.pygtex [7])
+(./codebook.mintedmd5)
+(./_minted-codebook/74fa800d501378d605316fc750b05f375340a722.pygtex [7])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 554.
@@ -2064,17 +2155,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 554.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/b
-ellmanFord1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+ellmanFord1.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"code
 book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/a6481171e8ce368e5d27af07cd61d970d3fa6dac.pygtex)
+(./codebook.mintedmd5)
+(./_minted-codebook/5d20371eff14806e77d51fa692cb58c799cffb96.pygtex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 558.
@@ -2092,163 +2183,198 @@ Underfull \hbox (badness 10000) in paragraph at lines 560--563
 
  []
 
-\openout3 = `Codebook.pyg'.
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/747c40bcbabf1d97c04164556653a760c0237827.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/80d68ff9f2db62f66765ed97274881bf008a2afb.pygtex" "codebook.pyg" )
+...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/80d68ff9f2db62f66765ed97274881bf008a2afb.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"graph/s
-econd_MST.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebo
+econd_MST.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebo
 ok.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hex
 digest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatothe
 r\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/d064742d6a05f2f227261bacd42862250fb845fa.pygtex [8])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/bcbde9ae56542c9193298ed10668923fdfc1a340.pygtex [8])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"flow/di
-nic.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.min
+nic.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.min
 tedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest
 () + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\end
 input\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/2b8e9dafe3718ee4d80485cd60773c7ecfbb7a7a.pygtex [9])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/0d62f281aa79c422d84309db961a4d01d4b6c309.pygtex [9])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"flow/mi
-nCostFlow.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebo
+nCostFlow.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebo
 ok.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hex
 digest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatothe
 r\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/edeed3ebc63ce7154c192263a073a1203e43ee53.pygtex [10])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/bc6e9c7bdbc8ab4952bd15abd885aa5a11098c68.pygtex" "flow/minCo
+stFlow.cpp" )...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/bc6e9c7bdbc8ab4952bd15abd885aa5a11098c68.pygtex [10])
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"flow/bi
 partiteMatching.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"
-Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hash
+codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hash
 er.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\make
 atother\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/329f8b0015097a51a8eba5a3ff88fd862eb6ab06.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/af760fa0a1b3d5b28b1ce483ffce0e588bec2b28.pygtex" "flow/bipar
+titeMatching.cpp" )...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/af760fa0a1b3d5b28b1ce483ffce0e588bec2b28.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"string/
-RollingHash.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+RollingHash.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"code
 book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/6776a4e4c92c3024093f91a49cdea63c5ea64036.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/22c920044b6af584b8753c37d6167617947c4a02.pygtex" "string/Rol
+lingHash.cpp" )...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/22c920044b6af584b8753c37d6167617947c4a02.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"string/
-KMP.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.min
+KMP.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.min
 tedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest
 () + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\end
 input\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/e1a83e4a729a88c29ccb2d004306a00e60be014f.pygtex [11])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/e5764cdf973ce7754347c887a032d9c7f6aac883.pygtex [11])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"string/
-Z_Algorithm.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+Z_Algorithm.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"code
 book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/32d1b56e6b0d305beb6e4bbf373a255935e32589.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/fcad1f097c02b2e75d02ad044bdc892b5b59eab3.pygtex" "string/Z_A
+lgorithm.cpp" )...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/fcad1f097c02b2e75d02ad044bdc892b5b59eab3.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"string/
-TrieAmoshyc.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+TrieAmoshyc.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"code
 book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/efaf28c1c08f55bf9f68db7a1df6eaa48e0050ee.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/6215398f35e811e2511cdc77f6a0e68c74704542.pygtex" "string/Tri
+eAmoshyc.cpp" )...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/6215398f35e811e2511cdc77f6a0e68c74704542.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Matrix/
-gauss_jordan.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Cod
+gauss_jordan.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"cod
 ebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.
 hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeato
 ther\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/beb97c0c272dd31fd3ad23bb8bc7c970540b0709.pygtex [12])
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/fc09eacd59d55d347009aed2c3a836dc87246b80.pygtex [12])
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Matrix/
-matrix_det.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeb
+matrix_det.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeb
 ook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.he
 xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
 er\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/dae669081808509a794d35ff1922432cd4130462.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+(./_minted-codebook/4c73f738c5efcf61b4a03e58fa743d60c5aab201.pygtex)
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"geometr
-y/my_geometry2.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"C
+y/my_geometry2.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"c
 odebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hashe
 r.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makea
 tother\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/1edee26651d6d55376ad6b1fe8f6c88706346ac9.pygtex [13]
+(./codebook.mintedmd5)
+(./_minted-codebook/2343f0b274a661db6cf076eb6eec3cbeb106dc9b.pygtex [13]
 [14])
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"geometr
-y/rect_area.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Code
+y/rect_area.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"code
 book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
- (./Codebook.mintedmd5)
-(./_minted-Codebook/3cf2da7f749de37ecc08466749b28c0c91abaf99.pygtex)
+ (./codebook.mintedmd5)
+(./_minted-codebook/c5901e19a0f04421883a6aec70f20f023a377ac8.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 685--689
 
  []
@@ -2258,67 +2384,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--704
 
  []
 
-\openout3 = `Codebook.pyg'.
+\openout3 = `codebook.pyg'.
 
-\openout5 = `Codebook.mintedcmd'.
+\openout5 = `codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/fc638613652dce2537d5f3d101889d6bac630b52.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/c2ac43f33833f613ad26ca349ca6e641b2930b2b.pygtex" "codebook.pyg" )
+...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/c2ac43f33833f613ad26ca349ca6e641b2930b2b.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Math/lu
-cas.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.min
+cas.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.min
 tedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest
 () + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\end
 input\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/9c24089bbfc2553142bef36f82cfbfe3e03f464a.pygtex)
-\openout3 = `Codebook.pyg'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/07303970f1542a41dff9df8ee3a6f4d667489215.pygtex" "Math/lucas
+.cpp" )...executed.
 
-\openout5 = `Codebook.mintedcmd'.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
-ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codeboo
-k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Codebook.minte
+(./_minted-codebook/07303970f1542a41dff9df8ee3a6f4d667489215.pygtex)
+\openout3 = `codebook.pyg'.
+
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
+ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codeboo
+k.pyg\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"codebook.minte
 dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
  + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endin
 put\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/5d47d00b88f36fc2b2267594f401c2aaca628b6a.pygtex)
-\openout5 = `Codebook.mintedcmd'.
+(./codebook.mintedmd5)
+runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
+nted-codebook/ac3f643ebc3a65ffb564392e9b9bd5a055cfa9f7.pygtex" "codebook.pyg" )
+...executed.
 
-runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"Codebo
+
+(./_minted-codebook/ac3f643ebc3a65ffb564392e9b9bd5a055cfa9f7.pygtex)
+\openout5 = `codebook.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
 ok.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"Math/ch
 ineseRemainderTheorem.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = o
-pen(\"Codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) 
+pen(\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) 
 + hasher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"
 \\makeatother\\endinput\n \"); f.close();")...executed.
 
 
-(./Codebook.mintedmd5)
-(./_minted-Codebook/e8a1a2a5cf84d43f3e48dcb75fcb2072bac96869.pygtex [16])
+(./codebook.mintedmd5)
+runsystem(pygmentize -l cpp -f latex -P commandprefix=PYG -F tokenmerge -F gobb
+le:n=0 -P funcnamehighlighting=True -P mathescape=False -P texcomments=False -o
+ "_minted-codebook/2f70ad82254e25028d0acab6f43ce68bfe29b012.pygtex" "Math/chine
+seRemainderTheorem.cpp" )...executed.
+
+
+(./_minted-codebook/2f70ad82254e25028d0acab6f43ce68bfe29b012.pygtex [16])
 [17] [18]
-runsystem(rm "Codebook.mintedcmd")...executed.
+runsystem(rm "_minted-codebook/46e3fc0b300e380ef4cb2ecd65d9d2774da47346.pygtex"
+)...executed.
 
-runsystem(rm "Codebook.mintedmd5")...executed.
+runsystem(rm "_minted-codebook/e7d0828cd4994ed6582a4085dec92180d31a51c7.pygtex"
+)...executed.
 
-runsystem(rm "Codebook.pyg")...executed.
+runsystem(rm "_minted-codebook/8b1b8c91e10aa8fc2ec37e602b7c9f7278a631cf.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/1a6787dc7cdceaef3ce3b994670461bc3f6a0f67.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/5b323aaed16a384153d8b70311180a50aa73bbd8.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/35d37eaddd807f14a9463076e186d76bfe6f0a41.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/063652bfcfa958cec1c1a4fe4271c258b38d1b3a.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/ef7a5363cdc0a8dd839cb9a5c7d198375db4762f.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/1f53e24803fdf4d28b2dfb3106b60a175e451927.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/989fcc469e34e1daefc1feb39e5a7467955d9ee2.pygtex"
+)...executed.
+
+runsystem(rm "_minted-codebook/eda17a549bf5631c0edfe07744f18beb5e80316f.pygtex"
+)...executed.
+
+runsystem(rm "codebook.mintedcmd")...executed.
+
+runsystem(rm "codebook.mintedmd5")...executed.
+
+runsystem(rm "codebook.pyg")...executed.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 800.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 800.
- (./Codebook.aux)
+ (./codebook.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 800.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 800.
 
@@ -2328,12 +2509,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 800.
  ) 
 Here is how much of TeX's memory you used:
- 30430 strings out of 493591
- 568617 string characters out of 6143546
- 672537 words of memory out of 5000000
- 33287 multiletter control sequences out of 15000+600000
+ 30438 strings out of 493591
+ 569015 string characters out of 6143546
+ 674248 words of memory out of 5000000
+ 33284 multiletter control sequences out of 15000+600000
  8120 words of font info for 61 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  38i,17n,72p,10348b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Codebook.pdf (18 pages).
+Output written on codebook.pdf (18 pages).
