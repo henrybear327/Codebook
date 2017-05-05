@@ -602,6 +602,20 @@ for(int k = 0; k < N; k++)
 
 \subsection{Bipartite Matching, Unweighted}
 %http://amoshyc.github.io/ojsolution-build/template/graph/bipartite_matching.html
+
+{\normalsize
+最大匹配數：最大匹配的匹配邊的數目\\
+最小點覆蓋數：選取最少的點，使任意一條邊至少有一個端點被選擇\\
+最大獨立數：選取最多的點，使任意所選兩點均不相連\\
+最小路徑覆蓋數：對於一個 DAG（有向無環圖），選取最少條路徑，使得每個頂點屬於且僅屬於一條路徑。路徑長可以為 0（即單個點）\\
+}
+
+{\normalsize
+定理1：最大匹配數 = 最小點覆蓋數（這是 Konig 定理）\\
+定理2：最大匹配數 = 最大獨立數\\
+定理3：最小路徑覆蓋數 = 頂點數 - 最大匹配數\\
+}
+
 \cppCode{flow/bipartiteMatching.cpp}
 
 %%%%%%%%%%%%%%%%%字串%%%%%%%%%%%%%%%%%%%

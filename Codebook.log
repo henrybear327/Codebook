@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  5 MAY 2017 20:59
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.10.2)  5 MAY 2017 21:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2141,6 +2141,15 @@ r\\endinput\n \"); f.close();")...executed.
 
 (./codebook.mintedmd5)
 (./_minted-codebook/bc6e9c7bdbc8ab4952bd15abd885aa5a11098c68.pygtex [10])
+Underfull \hbox (badness 10000) in paragraph at lines 607--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--618
+
+ []
+
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2149,7 +2158,6 @@ partiteMatching.cpp\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"
 codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hash
 er.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\make
 atother\\endinput\n \"); f.close();")...executed.
-
 
 (./codebook.mintedmd5)
 (./_minted-codebook/af760fa0a1b3d5b28b1ce483ffce0e588bec2b28.pygtex)
@@ -2224,7 +2232,7 @@ er\\endinput\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/4c73f738c5efcf61b4a03e58fa743d60c5aab201.pygtex)
+(./_minted-codebook/4c73f738c5efcf61b4a03e58fa743d60c5aab201.pygtex) [13]
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2236,8 +2244,7 @@ tother\\endinput\n \"); f.close();")...executed.
 
 
 (./codebook.mintedmd5)
-(./_minted-codebook/2343f0b274a661db6cf076eb6eec3cbeb106dc9b.pygtex [13]
-[14])
+(./_minted-codebook/2343f0b274a661db6cf076eb6eec3cbeb106dc9b.pygtex [14])
 \openout5 = `codebook.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"codebo
@@ -2247,14 +2254,15 @@ book.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
 exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
 her\\endinput\n \"); f.close();")...executed.
 
- (./codebook.mintedmd5)
+
+(./codebook.mintedmd5)
 (./_minted-codebook/c5901e19a0f04421883a6aec70f20f023a377ac8.pygtex [15])
-Underfull \hbox (badness 10000) in paragraph at lines 686--690
+Underfull \hbox (badness 10000) in paragraph at lines 700--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--705
+Underfull \hbox (badness 10000) in paragraph at lines 714--719
 
  []
 
@@ -2270,11 +2278,6 @@ dmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest()
 put\n \"); f.close();")...executed.
 
 (./codebook.mintedmd5)
-runsystem(pygmentize -l c++ -f latex -P commandprefix=PYG -F tokenmerge -o "_mi
-nted-codebook/989fcc469e34e1daefc1feb39e5a7467955d9ee2.pygtex" "codebook.pyg" )
-...executed.
-
-
 (./_minted-codebook/989fcc469e34e1daefc1feb39e5a7467955d9ee2.pygtex)
 \openout5 = `codebook.mintedcmd'.
 
@@ -2315,31 +2318,28 @@ pen(\"codebook.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123)
 (./codebook.mintedmd5)
 (./_minted-codebook/2f70ad82254e25028d0acab6f43ce68bfe29b012.pygtex) [17]
 [18]
-runsystem(rm "_minted-codebook/34f5f8fde5cf434415e034f142fc69e5e4c4a6d8.pygtex"
-)...executed.
-
 runsystem(rm "codebook.mintedcmd")...executed.
 
 runsystem(rm "codebook.mintedmd5")...executed.
 
 runsystem(rm "codebook.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 801.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 801.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
  (./codebook.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 801.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 801.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 815.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 815.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 801.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 815.
  ) 
 Here is how much of TeX's memory you used:
- 30431 strings out of 493591
- 568657 string characters out of 6143546
- 683537 words of memory out of 5000000
- 33287 multiletter control sequences out of 15000+600000
+ 30474 strings out of 493591
+ 571321 string characters out of 6143546
+ 686537 words of memory out of 5000000
+ 33331 multiletter control sequences out of 15000+600000
  8120 words of font info for 61 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  38i,17n,72p,10348b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
