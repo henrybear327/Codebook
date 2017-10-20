@@ -1,0 +1,43 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}N} \PYG{o}{=} \PYG{l+m+mi}{1111}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];}
+
+\PYG{c+c1}{// for bridge}
+\PYG{k}{typedef} \PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{ii}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{ii}\PYG{o}{\PYGZgt{}} \PYG{n}{ans}\PYG{p}{;}
+
+\PYG{c+c1}{// for articulation point}
+\PYG{k+kt}{int} \PYG{n}{root}\PYG{p}{;}                \PYG{c+c1}{// set it before dfs() call}
+\PYG{k+kt}{bool} \PYG{n}{isCutVertex}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];} \PYG{c+c1}{// init to false}
+
+\PYG{k+kt}{int} \PYG{n}{tt} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{],} \PYG{n}{low}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}N}\PYG{p}{];} \PYG{c+c1}{// init array to \PYGZhy{}1}
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{p}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{tt}\PYG{o}{++}\PYG{p}{;}
+
+    \PYG{c+c1}{// for articulation point, root needs to have \PYGZgt{}= 2 childrens}
+    \PYG{k+kt}{int} \PYG{n}{child} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{v} \PYG{p}{:} \PYG{n}{g}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{v} \PYG{o}{==} \PYG{n}{p}\PYG{p}{)}
+            \PYG{k}{continue}\PYG{p}{;}
+        \PYG{n}{child}\PYG{o}{++}\PYG{p}{;}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{,} \PYG{n}{u}\PYG{p}{);}
+            \PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]);}
+
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{c+c1}{// bridge}
+                \PYG{n}{ans}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{ii}\PYG{p}{(}\PYG{n}{min}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{v}\PYG{p}{),} \PYG{n}{max}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{v}\PYG{p}{)));}
+
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{u} \PYG{o}{!=} \PYG{n}{root} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZgt{}=} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// articulation point}
+                \PYG{n}{isCutVertex}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{k}{if} \PYG{p}{(}\PYG{n}{u} \PYG{o}{==} \PYG{n}{root} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{child} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{2}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// articulation point}
+                \PYG{n}{isCutVertex}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{// u \PYGZhy{}\PYGZgt{} v, u has direct access to v \PYGZhy{}\PYGZgt{} back edge}
+            \PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{],} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

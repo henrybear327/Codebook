@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{new} \PYG{n}{Comparator}\PYG{o}{\PYGZlt{}}\PYG{n}{Interval}\PYG{o}{\PYGZgt{}()} \PYG{o}{\PYGZob{}\PYGZcb{}}
+\end{Verbatim}

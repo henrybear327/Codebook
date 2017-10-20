@@ -1,53 +1,83 @@
-\contentsline {section}{\numberline {1}Useful code}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Leap year $O(1)$}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Fast Exponentiation $O(log(exp))$}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Mod Inverse $ O(log n) $}{2}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}GCD $O(log( min(a + b) ))$}{2}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}{2}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Prime Generator $ O(n loglogn) $}{2}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}C++ Reference}{2}{subsection.1.7}
-\contentsline {section}{\numberline {2}Binary search}{3}{section.2}
-\contentsline {section}{\numberline {3}Basic data structure}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}1D BIT}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}2D BIT}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Union Find}{3}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Segment Tree}{3}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Sparse Table}{4}{subsection.3.5}
-\contentsline {section}{\numberline {4}Tree}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}LCA}{4}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Tree Center}{5}{subsection.4.2}
-\contentsline {section}{\numberline {5}Graph}{5}{section.5}
-\contentsline {subsection}{\numberline {5.1}Articulation point / Bridge}{5}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}2-SAT}{6}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}CC}{6}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}BCC}{6}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}SCC}{6}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Shortest Path}{7}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Dijkatra (next-to-shortest path) $O(VlogE)$}{7}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}SPFA}{7}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Bellman-Ford $O(VE)$}{7}{subsubsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.4}Floyd-Warshall $O(V^3)$}{8}{subsubsection.5.4.4}
-\contentsline {subsection}{\numberline {5.5}MST}{8}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Kruskal}{8}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}Second MST}{8}{subsubsection.5.5.2}
-\contentsline {section}{\numberline {6}Flow}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Max Flow (Dinic)}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}TSP}{9}{subsection.6.2}
-\contentsline {section}{\numberline {7}String}{10}{section.7}
-\contentsline {subsection}{\numberline {7.1}KMP}{10}{subsection.7.1}
-\contentsline {section}{\numberline {8}Matrix}{10}{section.8}
-\contentsline {subsection}{\numberline {8.1}Gauss Jordan Elimination}{10}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Determinant}{11}{subsection.8.2}
-\contentsline {section}{\numberline {9}Geometry}{11}{section.9}
-\contentsline {subsection}{\numberline {9.1}EPS}{11}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Rectangle area}{12}{subsection.9.2}
-\contentsline {section}{\numberline {10}Math}{13}{section.10}
-\contentsline {subsection}{\numberline {10.1}Euclid's formula (Pythagorean Triples)}{13}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Difference between two consecutive numbers' square is odd}{13}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Summation}{13}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Combination}{13}{subsection.10.4}
-\contentsline {subsubsection}{\numberline {10.4.1}Pascal triangle}{13}{subsubsection.10.4.1}
-\contentsline {subsubsection}{\numberline {10.4.2}線性}{13}{subsubsection.10.4.2}
-\contentsline {subsection}{\numberline {10.5}2-Circle relations}{14}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}Fun Facts}{14}{subsection.10.6}
-\contentsline {section}{\numberline {11}Dynamic Programming - Problems collection}{14}{section.11}
+\contentsline {section}{\numberline {1}Contest Setup}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}vimrc}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Java template}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Java Issues}{2}{subsubsection.1.2.1}
+\contentsline {section}{\numberline {2}System Testing}{2}{section.2}
+\contentsline {section}{\numberline {3}Reminder}{3}{section.3}
+\contentsline {section}{\numberline {4}Topic list}{3}{section.4}
+\contentsline {section}{\numberline {5}Useful code}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}Leap year $O(1)$}{3}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Fast Exponentiation $O(log(exp))$}{3}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Mod Inverse $ O(log n) $}{3}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}GCD $O(log( min(a + b) ))$}{3}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Extended Euclidean Algorithm GCD $O(log( min(a + b) ))$}{3}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Prime Generator $ O(n loglogn) $}{4}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}C++ Reference}{4}{subsection.5.7}
+\contentsline {section}{\numberline {6}Search}{4}{section.6}
+\contentsline {subsection}{\numberline {6.1}Ternary Search $O(nlogn)$}{4}{subsection.6.1}
+\contentsline {section}{\numberline {7}Basic data structure}{4}{section.7}
+\contentsline {subsection}{\numberline {7.1}1D BIT}{4}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}2D BIT}{4}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Union Find}{5}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Segment Tree}{5}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Sparse Table}{6}{subsection.7.5}
+\contentsline {section}{\numberline {8}Tree}{6}{section.8}
+\contentsline {subsection}{\numberline {8.1}LCA}{6}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Tree Center}{6}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Treap}{7}{subsection.8.3}
+\contentsline {section}{\numberline {9}Graph}{8}{section.9}
+\contentsline {subsection}{\numberline {9.1}Articulation point / Bridge}{8}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}2-SAT}{8}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}BCC}{8}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Biconnected Component }{8}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Bridge-connected Component}{8}{subsubsection.9.3.2}
+\contentsline {subsection}{\numberline {9.4}SCC}{9}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}Shortest Path}{9}{subsection.9.5}
+\contentsline {subsubsection}{\numberline {9.5.1}Dijkatra (next-to-shortest path) $O(VlogE)$}{9}{subsubsection.9.5.1}
+\contentsline {subsubsection}{\numberline {9.5.2}SPFA}{10}{subsubsection.9.5.2}
+\contentsline {subsubsection}{\numberline {9.5.3}Bellman-Ford $O(VE)$}{10}{subsubsection.9.5.3}
+\contentsline {subsubsection}{\numberline {9.5.4}Floyd-Warshall $O(V^3)$}{10}{subsubsection.9.5.4}
+\contentsline {subsection}{\numberline {9.6}MST}{11}{subsection.9.6}
+\contentsline {subsubsection}{\numberline {9.6.1}Kruskal}{11}{subsubsection.9.6.1}
+\contentsline {subsubsection}{\numberline {9.6.2}Second MST}{11}{subsubsection.9.6.2}
+\contentsline {subsubsection}{\numberline {9.6.3}Prim}{11}{subsubsection.9.6.3}
+\contentsline {section}{\numberline {10}Flow}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{12}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Bipartite Matching, Unweighted}{13}{subsection.10.3}
+\contentsline {section}{\numberline {11}String}{14}{section.11}
+\contentsline {subsection}{\numberline {11.1}Rolling Hash}{14}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}KMP}{14}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Z Algorithm}{14}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Trie}{14}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Suffix Array}{15}{subsection.11.5}
+\contentsline {section}{\numberline {12}Matrix}{16}{section.12}
+\contentsline {subsection}{\numberline {12.1}Gauss Jordan Elimination}{16}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Determinant}{16}{subsection.12.2}
+\contentsline {section}{\numberline {13}Geometry}{16}{section.13}
+\contentsline {subsection}{\numberline {13.1}EPS}{16}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Rectangle area}{18}{subsection.13.2}
+\contentsline {section}{\numberline {14}Math}{19}{section.14}
+\contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{19}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Difference between two consecutive numbers' square is odd}{19}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Summation}{19}{subsection.14.3}
+\contentsline {subsection}{\numberline {14.4}FFT}{19}{subsection.14.4}
+\contentsline {subsection}{\numberline {14.5}Combination}{20}{subsection.14.5}
+\contentsline {subsubsection}{\numberline {14.5.1}Pascal triangle}{20}{subsubsection.14.5.1}
+\contentsline {subsubsection}{\numberline {14.5.2}Lucus}{20}{subsubsection.14.5.2}
+\contentsline {subsubsection}{\numberline {14.5.3}線性}{20}{subsubsection.14.5.3}
+\contentsline {subsection}{\numberline {14.6}Chinese remainder theorem}{21}{subsection.14.6}
+\contentsline {subsection}{\numberline {14.7}2-Circle relations}{21}{subsection.14.7}
+\contentsline {subsection}{\numberline {14.8}Fun Facts}{21}{subsection.14.8}
+\contentsline {subsection}{\numberline {14.9}偏序集與 Dilworth}{21}{subsection.14.9}
+\contentsline {subsubsection}{\numberline {14.9.1}原理}{21}{subsubsection.14.9.1}
+\contentsline {subsubsection}{\numberline {14.9.2}題目}{21}{subsubsection.14.9.2}
+\contentsline {subsubsection}{\numberline {14.9.3}只能往右走或往下走}{21}{subsubsection.14.9.3}
+\contentsline {subsection}{\numberline {14.10}排列組合}{22}{subsection.14.10}
+\contentsline {subsubsection}{\numberline {14.10.1}排列 P}{22}{subsubsection.14.10.1}
+\contentsline {subsubsection}{\numberline {14.10.2}圓排列 Q}{22}{subsubsection.14.10.2}
+\contentsline {subsubsection}{\numberline {14.10.3}組合 C}{22}{subsubsection.14.10.3}
+\contentsline {subsubsection}{\numberline {14.10.4}重複組合 H}{22}{subsubsection.14.10.4}
+\contentsline {subsubsection}{\numberline {14.10.5}Stirling Number（Type I)}{22}{subsubsection.14.10.5}
+\contentsline {subsubsection}{\numberline {14.10.6}Stirling Number（Type II)}{22}{subsubsection.14.10.6}
+\contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{22}{section.15}

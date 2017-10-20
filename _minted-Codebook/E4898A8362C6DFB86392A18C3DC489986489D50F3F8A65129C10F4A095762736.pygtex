@@ -1,0 +1,91 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{INF} \PYG{o}{=} \PYG{l+m+mh}{0x3f3f3f3f}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}V} \PYG{o}{=} \PYG{l+m+mi}{100}\PYG{p}{;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V} \PYG{o}{=} \PYG{l+m+mi}{7}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{V}\PYG{p}{,} \PYG{n}{E}\PYG{p}{;} \PYG{c+c1}{// 記得初使化}
+
+\PYG{k}{struct} \PYG{n}{Edge} \PYG{p}{\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{n}{v}\PYG{p}{,} \PYG{n}{w}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{Edge}\PYG{o}{\PYGZgt{}} \PYG{n}{edges}\PYG{p}{;}
+
+\PYG{c+c1}{// btn[i][u] = u 前往它 2\PYGZca{}i parent 的路上經過的最大權重}
+\PYG{c+c1}{// par[i][u] = u 的 2\PYGZca{}i parent 是誰}
+\PYG{k+kt}{int} \PYG{n}{dep}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];} \PYG{c+c1}{// should be init to \PYGZhy{}1}
+\PYG{k+kt}{int} \PYG{n}{btn}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V}\PYG{p}{][}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{par}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V}\PYG{p}{][}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+
+\PYG{c+c1}{// mst}
+\PYG{k}{struct} \PYG{n}{AdjE} \PYG{p}{\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,} \PYG{n}{w}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{AdjE}\PYG{o}{\PYGZgt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+
+\PYG{k+kt}{void} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{p}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{d}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{n}{dep}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{d}\PYG{p}{;}
+	\PYG{n}{par}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{p}\PYG{p}{;}
+	\PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{e} \PYG{p}{:} \PYG{n}{g}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to} \PYG{o}{!=} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{btn}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{][}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{]} \PYG{o}{=} \PYG{n}{e}\PYG{p}{.}\PYG{n}{w}\PYG{p}{;}
+			\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{,} \PYG{n}{u}\PYG{p}{,} \PYG{n}{d} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{build}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+	\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{u} \PYG{o}{\PYGZlt{}} \PYG{n}{V}\PYG{p}{;} \PYG{n}{u}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{dep}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+
+	\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1} \PYG{o}{\PYGZlt{}} \PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{u} \PYG{o}{\PYGZlt{}} \PYG{n}{V}\PYG{p}{;} \PYG{n}{u}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{k}{if} \PYG{p}{(}\PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{||} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+				\PYG{n}{par}\PYG{p}{[}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+				\PYG{n}{btn}\PYG{p}{[}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+			\PYG{p}{\PYGZcb{}}
+			\PYG{k}{else} \PYG{p}{\PYGZob{}}
+				\PYG{n}{par}\PYG{p}{[}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]];}
+				\PYG{n}{btn}\PYG{p}{[}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{max}\PYG{p}{(}\PYG{n}{btn}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{],} \PYG{n}{btn}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]]);}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{int} \PYG{n+nf}{lca}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// 回傳 u, v 之間的最大權重}
+	\PYG{k+kt}{int} \PYG{n}{mx} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{INF}\PYG{p}{;} \PYG{c+c1}{// u, v 之間的最大權重}
+
+	\PYG{k}{if} \PYG{p}{(}\PYG{n}{dep}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{dep}\PYG{p}{[}\PYG{n}{v}\PYG{p}{])} \PYG{n}{swap}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,} \PYG{n}{v}\PYG{p}{);}
+	\PYG{k+kt}{int} \PYG{n}{diff} \PYG{o}{=} \PYG{n}{dep}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{dep}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+	\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{diff} \PYG{o}{\PYGZam{}} \PYG{p}{(}\PYG{l+m+mi}{1} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{i}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+			\PYG{n}{mx} \PYG{o}{=} \PYG{n}{max}\PYG{p}{(}\PYG{n}{mx}\PYG{p}{,} \PYG{n}{btn}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{v}\PYG{p}{]);}
+			\PYG{n}{v} \PYG{o}{=} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{v}\PYG{p}{];}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+
+	\PYG{k}{if} \PYG{p}{(}\PYG{n}{u} \PYG{o}{==} \PYG{n}{v}\PYG{p}{)} \PYG{k}{return} \PYG{n}{mx}\PYG{p}{;}
+
+	\PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{MAX\PYGZus{}LOG\PYGZus{}V} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]} \PYG{o}{!=} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{v}\PYG{p}{])} \PYG{p}{\PYGZob{}}
+			\PYG{n}{mx} \PYG{o}{=} \PYG{n}{max}\PYG{p}{(}\PYG{n}{mx}\PYG{p}{,} \PYG{n}{btn}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{]);}
+			\PYG{n}{mx} \PYG{o}{=} \PYG{n}{max}\PYG{p}{(}\PYG{n}{mx}\PYG{p}{,} \PYG{n}{btn}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{v}\PYG{p}{]);}
+			\PYG{n}{u} \PYG{o}{=} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{u}\PYG{p}{];}
+			\PYG{n}{v} \PYG{o}{=} \PYG{n}{par}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{v}\PYG{p}{];}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+c1}{// lca = par[0][u] = par[0][v];}
+	\PYG{n}{mx} \PYG{o}{=} \PYG{n}{max}\PYG{p}{(}\PYG{n}{mx}\PYG{p}{,} \PYG{n}{max}\PYG{p}{(}\PYG{n}{btn}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{][}\PYG{n}{u}\PYG{p}{],} \PYG{n}{btn}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{][}\PYG{n}{v}\PYG{p}{]));}
+
+	\PYG{k}{return} \PYG{n}{mx}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// second mst}
+\PYG{n}{build}\PYG{p}{();}
+\PYG{k+kt}{int} \PYG{n}{ans} \PYG{o}{=} \PYG{n}{INF}\PYG{p}{;}
+\PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{e}\PYG{p}{:} \PYG{n}{non\PYGZus{}mst\PYGZus{}edges}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{n}{mx\PYGZus{}w} \PYG{o}{=} \PYG{n}{lca}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{u}\PYG{p}{,} \PYG{n}{e}\PYG{p}{.}\PYG{n}{v}\PYG{p}{);}
+	\PYG{n}{ans} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,} \PYG{p}{(}\PYG{n}{total\PYGZus{}w} \PYG{o}{+} \PYG{n}{e}\PYG{p}{.}\PYG{n}{w} \PYG{o}{\PYGZhy{}} \PYG{n}{mx\PYGZus{}w}\PYG{p}{));}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

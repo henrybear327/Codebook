@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Random} \PYG{n}{rnd} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Random}\PYG{o}{();} \PYG{n}{rnd}\PYG{o}{.}\PYG{n+na}{nextInt}\PYG{o}{();}
+\end{Verbatim}

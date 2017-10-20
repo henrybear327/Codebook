@@ -1,0 +1,56 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}V} \PYG{o}{=} \PYG{p}{...;}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{INF} \PYG{o}{=} \PYG{l+m+mh}{0x3f3f3f3f}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{V}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+
+\PYG{k+kt}{int} \PYG{n}{dfn\PYGZus{}idx} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{scc\PYGZus{}cnt} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{low}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{belong}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{bool} \PYG{n}{in\PYGZus{}st}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{st}\PYG{p}{;}
+
+\PYG{k+kt}{void} \PYG{n+nf}{scc}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{v}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{dfn\PYGZus{}idx}\PYG{o}{++}\PYG{p}{;}
+    \PYG{n}{st}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+    \PYG{n}{in\PYGZus{}st}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{k+kt}{int}\PYG{p}{(}\PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{size}\PYG{p}{());} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{scc}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+            \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{],} \PYG{n}{low}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]);}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{k}{if} \PYG{p}{(}\PYG{n}{in\PYGZus{}st}\PYG{p}{[}\PYG{n}{u}\PYG{p}{])} \PYG{p}{\PYGZob{}}
+            \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{min}\PYG{p}{(}\PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{],} \PYG{n}{dfn}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{==} \PYG{n}{low}\PYG{p}{[}\PYG{n}{v}\PYG{p}{])} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{k}\PYG{p}{;}
+        \PYG{k}{do} \PYG{p}{\PYGZob{}}
+            \PYG{n}{k} \PYG{o}{=} \PYG{n}{st}\PYG{p}{.}\PYG{n}{back}\PYG{p}{();}
+            \PYG{n}{st}\PYG{p}{.}\PYG{n}{pop\PYGZus{}back}\PYG{p}{();}
+            \PYG{n}{in\PYGZus{}st}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{false}\PYG{p}{;}
+            \PYG{n}{belong}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n}{scc\PYGZus{}cnt}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{while} \PYG{p}{(}\PYG{n}{k} \PYG{o}{!=} \PYG{n}{v}\PYG{p}{);}
+        \PYG{n}{scc\PYGZus{}cnt}\PYG{o}{++}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void} \PYG{n+nf}{tarjan}\PYG{p}{()} \PYG{c+c1}{// scc 建立的順序即為反向的拓璞排序}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{st}\PYG{p}{.}\PYG{n}{clear}\PYG{p}{();}
+    \PYG{n}{fill}\PYG{p}{(}\PYG{n}{dfn}\PYG{p}{,} \PYG{n}{dfn} \PYG{o}{+} \PYG{n}{V}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{);}
+    \PYG{n}{fill}\PYG{p}{(}\PYG{n}{low}\PYG{p}{,} \PYG{n}{low} \PYG{o}{+} \PYG{n}{V}\PYG{p}{,} \PYG{n}{INF}\PYG{p}{);}
+    \PYG{n}{dfn\PYGZus{}idx} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{scc\PYGZus{}cnt} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{v} \PYG{o}{\PYGZlt{}} \PYG{n}{V}\PYG{p}{;} \PYG{n}{v}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfn}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{scc}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

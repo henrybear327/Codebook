@@ -1,0 +1,44 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{MAX\PYGZus{}V} \PYG{o}{=} \PYG{p}{...;}
+\PYG{k+kt}{int} \PYG{n}{V}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{match}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+\PYG{k+kt}{bool} \PYG{n}{used}\PYG{p}{[}\PYG{n}{MAX\PYGZus{}V}\PYG{p}{];}
+
+\PYG{k+kt}{void} \PYG{n+nf}{add\PYGZus{}edge}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{u}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{g}\PYG{p}{[}\PYG{n}{u}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{v}\PYG{p}{);}
+    \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{u}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// 回傳有無找到從 v 出發的增廣路徑}
+\PYG{c+c1}{//（首尾都為未匹配點的交錯路徑）}
+\PYG{c+c1}{// [待確認] 每次遞迴都找一個末匹配點 v 及匹配點 u}
+\PYG{k+kt}{bool} \PYG{n+nf}{dfs}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{used}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb}{true}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{u} \PYG{o}{=} \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{i}\PYG{p}{],} \PYG{n}{w} \PYG{o}{=} \PYG{n}{match}\PYG{p}{[}\PYG{n}{u}\PYG{p}{];}
+        \PYG{c+c1}{// 尚未配對或可從 w 找到增廣路徑（即路徑繼續增長）}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{w} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{o}{||} \PYG{p}{(}\PYG{o}{!}\PYG{n}{used}\PYG{p}{[}\PYG{n}{w}\PYG{p}{]} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{dfs}\PYG{p}{(}\PYG{n}{w}\PYG{p}{)))} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{// 交錯配對}
+            \PYG{n}{match}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{=} \PYG{n}{u}\PYG{p}{;}
+            \PYG{n}{match}\PYG{p}{[}\PYG{n}{u}\PYG{p}{]} \PYG{o}{=} \PYG{n}{v}\PYG{p}{;}
+            \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{int} \PYG{n+nf}{bipartite\PYGZus{}matching}\PYG{p}{()} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// 匈牙利演算法}
+    \PYG{k+kt}{int} \PYG{n}{res} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{memset}\PYG{p}{(}\PYG{n}{match}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{match}\PYG{p}{));}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{v} \PYG{o}{\PYGZlt{}} \PYG{n}{V}\PYG{p}{;} \PYG{n}{v}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{match}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{==} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{memset}\PYG{p}{(}\PYG{n}{used}\PYG{p}{,} \PYG{n+nb}{false}\PYG{p}{,} \PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{used}\PYG{p}{));}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{dfs}\PYG{p}{(}\PYG{n}{v}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+                \PYG{n}{res}\PYG{o}{++}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{res}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

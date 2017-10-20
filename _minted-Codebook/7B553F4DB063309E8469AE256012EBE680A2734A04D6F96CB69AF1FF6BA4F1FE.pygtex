@@ -1,0 +1,48 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{struct} \PYG{n}{Edge} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{to}\PYG{p}{,} \PYG{n}{cost}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{k}{typedef} \PYG{n}{pair}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{P}\PYG{p}{;} \PYG{c+c1}{// \PYGZlt{}d, v\PYGZgt{}}
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{INF} \PYG{o}{=} \PYG{l+m+mh}{0x3f3f3f3f}\PYG{p}{;}
+
+\PYG{k+kt}{int} \PYG{n}{N}\PYG{p}{,} \PYG{n}{R}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{Edge}\PYG{o}{\PYGZgt{}} \PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{5000}\PYG{p}{];}
+
+\PYG{k+kt}{int} \PYG{n}{d}\PYG{p}{[}\PYG{l+m+mi}{5000}\PYG{p}{];}
+\PYG{k+kt}{int} \PYG{n}{sd}\PYG{p}{[}\PYG{l+m+mi}{5000}\PYG{p}{];}
+
+\PYG{k+kt}{int} \PYG{n+nf}{solve}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{fill}\PYG{p}{(}\PYG{n}{d}\PYG{p}{,} \PYG{n}{d} \PYG{o}{+} \PYG{n}{N}\PYG{p}{,} \PYG{n}{INF}\PYG{p}{);}
+    \PYG{n}{fill}\PYG{p}{(}\PYG{n}{sd}\PYG{p}{,} \PYG{n}{sd} \PYG{o}{+} \PYG{n}{N}\PYG{p}{,} \PYG{n}{INF}\PYG{p}{);}
+    \PYG{n}{priority\PYGZus{}queue}\PYG{o}{\PYGZlt{}}\PYG{n}{P}\PYG{p}{,} \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{P}\PYG{o}{\PYGZgt{}}\PYG{p}{,} \PYG{n}{greater}\PYG{o}{\PYGZlt{}}\PYG{n}{P}\PYG{o}{\PYGZgt{}\PYGZgt{}} \PYG{n}{pq}\PYG{p}{;}
+
+    \PYG{n}{d}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n}{pq}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{P}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{));}
+
+    \PYG{k}{while} \PYG{p}{(}\PYG{o}{!}\PYG{n}{pq}\PYG{p}{.}\PYG{n}{empty}\PYG{p}{())} \PYG{p}{\PYGZob{}}
+        \PYG{n}{P} \PYG{n}{p} \PYG{o}{=} \PYG{n}{pq}\PYG{p}{.}\PYG{n}{top}\PYG{p}{();}
+        \PYG{n}{pq}\PYG{p}{.}\PYG{n}{pop}\PYG{p}{();}
+        \PYG{k+kt}{int} \PYG{n}{v} \PYG{o}{=} \PYG{n}{p}\PYG{p}{.}\PYG{n}{second}\PYG{p}{;}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{sd}\PYG{p}{[}\PYG{n}{v}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{p}\PYG{p}{.}\PYG{n}{first}\PYG{p}{)} \PYG{c+c1}{// 比次短距離還大，沒用，跳過}
+            \PYG{k}{continue}\PYG{p}{;}
+
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{].}\PYG{n}{size}\PYG{p}{();} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{Edge} \PYG{o}{\PYGZam{}}\PYG{n}{e} \PYG{o}{=} \PYG{n}{g}\PYG{p}{[}\PYG{n}{v}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+            \PYG{k+kt}{int} \PYG{n}{nd} \PYG{o}{=} \PYG{n}{p}\PYG{p}{.}\PYG{n}{first} \PYG{o}{+} \PYG{n}{e}\PYG{p}{.}\PYG{n}{cost}\PYG{p}{;}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{nd} \PYG{o}{\PYGZlt{}} \PYG{n}{d}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// 更新最短距離}
+                \PYG{n}{swap}\PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{],} \PYG{n}{nd}\PYG{p}{);}
+                \PYG{n}{pq}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{P}\PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{],} \PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{));}
+            \PYG{p}{\PYGZcb{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{nd} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{nd} \PYG{o}{\PYGZlt{}} \PYG{n}{sd}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{])} \PYG{p}{\PYGZob{}} \PYG{c+c1}{// 更新次短距離}
+                \PYG{n}{sd}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{]} \PYG{o}{=} \PYG{n}{nd}\PYG{p}{;}
+                \PYG{n}{pq}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{P}\PYG{p}{(}\PYG{n}{sd}\PYG{p}{[}\PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{],} \PYG{n}{e}\PYG{p}{.}\PYG{n}{to}\PYG{p}{));}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k}{return} \PYG{n}{sd}\PYG{p}{[}\PYG{n}{N} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

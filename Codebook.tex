@@ -2,9 +2,11 @@
 %!TEX encoding = UTF-8 Unicode
 
 % Project note
-% 	1. 一定要用 xelatex 進行編譯，因為有牽扯到中文字
+% 	1. 一定要用 xelatex 進行編譯，因為有牽扯到中文字 (-shell-escape)
 % 	2. 中文字體字體目前是使用Mac內建的中文字體
 % 	3. Empty codeblocks will cause formatting problem
+% 4. Install OxygenMono-Regular.tff
+% 5. Install pygmentize
 
 %%%%%% Page setting %%%%%%
 
@@ -53,7 +55,7 @@
 
 \usepackage{xeCJK} %讓中英文字體分開設置
 \setmainfont{Arial}
-\setCJKmainfont{STKaiti} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STKaiti}  %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
 %\setmonofont{Courier} %等寬字體
 \setmonofont{Oxygen Mono}
 
@@ -110,8 +112,6 @@
 
 \lstset{style=customc}
 
-
-
 % sudo easy_install Pygments
 % Add -shell-escape to compile flag
 \usepackage{minted}
@@ -160,7 +160,7 @@
 % \rhead{\includegraphics[width=1cm]{buzz}}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for 2017 桂冠賽 (Built on: \today)}
+\fancyfoot[C]{for 2017 NCPC (Built on: \today)}
 \fancyfoot[R]{\thepage}
 
 % for page 1
@@ -171,17 +171,17 @@
 \fancyhead[R]{\thepage}
 % generate footer
 %\fancyfoot[L]{\includegraphics[width=20pt]{pic.jpg}} %team profile picture
-\fancyfoot[C]{for 2017 桂冠賽 (Built on: \today)}
+\fancyfoot[C]{for 2017 NCPC (Built on: \today)}
 \fancyfoot[R]{\thepage}
 }
 
 % generate table of content on in a new page
 \scriptsize
-%\tableofcontents
+\tableofcontents
 \pagestyle{fancy}
 
 %\newpage
-\vfill
+% \vfill
 %\columnbreak
 
 %%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%
@@ -194,8 +194,8 @@
 
 \section{Contest Setup}
 
-% \subsection{vimrc}
-% \lstinputlisting[style=,basicstyle=\footnotesize\ttfamily]{contest_setup/vimrc}
+\subsection{vimrc}
+\lstinputlisting[style=,basicstyle=\footnotesize\ttfamily]{contest_setup/vimrc}
 
 % \subsection{bashrc}
 % \lstinputlisting[style=,language=bash,basicstyle=\footnotesize\ttfamily]{contest_setup/bashrc}
@@ -227,14 +227,14 @@
 
 {\normalsize
 \begin{enumerate}
-\item Setup Codeblock warning level and std=c++11
-\item Test g++ and Java 8 compiler
-\item Test if c++ and Java templates work properly on local and judge machine (bits, auto, and other c++11 stuff)
+% \item Setup Codeblock warning level and std=c++11
+\item Test g++ (\mintinline{c++}{-Wall -Wextra -Wshadow -std=c++11}) and Java 8 compiler
+\item Test if c++ and Java templates work properly on local and judge machine (\mintinline{c++}{bits/stdc++.h, auto})
 \item Test "divide by 0" $\rightarrow$ RE/TLE?
-\item Make a complete graph and run Floyd warshall, to test time complexity upper bound
-\item Make a linear graph and use DFS to test stack size
-\item Test output with extra newline and spaces
-\item Go to $Eclipse \rightarrow preference \rightarrow Java \rightarrow Editor \rightarrow Content Assist$, add $.abcdefghijklmnopqrstuvwxyz$ to auto activation triggers for Java in Eclipse
+\item Make a complete graph and run Floyd warshall, to test time complexity of the judge machine
+% \item Make a linear graph and use DFS to test stack size
+% \item Test output with extra newline and spaces
+%\item Go to $Eclipse \rightarrow preference \rightarrow Java \rightarrow Editor \rightarrow Content Assist$, add $.abcdefghijklmnopqrstuvwxyz$ to auto activation triggers for Java in Eclipse
 \end{enumerate}
 }
 
@@ -246,10 +246,10 @@
 
 {\normalsize
 \begin{enumerate}
-\item 隊友的建議，要認真聽！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
+\item 請不要排擠隊友！要記得心平氣和的小聲討論喔！通常隊友的建議都會突破你盲點。
 \item 每一題都要小心讀，尤其是IO的格式和限制都要看清楚。%Read the problem statements carefully. Input and output specifications and constraints are crucial!
 \item 小心估計\textbf{時間複雜度} 和 \textbf{空間複雜度}%Estimate the \textbf{time complexity} and \textbf{memory complexity} carefully.
-\item Coding 要兩人一組，要相信你的隊友的實力！
+\item Coding 要兩人一組，要相信你隊友的實力！
 \item 1WA 罰 20 分鐘！ \textbf{放輕鬆，不要急}，多產幾組測資後再丟。%Time penalty is 20 minutes per WA, \textbf{don't rush}!
 \item 範測一定要過！產個幾組極端測資，例如 input 下限、特殊 cases 0, 1, -1、空集合等等 %Sample test cases must all be tested and passed before every submission! Test the corner cases, such as 0, 1, -1. Test all edge cases of the input specification.
 \item 比賽是連續測資，一定要全部讀完再開始 solve 喔！%For continuous input problems, be sure to read in all input BEFORE terminating and start processing next the input.
@@ -258,7 +258,7 @@
 \item \mintinline{c++}{long long = int * int} 會完蛋%$long\ long = int * int$ won't work!
 \item \mintinline{c++}{long long int} 的位元運算要記得用 \mintinline{c++}{1LL << 35} %Shifting for $long long int$ should be something like $1LL << 35$
 %\item Don't use anonymous struct
-\item 記得清理Global variable
+\item 記得清理Global variable （煒杰要記得清圖喔！）
 \item 建圖時要注意有無重邊！
 \item c++ priority queue 是 max heap，Java 是 Min heap
 \item 注意要不要建立反向圖 % UVa1112
@@ -285,6 +285,7 @@
 \item 從答案推回來
 \item 寫出數學式，有時就馬上出現答案了！ % CF Div2 R372 C
 \item 奇偶性質
+\item 串接、反轉、兩倍長度
 \end{enumerate}
 }
 
@@ -298,7 +299,7 @@
 
 \subsection{Fast Exponentiation $O(log(exp))$}
 
-{\normalsize Fermat's little theorem: 若 $m$ 是質數，則$a^{m-1} \equiv 1 \pmod m$}
+{\normalsize Fermat's little theorem: 若 $p$ 是質數，則$a^{p-1} \equiv 1 \pmod p$}
 
 \cppCode{useful_code/fast_pow.cpp}
 
@@ -307,7 +308,7 @@
 {\normalsize 
 Case 1: $gcd(a, m) = 1$:  ax + my = gcd(a, m) = 1 (use ext$\_$gcd) \\
 
-\noindent Case 2: $m\ is\ prime$: $a^{m - 2} \equiv a^{-1} mod\ m$ 
+\noindent Case 2: $p\ is\ prime$: $a^{p - 2} \equiv a^{-1} mod\ p$ 
 }
 
 \subsection{GCD $O(log( min(a + b) ))$}
@@ -377,79 +378,15 @@ f(r) - maximum of function
 
 \subsection{1D BIT}
 
-\begin{minted}{c++}
-// BIT is 1-based
-const int MAX_N = 20000; //這個記得改！
-ll bit[MAX_N + 1];
-
-ll sum(int i) {
-    int s = 0;
-    while (i > 0) {
-        s += bit[i];
-        i -= (i & -i);
-    }
-    return s;
-}
-
-void add(int i, ll x) {
-    while (i <= MAX_N) {
-        bit[i] += x;
-        i += (i & -i);
-    }
-}
-\end{minted}
+\cppCode{DS/1D_BIT.cpp}
 
 \subsection{2D BIT}
 
-\begin{minted}{c++}
-// BIT is 1-based
-const int MAX_N = 20000, MAX_M = 20000; //這個記得改！
-ll bit[MAX_N + 1][MAX_M + 1];
-
-ll sum(int a, int b) {
-    ll s = 0;
-    for (int i = a; i > 0; i -= (i & -i))
-        for (int j = b; j > 0; j -= (j & -j))
-            s += bit[i][j];
-        return s;
-}
-
-void add(int a, int b, ll x) {
-    // MAX_N, MAX_M 須適時調整！
-    for (int i = a; i <= MAX_N; i += (i & -i))
-        for (int j = b; j <= MAX_M; j += (j & -j))
-            bit[i][j] += x;
-}
-\end{minted}
+\cppCode{DS/2D_BIT.cpp}
 
 \subsection{Union Find}
 
-\begin{minted}{c++}
-const int MAX_N = 20000; // 記得改
-struct UFDS {
-    int par[MAX_N];
-    
-    void init(int n) {
-        memset(par, -1, sizeof(int) * n);
-    }
-    
-    int root(int x) {
-        return par[x] < 0 ? x : par[x] = root(par[x]);
-    }
-    
-    void merge(int x, int y) {
-        x = root(x);
-        y = root(y);
-        
-        if (x != y) {
-            if (par[x] > par[y])
-            swap(x, y);
-            par[x] += par[y];
-            par[y] = x;
-        }
-    }
-};
-\end{minted}
+\cppCode{DS/unionFind.cpp}
 
 \subsection{Segment Tree}
 \cppCode{DS/segmentTree2.cpp}
@@ -726,32 +663,16 @@ $\sum_{k=1}^{n} k^2= \frac{n(n+1)(2n+1)}{6}$\\
 $\sum_{k=1}^{n} k^3= \frac{n^2(n+1)^2}{4}$\\
 }
 
-% \subsection{FFT}
+\subsection{FFT}
 %http://amoshyc.github.io/ojsolution-build/template/math/fft.html
-% \cppCode{Math/fft.cpp}
+\cppCode{Math/fft.cpp}
 
 \subsection{Combination}
 
 % Pi-You Uva 10943
 \subsubsection{Pascal triangle}
 
-\begin{minted}{c++}
-#define N 210
-ll C[N][N];
-
-void Combination() {
-    for(ll i=0; i<N; i++) {
-        C[i][0] = 1;
-        C[i][i] = 1;
-    }
-    
-    for(ll i=2; i<N; i++) {
-        for(ll j=1; j<=i; j++) {
-            C[i][j] = (C[i-1][j] + C[i-1][j-1])%M; // if needed, mod it
-        }
-    }
-}
-\end{minted}
+\cppCode{Math/pascal.cpp}
 
 \subsubsection{Lucus}
 
@@ -768,23 +689,7 @@ void Combination() {
 
 \subsubsection{線性}
 
-\begin{minted}{c++}
-ll binomialCoeff(ll n, ll k)
-{
-    ll res = 1;
-    
-    if ( k > n - k ) // Since C(n, k) = C(n, n-k)
-    k = n - k;
-    
-    for (int i = 0; i < k; ++i) // n...n-k / 1...k
-    {
-        res *= (n - i);
-        res /= (i + 1);
-    }
-
-    return res;
-}
-\end{minted}
+\cppCode{Math/combination_linear.cpp}
 
 \subsection{Chinese remainder theorem}
 %http://amoshyc.github.io/ojsolution-build/template/math/crt.html
@@ -821,12 +726,188 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 \end{enumerate}
 }
 
+\subsection{偏序集與 Dilworth}
+
+\subsubsection{原理}
+{\normalsize
+Dilworth 與其對偶定理適用於嚴格偏序，也適用於非嚴格偏序。(Hasse Diagram)
+
+\begin{enumerate}
+	\item Dilworth：最小正鏈覆蓋 = 最長反鏈長度
+	\item 對偶定理：最小反鏈覆蓋 = 最長正鏈長度
+\end{enumerate}
+}
+
+\subsubsection{題目}
+
+{\normalsize
+R x C 的格子中 N 個點 (r[i], c[i])。\\
+定義一次旅行為從任一個點出發，只能 \textbf{往右走或往下走}。\\
+請問：\\
+1. 經過最多點的那次旅行是經過了多少個點？\\
+2. 最少須要旅行幾次才能走完所有點？ \\
+
+\noindent 即非嚴格偏序集 $P = (S, \le)$
+
+\begin{equation}
+\begin{split}
+\begin{cases}
+    	S &= \{ (r_i, c_i) | 0 \le i < N \} \\
+    	\le &= (r_i \le r_j \land c_i \le c_j)
+\end{cases}
+\end{split}
+\end{equation}
+
+\noindent 題目所求分別為\\
+1. 最長正鏈長度，即為最小反鏈覆蓋。\\
+2. 最小正鏈覆蓋，即為最長反鏈長度。
+}
+
+\subsubsection{只能往右走或往下走}
+
+{\normalsize
+\textbf{最長正鏈長度}
+
+\begin{enumerate}
+	\item 將點排序，r 由小到大，相同時 c \textbf{由小到大}
+	\item 在 c 上求最長 \textbf{單調遞增} 子序列，長度即為所求
+\end{enumerate}
+}
+
+{\normalsize
+\noindent \textbf{最長反鏈長度}
+
+\begin{enumerate}
+	\item 將點排序，r 由小到大，相同時 c \textbf{由小到大}
+	\item 在 c 上求最長 \textbf{嚴格遞減} 子序列，長度即為所求
+\end{enumerate}
+}
+
+{\normalsize
+\noindent  \textbf{只能往斜右下走}
+
+如果題目改成 \textbf{只能往斜右下走，不能向右或向下}，則演算法改成
+}
+
+{\normalsize
+\noindent  \textbf{最長正鏈長度}
+
+\begin{enumerate}
+	\item 將點排序，r 由小到大，相同時 c \textbf{由大到小}
+	\item 上求最長 \textbf{嚴格遞增} 子序列，長度即為所求
+\end{enumerate}
+}
+
+{\normalsize
+\noindent \textbf{最長反鏈長度}
+
+\begin{enumerate}
+	\item 將點排序，r 由小到大，相同時 c \textbf{由大到小}
+	\item 在 c 上求最長 \textbf{單調遞減} 子序列，長度即為所求
+\end{enumerate}
+}
+
+\newpage
+\subsection{排列組合}
+
+\subsubsection{排列 P}
+
+{\normalsize 
+$P^n_k = \frac{n!}{(n-k)!}$
+
+\begin{enumerate}
+	\item 從 $n$ 個不同球中取 $k$ 個，\textbf{不同取出順序視為不同}，方法數為 $P^n_k$
+	\item $P^4_2 = 12$
+\end{enumerate}
+}
+
+\subsubsection{圓排列 Q}
+
+{\normalsize
+$Q^n_k = \frac{n!}{k (n-k)!} = \frac{P^n_k}{k}$
+
+\begin{enumerate}
+	\item 從 $n$ 個不同球中取 $k$ 個，\textbf{排成一個圓}，圓只考慮相對位置，方法數為 $Q^n_k$
+	\item $Q^4_2 = 6$
+\end{enumerate}
+}
+
+\subsubsection{組合 C}
+
+{\normalsize
+\begin{equation}
+\begin{split}
+\begin{cases}
+	C^n_n &= C^n_0 = 1 \\
+	C^n_k &= C^n_{n-k} = \frac{k!}{(n-k)!k!} = \frac{P^n_k}{k!} \\
+	C^n_k &= C^{n-1}_{k-1} + C^{n-1}_{k}
+\end{cases}
+\end{split}
+\end{equation}
+
+\begin{enumerate}
+	\item 從 $n$ 個不同球中取 $k$ 個， \textbf{取出順序不影響} ，方法數為 $C^n_k$
+	\item 考慮第 $k$ 顆球取或不取：取的話轉移成從 $n-1$ 個不同球中取出 $k-1$ 個；不取的話，轉移成從 $n-1$ 個球中取 $k$ 個，即 $C^n_k = C^{n-1}_{k-1} + C^{n-1}_{k}$
+	\item $C^4_2 = 6$
+\end{enumerate}
+}
+
+\subsubsection{重複組合 H}
+{\normalsize
+$H^n_k = C^{n+k-1}_k = C^{n+k-1}_{n-1}$
+
+\begin{enumerate}
+	\item 將 $n$ 顆\textbf{相同的球} 丟進 $k$ 個\textbf{可空、不同} 箱子，方法數為 $H^n_k$
+	\item $x_1 + x_2 + \dots + x_n = k$，$(x_1, x_2, \dots, x_n)$ 非負整數解的個數為 $H^n_k$
+	\item $x_1 + x_2 + \dots + x_n = k$，$(x_1, x_2, \dots, x_n)$ 正整數解的個數為 $H^n_{k - n}$
+	\item $H^4_2 = 10$
+\end{enumerate}
+}
+
+\subsubsection{Stirling Number（Type I)}
+{\normalsize
+\begin{equation}
+\begin{split}
+\begin{cases}
+	S^n_0 &=0 \\
+    	S^n_1 &=1 \\
+    	S^n_k &= S^{n-1}_{k-1} + (n-1) S^{n-1}_{k}
+\end{cases}
+\end{split}
+\end{equation}
+
+\begin{enumerate}
+	\item 將 $n$ 顆\textbf{不同的球} 丟進 $k$ 個 \textbf{非空、相同} 箱子，每個箱子為一 \textbf{圓排列} ，方法數為 $S^n_k$
+	\item 考慮第 $n$ 顆球：可以自己一個箱子，即其他 $n-1$ 個球丟進 $k-1$ 個箱子；也可以 $n-1$ 個球丟進 $k$ 個箱子，這顆球插到任一顆球旁邊。所以得 $S^n_k = S^{n-1}_{k-1} + (n-1) S^{n-1}_{k}$
+	\item $S^4_2 = 11$
+\end{enumerate}
+}
+
+\subsubsection{Stirling Number（Type II)}
+{\normalsize
+\begin{equation}
+\begin{split}
+\begin{cases}
+	S^n_n &= S^n_1 = 1 \\
+    	S^n_k &= S^{n-1}_{k-1} + k S^{n-1}_{k}
+\end{cases}
+\end{split}
+\end{equation}
+
+\begin{enumerate}
+	\item 將 $n$ 顆 \textbf{不同的球} 丟進 $k$ 個 \textbf{非空、相同} 箱子，每一個箱子為一 \textbf{集合}，方法數為 $S^n_k$
+	\item 考慮第 $n$ 顆球：可以自己一個箱子，即其他 $n-1$ 個球丟進 $k-1$ 個箱子；也可以 $n-1$ 個球丟進 $k$ 個箱子，這顆球丟進其中一個箱子。所以得 $S^n_k = S^{n-1}_{k-1} + k S^{n-1}_{k}$
+	\item $S^4_2 = 7$
+\end{enumerate}
+}
+
 %%%%%%%%%%%%DP%%%%%%%%%%
 
 \section{Dynamic Programming - Problems collection}
 %\cppCode{DP/dp.cpp}
 \VerbatimInput{DP/dp_noComment.txt}
 
+\newpage
 \cppCode{DP/TSP.cpp}
 
 %trig information
@@ -836,3 +917,4 @@ $d$ = 圓心距, $R$, $r$ 為半徑 ($R \geq r$)\\
 \end{landscape}
 
 \end{document}
+

@@ -1,0 +1,75 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{java.io.*}\PYG{o}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{java.util.*}\PYG{o}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Main}
+\PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{void} \PYG{n+nf}{main}\PYG{o}{(}\PYG{n}{String}\PYG{o}{[]} \PYG{n}{args}\PYG{o}{)}
+    \PYG{o}{\PYGZob{}}
+        \PYG{n}{MyScanner} \PYG{n}{sc} \PYG{o}{=} \PYG{k}{new} \PYG{n}{MyScanner}\PYG{o}{();}
+        \PYG{n}{out} \PYG{o}{=} \PYG{k}{new} \PYG{n}{PrintWriter}\PYG{o}{(}\PYG{k}{new} \PYG{n}{BufferedOutputStream}\PYG{o}{(}\PYG{n}{System}\PYG{o}{.}\PYG{n+na}{out}\PYG{o}{));}
+        \PYG{c+c1}{// Start writing your solution here.}
+
+        \PYG{c+c1}{// Stop writing your solution here.}
+        \PYG{n}{out}\PYG{o}{.}\PYG{n+na}{close}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{n}{PrintWriter} \PYG{n}{out}\PYG{o}{;}
+
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kd}{class} \PYG{n+nc}{MyScanner} 
+    \PYG{o}{\PYGZob{}}
+        \PYG{n}{BufferedReader} \PYG{n}{br}\PYG{o}{;}
+        \PYG{n}{StringTokenizer} \PYG{n}{st}\PYG{o}{;}
+
+        \PYG{k+kd}{public} \PYG{n+nf}{MyScanner}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{n}{br} \PYG{o}{=} \PYG{k}{new} \PYG{n}{BufferedReader}\PYG{o}{(}\PYG{k}{new} \PYG{n}{InputStreamReader}\PYG{o}{(}\PYG{n}{System}\PYG{o}{.}\PYG{n+na}{in}\PYG{o}{));}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{k+kt}{boolean} \PYG{n+nf}{hasNext}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{k}{while} \PYG{o}{(}\PYG{n}{st} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{o}{!}\PYG{n}{st}\PYG{o}{.}\PYG{n+na}{hasMoreElements}\PYG{o}{())} \PYG{o}{\PYGZob{}}
+                \PYG{k}{try} \PYG{o}{\PYGZob{}}
+                    \PYG{n}{st} \PYG{o}{=} \PYG{k}{new} \PYG{n}{StringTokenizer}\PYG{o}{(}\PYG{n}{br}\PYG{o}{.}\PYG{n+na}{readLine}\PYG{o}{());}
+                \PYG{o}{\PYGZcb{}} \PYG{k}{catch} \PYG{o}{(}\PYG{n}{Exception} \PYG{n}{e}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+                    \PYG{k}{return} \PYG{k+kc}{false}\PYG{o}{;}
+                \PYG{o}{\PYGZcb{}}
+            \PYG{o}{\PYGZcb{}}
+            \PYG{k}{return} \PYG{k+kc}{true}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{n}{String} \PYG{n+nf}{next}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{k}{if} \PYG{o}{(}\PYG{n}{hasNext}\PYG{o}{())}
+                \PYG{k}{return} \PYG{n}{st}\PYG{o}{.}\PYG{n+na}{nextToken}\PYG{o}{();}
+            \PYG{k}{return} \PYG{k+kc}{null}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{k+kt}{int} \PYG{n+nf}{nextInt}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{Integer}\PYG{o}{.}\PYG{n+na}{parseInt}\PYG{o}{(}\PYG{n}{next}\PYG{o}{());}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{k+kt}{long} \PYG{n+nf}{nextLong}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{Long}\PYG{o}{.}\PYG{n+na}{parseLong}\PYG{o}{(}\PYG{n}{next}\PYG{o}{());}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{k+kt}{double} \PYG{n+nf}{nextDouble}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{Double}\PYG{o}{.}\PYG{n+na}{parseDouble}\PYG{o}{(}\PYG{n}{next}\PYG{o}{());}
+        \PYG{o}{\PYGZcb{}}
+
+        \PYG{n}{String} \PYG{n+nf}{nextLine}\PYG{o}{()}
+        \PYG{o}{\PYGZob{}}
+            \PYG{n}{String} \PYG{n}{str} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{o}{;}
+            \PYG{k}{try} \PYG{o}{\PYGZob{}}
+                \PYG{n}{str} \PYG{o}{=} \PYG{n}{br}\PYG{o}{.}\PYG{n+na}{readLine}\PYG{o}{();}
+            \PYG{o}{\PYGZcb{}} \PYG{k}{catch} \PYG{o}{(}\PYG{n}{IOException} \PYG{n}{e}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+                \PYG{n}{e}\PYG{o}{.}\PYG{n+na}{printStackTrace}\PYG{o}{();}
+            \PYG{o}{\PYGZcb{}}
+            \PYG{k}{return} \PYG{n}{str}\PYG{o}{;}
+        \PYG{o}{\PYGZcb{}}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}
