@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const} \PYG{k+kt}{int} \PYG{n}{INF} \PYG{o}{=} \PYG{l+m+mh}{0x3f3f3f3f}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n+nf}{lsis}\PYG{p}{(}\PYG{k}{const} \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZam{}} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{dp}\PYG{p}{(}\PYG{n}{sz}\PYG{p}{(}\PYG{n}{v}\PYG{p}{),} \PYG{n}{INF}\PYG{p}{);}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k}{auto} \PYG{n+nl}{x} \PYG{p}{:} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{o}{*}\PYG{n}{lower\PYGZus{}bound}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),} \PYG{n}{dp}\PYG{p}{.}\PYG{n}{end}\PYG{p}{(),} \PYG{n}{x}\PYG{p}{)} \PYG{o}{=} \PYG{n}{x}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{find}\PYG{p}{(}\PYG{n}{dp}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),} \PYG{n}{dp}\PYG{p}{.}\PYG{n}{end}\PYG{p}{(),} \PYG{n}{INF}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{dp}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{int} \PYG{n+nf}{lsds}\PYG{p}{(}\PYG{k}{const} \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}\PYGZam{}} \PYG{n}{v}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{rv} \PYG{o}{=} \PYG{n}{v}\PYG{p}{;}
+    \PYG{n}{reverse}\PYG{p}{(}\PYG{n}{rv}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),} \PYG{n}{rv}\PYG{p}{.}\PYG{n}{end}\PYG{p}{());}
+    \PYG{k}{return} \PYG{n}{lsis}\PYG{p}{(}\PYG{n}{rv}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

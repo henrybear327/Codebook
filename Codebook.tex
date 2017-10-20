@@ -192,6 +192,7 @@
 \includegraphics[width=10cm]{buzz1}
 \end{center}
 
+\newpage
 \section{Contest Setup}
 
 \subsection{vimrc}
@@ -783,9 +784,9 @@ R x C 的格子中 N 個點 (r[i], c[i])。\\
 \end{enumerate}
 }
 
+\columnbreak
+\subsubsection{只能往斜右下走}
 {\normalsize
-\noindent  \textbf{只能往斜右下走}
-
 如果題目改成 \textbf{只能往斜右下走，不能向右或向下}，則演算法改成
 }
 
@@ -794,7 +795,7 @@ R x C 的格子中 N 個點 (r[i], c[i])。\\
 
 \begin{enumerate}
 	\item 將點排序，r 由小到大，相同時 c \textbf{由大到小}
-	\item 上求最長 \textbf{嚴格遞增} 子序列，長度即為所求
+	\item 在 c 上求最長 \textbf{嚴格遞增} 子序列，長度即為所求
 \end{enumerate}
 }
 
@@ -805,9 +806,19 @@ R x C 的格子中 N 個點 (r[i], c[i])。\\
 	\item 將點排序，r 由小到大，相同時 c \textbf{由大到小}
 	\item 在 c 上求最長 \textbf{單調遞減} 子序列，長度即為所求
 \end{enumerate}
+
+\noindent \textbf{c 由小到大是為了防止誤判}
 }
 
-\newpage
+\subsubsection{最長 嚴格遞增 子序列、最長 嚴格遞減 子序列}
+
+\cppCode{DP/dilworth_strict_inc.cpp}
+
+\subsubsection{最長 單調遞增 子序列、最長 單調遞減 子序列:}
+
+\cppCode{DP/dilworth_monotone_inc.cpp}
+
+\columnbreak
 \subsection{排列組合}
 
 \subsubsection{排列 P}
@@ -839,7 +850,7 @@ $Q^n_k = \frac{n!}{k (n-k)!} = \frac{P^n_k}{k}$
 \begin{split}
 \begin{cases}
 	C^n_n &= C^n_0 = 1 \\
-	C^n_k &= C^n_{n-k} = \frac{k!}{(n-k)!k!} = \frac{P^n_k}{k!} \\
+	C^n_k &= C^n_{n-k} = \frac{n!}{(n-k)!k!} = \frac{P^n_k}{k!} \\
 	C^n_k &= C^{n-1}_{k-1} + C^{n-1}_{k}
 \end{cases}
 \end{split}
@@ -907,7 +918,7 @@ $H^n_k = C^{n+k-1}_k = C^{n+k-1}_{n-1}$
 %\cppCode{DP/dp.cpp}
 \VerbatimInput{DP/dp_noComment.txt}
 
-\newpage
+\columnbreak
 \cppCode{DP/TSP.cpp}
 
 %trig information

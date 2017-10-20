@@ -73,11 +73,14 @@
 \BOOKMARK [3][-]{subsubsection.14.9.1}{原理}{subsection.14.9}% 73
 \BOOKMARK [3][-]{subsubsection.14.9.2}{題目}{subsection.14.9}% 74
 \BOOKMARK [3][-]{subsubsection.14.9.3}{只能往右走或往下走}{subsection.14.9}% 75
-\BOOKMARK [2][-]{subsection.14.10}{排列組合}{section.14}% 76
-\BOOKMARK [3][-]{subsubsection.14.10.1}{排列 P}{subsection.14.10}% 77
-\BOOKMARK [3][-]{subsubsection.14.10.2}{圓排列 Q}{subsection.14.10}% 78
-\BOOKMARK [3][-]{subsubsection.14.10.3}{組合 C}{subsection.14.10}% 79
-\BOOKMARK [3][-]{subsubsection.14.10.4}{重複組合 H}{subsection.14.10}% 80
-\BOOKMARK [3][-]{subsubsection.14.10.5}{Stirling Number（Type I\)}{subsection.14.10}% 81
-\BOOKMARK [3][-]{subsubsection.14.10.6}{Stirling Number（Type II\)}{subsection.14.10}% 82
-\BOOKMARK [1][-]{section.15}{Dynamic\040Programming\040-\040Problems\040collection}{}% 83
+\BOOKMARK [3][-]{subsubsection.14.9.4}{只能往斜右下走}{subsection.14.9}% 76
+\BOOKMARK [3][-]{subsubsection.14.9.5}{最長 嚴格遞增 子序列、最長 嚴格遞減 子序列}{subsection.14.9}% 77
+\BOOKMARK [3][-]{subsubsection.14.9.6}{最長 單調遞增 子序列、最長 單調遞減 子序列:}{subsection.14.9}% 78
+\BOOKMARK [2][-]{subsection.14.10}{排列組合}{section.14}% 79
+\BOOKMARK [3][-]{subsubsection.14.10.1}{排列 P}{subsection.14.10}% 80
+\BOOKMARK [3][-]{subsubsection.14.10.2}{圓排列 Q}{subsection.14.10}% 81
+\BOOKMARK [3][-]{subsubsection.14.10.3}{組合 C}{subsection.14.10}% 82
+\BOOKMARK [3][-]{subsubsection.14.10.4}{重複組合 H}{subsection.14.10}% 83
+\BOOKMARK [3][-]{subsubsection.14.10.5}{Stirling Number（Type I\)}{subsection.14.10}% 84
+\BOOKMARK [3][-]{subsubsection.14.10.6}{Stirling Number（Type II\)}{subsection.14.10}% 85
+\BOOKMARK [1][-]{section.15}{Dynamic\040Programming\040-\040Problems\040collection}{}% 86

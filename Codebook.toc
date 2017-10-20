@@ -1,8 +1,8 @@
-\contentsline {section}{\numberline {1}Contest Setup}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}vimrc}{1}{subsection.1.1}
+\contentsline {section}{\numberline {1}Contest Setup}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}vimrc}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Java template}{2}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Java Issues}{2}{subsubsection.1.2.1}
-\contentsline {section}{\numberline {2}System Testing}{2}{section.2}
+\contentsline {section}{\numberline {2}System Testing}{3}{section.2}
 \contentsline {section}{\numberline {3}Reminder}{3}{section.3}
 \contentsline {section}{\numberline {4}Topic list}{3}{section.4}
 \contentsline {section}{\numberline {5}Useful code}{3}{section.5}
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {6.1}Ternary Search $O(nlogn)$}{4}{subsection.6.1}
 \contentsline {section}{\numberline {7}Basic data structure}{4}{section.7}
 \contentsline {subsection}{\numberline {7.1}1D BIT}{4}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}2D BIT}{4}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.2}2D BIT}{5}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Union Find}{5}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Segment Tree}{5}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Sparse Table}{6}{subsection.7.5}
@@ -36,11 +36,11 @@
 \contentsline {subsubsection}{\numberline {9.5.1}Dijkatra (next-to-shortest path) $O(VlogE)$}{9}{subsubsection.9.5.1}
 \contentsline {subsubsection}{\numberline {9.5.2}SPFA}{10}{subsubsection.9.5.2}
 \contentsline {subsubsection}{\numberline {9.5.3}Bellman-Ford $O(VE)$}{10}{subsubsection.9.5.3}
-\contentsline {subsubsection}{\numberline {9.5.4}Floyd-Warshall $O(V^3)$}{10}{subsubsection.9.5.4}
+\contentsline {subsubsection}{\numberline {9.5.4}Floyd-Warshall $O(V^3)$}{11}{subsubsection.9.5.4}
 \contentsline {subsection}{\numberline {9.6}MST}{11}{subsection.9.6}
 \contentsline {subsubsection}{\numberline {9.6.1}Kruskal}{11}{subsubsection.9.6.1}
 \contentsline {subsubsection}{\numberline {9.6.2}Second MST}{11}{subsubsection.9.6.2}
-\contentsline {subsubsection}{\numberline {9.6.3}Prim}{11}{subsubsection.9.6.3}
+\contentsline {subsubsection}{\numberline {9.6.3}Prim}{12}{subsubsection.9.6.3}
 \contentsline {section}{\numberline {10}Flow}{12}{section.10}
 \contentsline {subsection}{\numberline {10.1}Max Flow (Dinic)}{12}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Min Cost Flow}{12}{subsection.10.2}
@@ -49,13 +49,13 @@
 \contentsline {subsection}{\numberline {11.1}Rolling Hash}{14}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}KMP}{14}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Z Algorithm}{14}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Trie}{14}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.4}Trie}{15}{subsection.11.4}
 \contentsline {subsection}{\numberline {11.5}Suffix Array}{15}{subsection.11.5}
 \contentsline {section}{\numberline {12}Matrix}{16}{section.12}
 \contentsline {subsection}{\numberline {12.1}Gauss Jordan Elimination}{16}{subsection.12.1}
 \contentsline {subsection}{\numberline {12.2}Determinant}{16}{subsection.12.2}
 \contentsline {section}{\numberline {13}Geometry}{16}{section.13}
-\contentsline {subsection}{\numberline {13.1}EPS}{16}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.1}EPS}{17}{subsection.13.1}
 \contentsline {subsection}{\numberline {13.2}Rectangle area}{18}{subsection.13.2}
 \contentsline {section}{\numberline {14}Math}{19}{section.14}
 \contentsline {subsection}{\numberline {14.1}Euclid's formula (Pythagorean Triples)}{19}{subsection.14.1}
@@ -73,11 +73,14 @@
 \contentsline {subsubsection}{\numberline {14.9.1}原理}{21}{subsubsection.14.9.1}
 \contentsline {subsubsection}{\numberline {14.9.2}題目}{21}{subsubsection.14.9.2}
 \contentsline {subsubsection}{\numberline {14.9.3}只能往右走或往下走}{21}{subsubsection.14.9.3}
+\contentsline {subsubsection}{\numberline {14.9.4}只能往斜右下走}{22}{subsubsection.14.9.4}
+\contentsline {subsubsection}{\numberline {14.9.5}最長 嚴格遞增 子序列、最長 嚴格遞減 子序列}{22}{subsubsection.14.9.5}
+\contentsline {subsubsection}{\numberline {14.9.6}最長 單調遞增 子序列、最長 單調遞減 子序列:}{22}{subsubsection.14.9.6}
 \contentsline {subsection}{\numberline {14.10}排列組合}{22}{subsection.14.10}
 \contentsline {subsubsection}{\numberline {14.10.1}排列 P}{22}{subsubsection.14.10.1}
 \contentsline {subsubsection}{\numberline {14.10.2}圓排列 Q}{22}{subsubsection.14.10.2}
 \contentsline {subsubsection}{\numberline {14.10.3}組合 C}{22}{subsubsection.14.10.3}
 \contentsline {subsubsection}{\numberline {14.10.4}重複組合 H}{22}{subsubsection.14.10.4}
 \contentsline {subsubsection}{\numberline {14.10.5}Stirling Number（Type I)}{22}{subsubsection.14.10.5}
-\contentsline {subsubsection}{\numberline {14.10.6}Stirling Number（Type II)}{22}{subsubsection.14.10.6}
-\contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{22}{section.15}
+\contentsline {subsubsection}{\numberline {14.10.6}Stirling Number（Type II)}{23}{subsubsection.14.10.6}
+\contentsline {section}{\numberline {15}Dynamic Programming - Problems collection}{23}{section.15}
