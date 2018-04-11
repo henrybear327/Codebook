@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
 struct Edge {
     int from, to, cost;
 };
@@ -31,31 +27,4 @@ bool bellman_ford()
     }
 
     return false;
-}
-
-void solve()
-{
-    int n, m;
-    scanf("%d %d", &n, &m);
-    V = n;
-    E = m;
-    for (int i = 0; i < m; i++) {
-        int f, t, c;
-        scanf("%d %d %d", &f, &t, &c);
-        f--;
-        t--;
-        edges[i] = Edge{f, t, c};
-    }
-
-    printf("%s\n", bellman_ford() ? "No" : "Yes");
-}
-
-int main()
-{
-    int ncase;
-    scanf("%d", &ncase);
-    while (ncase--)
-        solve();
-
-    return 0;
 }
