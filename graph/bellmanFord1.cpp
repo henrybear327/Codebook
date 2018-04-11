@@ -1,9 +1,13 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
 struct Edge {
     int from, to, cost;
 };
 
-const int MAX_V = ...;
-const int MAX_E = ...;
+const int MAX_V = 333;
+const int MAX_E = 5555;
 const int INF = 0x3f3f3f3f;
 int V, E;
 Edge edges[MAX_E];
@@ -27,4 +31,31 @@ bool bellman_ford()
     }
 
     return false;
+}
+
+void solve()
+{
+    int n, m;
+    scanf("%d %d", &n, &m);
+    V = n;
+    E = m;
+    for (int i = 0; i < m; i++) {
+        int f, t, c;
+        scanf("%d %d %d", &f, &t, &c);
+        f--;
+        t--;
+        edges[i] = Edge{f, t, c};
+    }
+
+    printf("%s\n", bellman_ford() ? "No" : "Yes");
+}
+
+int main()
+{
+    int ncase;
+    scanf("%d", &ncase);
+    while (ncase--)
+        solve();
+
+    return 0;
 }
